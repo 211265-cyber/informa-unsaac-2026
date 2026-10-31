@@ -1,0 +1,69 @@
+\subsection{Comparación tecnológica de módulos fotovoltaicos}
+Se contrastan cuatro módulos publicados por un mismo distribuidor en Perú, AutoSolar, para homogeneizar IGV, existencias y despacho. La selección considera costo por Wp, corriente frente al límite de 16~A del seguidor MPPT, tensión del string en frío, área, masa y garantía, además de la potencia nominal. Cuando la página comercial y la ficha del fabricante difieren, prevalece la ficha. Una generación tecnológica más reciente puede mejorar el aprovechamiento del área, pero no demuestra por sí sola menor costo del servicio ni compatibilidad con el inversor. El cuadro \ref{tab:modulos_comparados} presenta las cuatro opciones con su imagen referencial, datos de ficha, precio y enlaces.
+
+Jinko conserva el menor costo por Wp y se mantiene como referencia de valorización. Su Imp STC deja un margen de 5,3\% frente a los 16~A del seguidor, pero la corriente bifacial BNPI de 16,73~A lo supera: no se presupone ganancia posterior y se evaluará la limitación de corriente \cite{jinko}. AutoSolar declara además una garantía propia de un año en esa página; la garantía de 12 años corresponde al fabricante y su atención deberá acreditarse \cite{preciojinko}.
+
+La página de Trina anuncia un módulo bifacial, mientras la ficha que enlaza corresponde al TSM-NE19R.70 de lámina posterior \cite{trinaprecio,trinaficha}. La oferta deberá identificar el modelo exacto. Si se confirma esa ficha, el conjunto pesa 28,2~kg menos y amplía el margen de corriente por S/~168,30 adicionales. LONGi Hi-MO X10 ofrece la mayor eficiencia y 15 años de garantía de producto, con S/~926,04 adicionales y el menor margen de corriente. El módulo LONGi de 505~W es la única opción con holgura amplia frente al seguidor; utiliza tecnología PERC, requiere siete unidades y eleva el costo en S/~2\,355,90 \cite{longi505ficha}.
+
+\textbf{Opción elegida para valorizar ET-06: Jinko Tiger Neo de 615~W}, por menor costo por Wp entre las que cumplen tensión, área y garantía. Las cuatro tensiones del string en frío permanecen bajo los 550~V del inversor elegido y dentro de su rango MPPT de 40 a 530~V. Si la ingeniería concluye que la limitación de corriente del módulo de referencia es inaceptable, se confirmará el Trina de lámina posterior, se adoptará el módulo de 505~W o se cotizará un inversor con mayor corriente por seguidor; cualquiera de esas decisiones requerirá recalcular el conjunto. Las garantías de ficha no reemplazan las condiciones contractuales, exclusiones y atención local que debe acreditar el proveedor.
+
+\begin{table}[p]\formatofichas
+\caption{Paneles solares analizados como opción: características STC y precio unitario}\label{tab:modulos_comparados}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.15cm}YYYY@{}}
+\toprule
+\textbf{Característica} & \textbf{Jinko Tiger Neo 615~W} & \textbf{Trina Vertex N 625~W} & \textbf{LONGi Hi-MO X10 640~W} & \textbf{LONGi Hi-MO 5 505~W}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/mercado_fv_jinko615.jpg}{3.1cm} & \imgficha{imagenes/mercado_fv_trina625.jpg}{3.1cm} & \imgficha{imagenes/mercado_fv_longi640.jpg}{3.1cm} & \imgficha{imagenes/mercado_fv_longi505.jpg}{3.1cm}\\
+\textbf{Modelo y tecnología} & JKM615N-66HL4M-BDV; TOPCon tipo N, bifacial, doble vidrio & TSM-NE19R.70 según la ficha: i-TOPCon con lámina posterior; la página dice bifacial & LR8-66HVD-640M; contacto posterior HPBC 2.0, bifacial, doble vidrio & LR5-66HPH-505M; PERC de media celda, vidrio simple; ficha de 2022\\
+\textbf{Potencia y eficiencia} & 615 Wp; 22,77\% & 625 Wp; 23,1\% & 640 Wp; 23,7\% & 505 Wp; 21,3\%\\
+\textbf{Vmp / Imp STC} & 40,60 V / 15,15 A & 41,6 V / 15,00 A & 40,78 V / 15,69 A & 38,53 V / 13,11 A\\
+\textbf{Voc / Isc STC} & 48,88 V / 16,02 A & 49,8 V / 15,93 A & 49,52 V / 16,38 A & 45,70 V / 13,97 A\\
+\textbf{Coeficiente de Voc} & $-0{,}25$\,\%/°C & $-0{,}24$\,\%/°C & $-0{,}20$\,\%/°C & $-0{,}265$\,\%/°C\\
+\textbf{Medidas y masa} & 2\,382 $\times$ 1\,134 $\times$ 30 mm; 32,4 kg & 2\,382 $\times$ 1\,134 $\times$ 30 mm; 27,7 kg & 2\,382 $\times$ 1\,134 $\times$ 30 mm; 33,5 kg & 2\,093 $\times$ 1\,134 $\times$ 35 mm; 25,3 kg\\
+\textbf{Garantía} & 12 y 30 años & 12 y 25 años & 15 y 30 años & 12 y 25 años\\
+\textbf{Precio con IGV} & S/~405,35; S/~0,659 por Wp; sin IGV S/~343,52 & S/~433,40; S/~0,693 por Wp; sin IGV S/~367,29 & S/~559,69; S/~0,875 por Wp; sin IGV S/~474,31 & S/~684,00; S/~1,354 por Wp; sin IGV S/~579,66\\
+\textbf{Conjunto para el balance} & 6 módulos; 3,69 kWp; S/~2\,432,10; 16,21 m$^2$; 194,4 kg & 6 módulos; 3,75 kWp; S/~2\,600,40; 16,21 m$^2$; 166,2 kg & 6 módulos; 3,84 kWp; S/~3\,358,14; 16,21 m$^2$; 201,0 kg & 7 módulos; 3,535 kWp; S/~4\,788,00; 16,61 m$^2$; 177,1 kg\\
+\textbf{Margen de Imp a 16 A} & 5,3\%; la corriente BNPI de 16,73 A lo supera & 6,3\%; sin ganancia posterior si se confirma la ficha & 1,9\%; con 5\% de ganancia posterior, unos 16,47 A; la ficha tabula 16,57 A sobre base de 645 W & 18,1\%; módulo monofacial\\
+\textbf{Voc del string a $-10$\,°C} & 318,94 V & 323,90 V & 317,92 V & 349,57 V\\
+\textbf{Enlace del producto} & \enlace{https://autosolar.pe/paneles-solares-24v/panel-solar-jinko-tiger-neo-bifacial-615w-n-type} & \enlace{https://autosolar.pe/paneles-solares/panel-solar-bifacial-625w-trina-solar} & \enlace{https://autosolar.pe/paneles-solares-24v/panel-solar-bifacial-longi-lr8-66hvd-640m-hi-mo-640w} & \enlace{https://autosolar.pe/paneles-solares-24v/panel-solar-longi-lr5-66hph-himo5-505w}\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de AutoSolar Perú y fichas de fabricante consultadas el 30 de octubre de 2026 \cite{preciojinko,jinko,trinaprecio,trinaficha,longiprecio2026,longificha2025,longi505precio,longi505ficha}. STC corresponde a condiciones normalizadas de ensayo; la garantía indica años de producto y de potencia lineal. El número de módulos es $N=\lceil 1{,}20(8{,}16)/(3P)\rceil$, con $P$ en kW, 4 HSP y factor 0,75; el margen de corriente es $(16-I_{mp})/16$. Fuente de las imágenes, de izquierda a derecha: \url{https://cdn.autosolar.pe/images/1002232/panel-solar-jinko-tiger-neo-bifacial-615w-n-type-684992fe19b4e.jpg}; \url{https://cdn.autosolar.pe/images/1002343/panel-solar-bifacial-625w-trina-solar-698dfb53e7a67.jpg}; \url{https://cdn.autosolar.pe/images/1006015/panel-solar-bifacial-longi-lr8-66hvd-640m-hi-mo-640w-69a9f09bd1a5f.jpg}; \url{https://cdn.autosolar.pe/images/1006012/panel-solar-longi-lr5-66hph-himo5-505w.jpg}. Las imágenes son referenciales, se reproducen con fines académicos y su procedencia se registra en \texttt{procedencia\_imagenes.json}.}
+\end{table}
+
+\subsection{Conjunto energético de referencia y compatibilidad}
+El conjunto valorizado comprende \textbf{seis módulos de 615 Wp, un inversor híbrido monofásico de 4 kW y una batería LFP de 48 V y 4,8 kWh}. Cumplen las especificaciones ET-05 a ET-07 de la sección \ref{sec:especificaciones}. Las opciones de mercado que los valorizan se eligen en los cuadros comparativos de la sección \ref{sec:seleccion}. Quedan sujetos a la condición G1 de aceptación técnica y a la oferta final; una variante equivalente acreditará su propia ficha y compatibilidad.
+
+La ficha del inversor elegido acredita: tensión FV máxima de 550 V, rango MPPT de 40 a 530 V con 380 V nominales y arranque a 50 V; dos seguidores con una cadena cada uno, 16 A de entrada y 20 A de cortocircuito por seguidor; y hasta 6\,500 Wp de generador. También acredita batería de 48 V con rango de 40 a 60 V, 100 A de carga y descarga, salida de respaldo de 5\,000 VA con conmutación de hasta 10 ms, eficiencia máxima de 97,6\%, grado IP66 y comunicación RS485/CAN. Su altitud máxima de operación es de 4\,000 m, con reducción de potencia sobre 3\,000 m \cite{tensiteinv}. Cusco se ubica cerca de 3\,400 m, de modo que la reducción aplica; con 640 W de carga simultánea el margen sigue siendo amplio, pero la oferta precisará la potencia disponible a la cota real. Estos límites no equivalen a aprobar una cadena sólo por su potencia total.
+
+% Flotante para que conserve el orden después del cuadro comparativo de módulos.
+\begin{table}[htbp]
+\cuadro{tab:string_referencia}{Comprobación preliminar de seis módulos de referencia en serie}{@{}Y P{4.7cm}@{}}{\textbf{Magnitud}&\textbf{Resultado ilustrativo}}{
+Potencia; tensión de máxima potencia STC & 3\,690 Wp; $6(40,60)=243,60$ V\\*
+Tensión de circuito abierto STC & $6(48,88)=293,28$ V\\
+Corrientes STC del string & Imp 15,15 A; Isc 16,02 A\\
+Voc con temperatura supuesta de $-10\,^{\circ}$C & $293,28[1+(-0,0025)(-10-25)]=318,94$ V\\
+Comparación con el inversor elegido & 318,94 V $<$ 550 V; 243,60 V dentro de 40 a 530 V; 16,02 A $<$ 20 A\\
+}
+\end{table}
+El cuadro \ref{tab:string_referencia} resume la comprobación de la cadena. Su cálculo de Voc utiliza el coeficiente de $-0,25\%/^{\circ}$C y una temperatura de ensayo supuesta; no es un registro del edificio ni un diseño ejecutivo. Se comprobarán temperatura mínima, tolerancias, tensión MPPT en caliente, orientación y sombras. La corriente permanece igual en serie. Dividir tres módulos por seguidor reduce el margen de tensión y requiere otra comprobación; dos strings en paralelo sobre un mismo seguidor sumarían Isc de 32,04 A STC, superior a 20 A.
+
+La ficha del módulo declara Imp de 16,73 A e Isc de 17,70 A en condiciones bifaciales BNPI \cite{jinko}. La primera supera los 16 A del MPPT y puede producir limitación de corriente y energía. Se requiere evaluación de fabricante o instalador, separando corriente operativa y de cortocircuito con sus correcciones; no se presupone ganancia bifacial.
+
+La batería elegida es del mismo fabricante que el inversor, lo que facilita la compatibilidad del BMS por CAN/RS485; la oferta confirmará protocolo, firmware y configuración. Su ficha acredita química LiFePO4, 4,8 kWh de energía total y 4,3 kWh utilizables, 60 A nominales y 100 A continuos de descarga. Indica además más de 6\,000 ciclos al 80\% de profundidad, carga entre 0 y 50\,°C, descarga entre $-10$ y 55\,°C, uso interior con IP20, 43 kg, garantía de cinco años y certificaciones UN38.3, CE y TÜV \cite{tensitebat}. La ficha no publica altitud: la oferta la acreditará para la cota de Cusco. La garantía de cinco años coincide con la reposición prevista en el año 5 del flujo económico.
+
+\subsection{Integración, materiales y condición de habilitación}
+Se plantea una operación híbrida con respaldo de red y \textbf{consigna programada de exportación cero}, con un medidor bidireccional Modbus compatible con el inversor y un módulo de monitoreo con registro exportable (ET-10) \cite{autosolarmed}. El control depende del muestreo y admite sobreimpulsos transitorios, por lo que la consigna no demuestra aislamiento físico ni ausencia instantánea de exportación. La ingeniería definirá el punto de conexión, neutro, tierra, protecciones y las condiciones institucionales aplicables. Si exige impedir físicamente la realimentación, incorporará una solución específica aprobada, sin atribuir esa función al simple ajuste del inversor.
+
+\cuadro{tab:bom_energia}{Cantidades del subsistema energético para cotizar e integrar}{@{}P{3.4cm}P{1.8cm}Y@{}}{\textbf{Elemento}&\textbf{Cantidad}&\textbf{Condición de suministro e ingeniería}}{
+Módulos FV, ET-06 & 6 & Modelo, conectores, estructura y distribución verificados\\*
+Inversor híbrido, ET-05 & 1 & Corriente por MPPT, altitud y compatibilidad BMS acreditadas\\
+Batería LFP, ET-07 & 1 & Protocolo, cable BMS, fusible y soporte confirmados\\
+Medidor y monitoreo, ET-10 & 1 y 1 & Comunicación Modbus y registro exportable verificados\\
+Estructura, ET-08 & 2 de 3 módulos & Compatibilidad con 2\,382 × 1\,134 mm y anclaje a la cubierta\\
+Protección DC, ET-09 & 1 conjunto & Interruptor DC de 25 A, protector de sobretensiones y 30 m de cable de 6 mm² por polaridad\\
+Tablero crítico, ET-09 & 1 & 18 polos: entrada y salida 2P 32 A, dos circuitos 2P 16 A con diferencial y protector AC\\
+Puesta a tierra, ET-09 & 1 pozo & Barra de cobre de 2,4 m, cemento conductivo y medición de resistencia\\
+}
+Los precios de estos elementos proceden de publicaciones identificadas y se detallan en el cuadro \ref{tab:precios_energia}. Las cantidades de conductores AC y canalización son estimaciones de metrado. El monitoreo y los enlaces RS485 del medidor y CAN del BMS deberán ser compatibles, con pinout y accesorios confirmados. Se evitará cotizar dos veces medidor, cables o soportes incluidos en los equipos.
+
+La condición \textbf{G1, previa a compra y montaje}, requiere ficha y oferta del modelo y revisión, altitud real, balance de cargas, configuración del string con frío, calor y corriente bifacial, compatibilidad BMS y firmware, esquema unifilar y autorización de conexión que corresponda. La ingeniería fijará longitudes, secciones, caída de tensión, canalizaciones, seccionamiento y protección DC, AC y de batería, sobretensiones, diferencial adecuado, puesta a tierra, anclajes y capacidad de cubierta. La aceptación incluirá registros exportables de energía y eventos, pérdida de comunicación, transferencia y ensayo de respaldo con la carga acordada.

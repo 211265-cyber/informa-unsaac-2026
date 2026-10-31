@@ -1,0 +1,392 @@
+{
+  "validated_on": "2026-10-30",
+  "version": "Proyecto integral 2026",
+  "entry_point": "main.tex",
+  "pdf": {
+    "file": "main.pdf",
+    "pages": 108,
+    "size_bytes": 10728736,
+    "sha256": "7cdfd8fdf46fe77ba0afecad9c7abbaba8a60000cdd46305ff4e9ef1921c8c8e",
+    "page_size_pt": [
+      595.28,
+      841.89
+    ],
+    "latest_tex_not_newer_than_pdf": true,
+    "encrypted": false,
+    "links": 568,
+    "fonts_embedded": {
+      "DWNTRA+TimesNewRomanPS-BoldMT": true,
+      "VGPCXC+TimesNewRomanPSMT": true,
+      "UACRXE+TimesNewRomanPS-ItalicMT": true,
+      "HKRIDO+CMSY8": true,
+      "ULGDNB+CMSY10": true,
+      "JLSYEZ+CMMI10": true,
+      "SNZKIN+CMR10": true,
+      "OJFNKL+LMMono10-Regular-Identity-H": true,
+      "EANSWY+CMR12": true,
+      "NJRFSH+CMMI12": true,
+      "DOAZMB+CMR7": true,
+      "YYTNGV+CMMI7": true,
+      "GMUGTJ+CMR8": true,
+      "NYLDSO+CMEX10": true,
+      "CZPDRK+CMMI8": true,
+      "NAHCEU+LMMono12-Regular-Identity-H": true
+    }
+  },
+  "compile": {
+    "status": "success_local",
+    "engine": "MiKTeX XeLaTeX 25.12; latexmk 4.88",
+    "command": "latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 main.tex",
+    "exit_code": 0,
+    "warnings": [],
+    "global_environment_changed": false,
+    "builtin_compile": {
+      "status": "failed_before_compilation",
+      "error": "MiKTeX/Core/Session/texmfroot.cpp:230; exit3221225477; Tectonic WinError5"
+    },
+    "local_fallback_authorized": true
+  },
+  "visual_qa": {
+    "status": "passed",
+    "renderer": "Poppler pdftoppm",
+    "dpi": 150,
+    "rendered_pages": 75,
+    "contact_sheets": 18,
+    "all_final_pages_visually_reviewed": true,
+    "independent_reviews": [
+      {
+        "range": [
+          1,
+          24
+        ],
+        "reviewer": "visual_primera",
+        "defects_remaining": 0
+      },
+      {
+        "range": [
+          25,
+          48
+        ],
+        "reviewer": "visual_segunda",
+        "defects_remaining": 0
+      },
+      {
+        "range": [
+          49,
+          70
+        ],
+        "reviewer": "visual_final_docente",
+        "defects_remaining": 0
+      }
+    ],
+    "root_detail_review_pages": [
+      1,
+      18,
+      20,
+      25,
+      32,
+      38,
+      52,
+      59
+    ],
+    "bounds_exceptions_35pt": 0,
+    "unintended_blank_pages": false,
+    "cut_tables_or_overlap_observed": false,
+    "corrections": [
+      "Removed redundant closing paragraph that produced a nearly empty page.",
+      "Aligned E1-E6 deliverable names between management and EDT.",
+      "Added capacity/response acceptance test and explicit availability target."
+    ],
+    "review_after_market_update": {
+      "full_document": "75 páginas revisadas en hojas de contacto a 32 ppp (15 a 75 de nuevo tras el último cambio): sin páginas en blanco ni cuadros cortados",
+      "detail_80_85_dpi": [
+        "cuadro de tótems",
+        "matriz de cumplimiento",
+        "cuadro de módulos FV",
+        "cuadro VAC",
+        "fórmulas del balance energético"
+      ],
+      "corrections": [
+        "cuadros comparativos como flotantes [p] para evitar media página vacía",
+        "coma decimal en fórmulas con icomma",
+        "URL de imágenes en nota alineada a la izquierda"
+      ],
+      "cover": "carátula formal rediseñada y revisada a 80-110 ppp: sin el rótulo INFORMA UNSAAC, sin marco, datos alineados"
+    }
+  },
+  "technical_review": {
+    "published_and_estimated_costs_distinguished": true,
+    "implementation_results_not_claimed": true,
+    "survey_not_redated_as_new_collection": true,
+    "energy_design_pending_field_validation": true,
+    "total_execution_hours_person": 408,
+    "planned_weeks_after_authorization": 16,
+    "minimum_operating_followup_days": 30,
+    "cost_model": "gestion/evidencia/modelo_economico.json",
+    "present_value_8pct": {
+      "A0": "27402.76",
+      "A1": "118682.52",
+      "A2": "125928.38"
+    },
+    "published_prices_verified_on": "2026-10-30",
+    "investment_with_reserves": {
+      "A0": "9196.00",
+      "A1": "83203.09",
+      "A2": "93333.53"
+    },
+    "tco_5_years": {
+      "A0": "31996.00",
+      "A1": "128368.76",
+      "A2": "134886.90"
+    },
+    "published_share_of_A2_base": "0.5885"
+  },
+  "source_checks": {
+    "missing_cites": [],
+    "duplicate_bibitems": 0,
+    "unused_bibitems": [],
+    "original_images": [
+      {
+        "file": "encuesta_01.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_02.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_03.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_04.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_05.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_06.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_07.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_08.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_09.png",
+        "match": true
+      },
+      {
+        "file": "encuesta_10.png",
+        "match": true
+      },
+      {
+        "file": "planta_piso_1.png",
+        "match": true
+      },
+      {
+        "file": "detalle_piso_1.png",
+        "match": true
+      },
+      {
+        "file": "planta_piso_2.png",
+        "match": true
+      },
+      {
+        "file": "detalle_piso_2.png",
+        "match": true
+      },
+      {
+        "file": "planta_piso_3.png",
+        "match": true
+      },
+      {
+        "file": "detalle_piso_3.png",
+        "match": true
+      },
+      {
+        "file": "concepto_terminal.png",
+        "match": true
+      },
+      {
+        "file": "concepto_interfaz.png",
+        "match": true
+      },
+      {
+        "file": "visualizacion_ubicacion.png",
+        "match": true
+      },
+      {
+        "file": "foto_ingreso.png",
+        "match": true
+      },
+      {
+        "file": "foto_murales.png",
+        "match": true
+      },
+      {
+        "file": "foto_pasillo.png",
+        "match": true
+      },
+      {
+        "file": "mercado_totem_prodimer.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_totem_firstview.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_totem_touchdata.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_totem_visionsystems.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_fv_jinko615.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_fv_trina625.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_fv_longi640.jpg",
+        "match": true
+      },
+      {
+        "file": "mercado_fv_longi505.jpg",
+        "match": true
+      }
+    ],
+    "source_hashes": [
+      {
+        "file": "AG_C05.xlsx",
+        "sha256": "830181dfef4c203a1aee5f996a30be71fa918de9754ec3d6df57d4d5573858a8"
+      },
+      {
+        "file": "FORMULACION_DE_PROYECTOS_TI_2.pptx",
+        "sha256": "cbcf025ba3e7d75f17665937e0454ed80881183c975b3f956e4cc7302beafb7f"
+      },
+      {
+        "file": "FORMULACIÓN DE PROYECTOS DE TI 1 - _2026-1.pptx",
+        "sha256": "257cc60bf08f229b47092b5a0fbce613f780091c2f51d04d3e67a2aacdb2a995"
+      }
+    ],
+    "long_dashes": {
+      "0x2014": 0,
+      "0x2013": 0,
+      "0x2011": 0
+    },
+    "replacement_characters": 0,
+    "bibliography_entries": 60
+  },
+  "tex_sha256": {
+    "01_formulacion.tex": "a54e4aabf40611f08591441428ff71100406ec12da626d27820bc7e3a0dd813d",
+    "02_tecnica.tex": "08f7e28b02591deba654b0a5d84423ed6f48bc48cda52992921025f9f4c68921",
+    "03_presupuesto.tex": "358f13a0ae21996d1b0c153918aa9af7a4a1442cab1b23dec711f8f64d2ea6d5",
+    "04_gestion.tex": "162558ed5d826461116f5535aee755d0b49dd609431c9e4db8bc19fe3c5417a3",
+    "05_referencias.tex": "03f5270b86df46175ee9359dbd02217aacfbec60c017e600812f910b6b402910",
+    "06_anexos.tex": "8f6b36b59614e2c361335a24b276fb76b21d8b00c0b1496ad7746a27303aeaa1",
+    "07_ejecucion_operacion.tex": "fd5b7252646a094877b12bb756b252574452227a7c329284fba943b516b8569a",
+    "08_mercado_tecnologico.tex": "f15f7b5506bed69dcdfbff351cdcca6d2269aebeeea31cc05d24b1318afe850a",
+    "09_conclusiones.tex": "47e207df7ca39690f77e77bf0168e3587ef0ff9dc21be7624ee46bc0c5c3633d",
+    "10_comparacion_energia.tex": "e0fa41e353c268a7a869ef6b4205c93fec73dd6c9b7c3ca3ca13c6862a2bd512",
+    "11_especificaciones.tex": "76fdadc81cde8537eb2455816e06443e2514c47e2a8be9643265b3b650bc1216",
+    "12_seleccion_mercado.tex": "727afb6140b0d6aa1bea80865c108815e46a555b5df7ce098d734a1e6757841d",
+    "contenido.tex": "85008f37ce759540ded8acbd316ee89d9b8ff0110f0d64d9a3c6c0d8acdce35c",
+    "estilo.tex": "36e9b883abbc170297a515461ce816c34de30807d2b00c4d559d8eec5b7e8b79",
+    "main.tex": "bf7abb901205980432b37c2cbaf07f02fdec3f4373c32e15d42c99c4932a6ee8",
+    "portada.tex": "ba24795fb082814a186a8f47b53b927d4cdb96ba1c29c2c6a56c893102d8fb22"
+  },
+  "long_dashes_in_pdf": {
+    "0x2014": 0,
+    "0x2013": 0,
+    "0x2011": 0
+  },
+  "unresolved_reference_placeholders": 0,
+  "market_update_2026_10_30": {
+    "totem_options": [
+      "Prodimer TIPI7-55",
+      "First View FVD-D550M",
+      "Touch Data ADV5531 Pro",
+      "Visionsystems 55 Core i5"
+    ],
+    "pv_module_options": [
+      "Jinko JKM615N-66HL4M-BDV",
+      "Trina TSM-NE19R.70 625 W",
+      "LONGi LR8-66HVD-640M",
+      "LONGi LR5-66HPH-505M"
+    ],
+    "market_images_added": 8,
+    "removed_sources": [
+      "gcs (Mercado Libre, no verificable)",
+      "jaficha2025",
+      "japrecio2026"
+    ],
+    "visual_review": "páginas de ambos cuadros, matriz, VAC y fórmulas revisadas a 80-85 ppp",
+    "budget_changed": false
+  },
+  "formulation_update_2026_10_30": {
+    "added": [
+      "arbol de problemas (figura 1) y arbol de objetivos con medios vinculados a OE1 a OE4 (figura 3)",
+      "matriz de marco logico con fin, proposito, cuatro componentes y actividades (cuadro 5)",
+      "poblacion de referencia, potencial y objetivo: 830 a 870 estudiantes de la EPIIS (cuadro 6)",
+      "ficha tecnica de la encuesta con cobertura EPIIS y error muestral de referencia (cuadro 7)",
+      "indice de costo-efectividad por estudiante e incremental A1/A0 y A2/A1 (cuadro 30)",
+      "diagrama de Gantt de 16 semanas con incrementos I1 a I3, puertas G0 a G6 y seguimiento (figura 15)"
+    ],
+    "corrected": [
+      "orden de cuadros: la comprobacion del string ahora sigue al cuadro comparativo de modulos",
+      "LONGi 640 W: 16,47 A con 5% de ganancia posterior; la ficha tabula 16,57 A sobre base de 645 W",
+      "se retiro la referencia sin contexto a 18 HP del cierre de formulacion",
+      "titulos 'Finalidad publica' y 'Estudio de mercado' en mayuscula inicial unica",
+      "fotografias del entorno en una sola fila para que la figura no se divida entre paginas"
+    ],
+    "population_source": "matricula referencial proporcionada por el equipo; confirmar con registro oficial 2026-II",
+    "tables": 85,
+    "figures": 24,
+    "visual_review": "paginas revisadas en hojas de contacto; arboles, matriz, Gantt y paginas afectadas revisados a 60-90 ppp; sin paginas en blanco, figuras divididas ni cuadros fuera de orden"
+  },
+  "specifications_update_2026_10_30": {
+    "trigger": "observaciones generales del docente a otros proyectos del curso",
+    "added": [
+      "sustento normativo y de acreditacion de la finalidad publica: Ley 30220 art. 11.4, 11.8, 100.8, 100.10 y 126; SINEACE 2025 estandares 5 a 8; Ley 32069 y numeral 44.6 de su reglamento; Ley 29733",
+      "cuadro de estadisticas e insumos con fuente y cuadro de fuentes de informacion y metodo de recopilacion",
+      "origen, emisor y forma de ingreso de cada tipo de informacion publicada",
+      "seccion de especificaciones tecnicas ET-01 a ET-10 sin marca ni modelo",
+      "cuadro de decisiones de dimensionamiento frente a valores menores y mayores",
+      "calculo de servidor y base de datos, metrado de red, grabacion de 30 dias, cuadro de cargas, protecciones, tierra y caidas de tension",
+      "plan de mantenimiento por equipo con costo anual",
+      "cuadros comparativos de inversores, baterias, red, videovigilancia y alojamiento con opcion elegida",
+      "anexo C de procedencia de las caracteristicas de cada marca",
+      "presupuesto con 37 partidas de precio publicado y grafico de costos generado con pgfplots",
+      "riesgo R11 y pruebas PC6 y PE5"
+    ],
+    "changed": {
+      "inverter_reference": "Solis S6-EH1P3K-L sin precio publicado en Peru -> Tensite AH4M-2, 16 A por MPPT, 4000 m",
+      "battery_reference": "Pylontech US5000 S/ 7493 -> Tensite TS-L5000/LV S/ 4178.47, mismo fabricante del inversor",
+      "hours_person": "392 -> 408",
+      "battery_replacement_year5": "8293.00 -> 4978.47",
+      "removed_file": "imagenes/costo_total_alternativas.png, sustituido por grafico pgfplots"
+    },
+    "price_sources": {
+      "AutoSolar Peru": "IGV incluido segun la pagina",
+      "ARTEUS S.A.C., RUC 20608279637": "IGV incluido segun terminos",
+      "Panacompu Peru": "solo contraste; no acepta pedidos en Peru"
+    },
+    "not_verified_automatically": [
+      "texto oficial de la directiva de videovigilancia de la ANPD (gob.pe bloquea la consulta automatizada)",
+      "pliego tarifario de Electro Sur Este (gob.pe bloquea la consulta automatizada)",
+      "precios de conductores AC y tuberia en Promart y Sodimac (paginas renderizadas por JavaScript)"
+    ]
+  }
+}

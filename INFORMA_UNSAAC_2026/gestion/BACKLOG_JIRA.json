@@ -1,0 +1,704 @@
+{
+  "project_name": "INFORMAUNSAAC",
+  "scope": "Formulación del piloto de paneles interactivos con energía solar: tres tótems de 55 pulgadas en la EPIIS.",
+  "prepared_date": "2026-10-29",
+  "timezone": "America/Lima",
+  "confirmed_first_delivery": "2026-10-30",
+  "purpose": "Plan de trabajo y registro de 16 tareas creadas en Jira; la creación no acredita su ejecución.",
+  "planning_notes": [
+    "Las 16 tareas tienen creación confirmada en Jira y estado Por hacer. Las asignaciones y vencimientos registrados no acreditan ejecución ni aceptación de compromisos externos.",
+    "Las fechas de validación son propuestas de trabajo, no una consigna oficial de segunda parcial ni plazos de terceros.",
+    "Las estimaciones del cierre son horas-persona agregadas por tarea e incluyen su revisión; no son horas transcurridas ni registros de ejecución.",
+    "El cierre suma 18 horas-persona. Se comprobará disponibilidad por integrante y se reducirá alcance o redistribuirán tareas si no alcanza.",
+    "La validación depende de autorización, personal y ofertas externas. Una fecha propuesta no autoriza declarar una actividad terminada sin su evidencia.",
+    "Los integrantes realizan análisis y coordinación dentro de sus capacidades; no certifican instalaciones eléctricas, estructurales o fotovoltaicas."
+  ],
+  "team": [
+    {
+      "id": "flavio",
+      "name": "Flavio Antony Cabeza Huillca",
+      "student_code": "211265"
+    },
+    {
+      "id": "george",
+      "name": "George Ivanok Muñoz Castillo",
+      "student_code": "204800"
+    },
+    {
+      "id": "lucian",
+      "name": "Lucian Neptalí Fernández Baca Castro",
+      "student_code": "184197"
+    }
+  ],
+  "summary": {
+    "closure_task_count": 8,
+    "closure_total_effort_hours": 18,
+    "closure_task_effort_grouped_by_owner": {
+      "Flavio Antony Cabeza Huillca": 7.5,
+      "George Ivanok Muñoz Castillo": 4.5,
+      "Lucian Neptalí Fernández Baca Castro": 6
+    },
+    "validation_task_count": 8,
+    "validation_window": {
+      "start": "2026-11-02",
+      "end": "2026-11-20"
+    },
+    "jira_created_task_count": 16
+  },
+  "tasks": [
+    {
+      "id": "C01",
+      "title": "Cerrar problema, objetivos y lectura de la encuesta",
+      "owner": "flavio",
+      "reviewer": "george",
+      "start": "2026-10-29",
+      "due": "2026-10-29",
+      "effort_hours": 1.5,
+      "depends_on": [],
+      "acceptance": [
+        "Problema y objetivos se refieren a información oportuna y gestión de contenidos, sin confundir señalización de pasillos con docencia en aula.",
+        "Se usa la base gráfica de 300 respuestas; se corrige la mención de 350 y no se atribuyen fecha de aplicación, representatividad o muestreo no acreditados.",
+        "Los hechos, supuestos y metas propuestas se distinguen sin presentar resultados nuevos."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-3",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-3",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-10-29",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [],
+        "summary": "C01 - Cerrar problema, objetivos y lectura de la encuesta",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C02",
+      "title": "Reconciliar alcance, alternativas y requisitos del piloto",
+      "owner": "george",
+      "reviewer": "flavio",
+      "start": "2026-10-29",
+      "due": "2026-10-29",
+      "effort_hours": 2,
+      "depends_on": [
+        "C01"
+      ],
+      "acceptance": [
+        "Toda la versión usa tres tótems de 55 pulgadas, uno por piso, y cantidades consistentes para red y alimentación.",
+        "A0 mejora canales web/QR; A1 añade CMS y terminales con red/respaldo; A2 añade solar híbrido con estrategia sin inyección por validar.",
+        "Se documentan funciones prioritarias, exclusiones y aceptación de publicación, caducidad, permisos, desconexión y recuperación; no se garantizan APIs institucionales inexistentes o no confirmadas."
+      ],
+      "status": "Por hacer",
+      "owner_name": "George Ivanok Muñoz Castillo",
+      "reviewer_name": "Flavio Antony Cabeza Huillca",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-4",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-4",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "George Ivanok Muñoz Castillo",
+        "due": "2026-10-29",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-3"
+        ],
+        "summary": "C02 - Reconciliar alcance, alternativas y requisitos del piloto",
+        "assignee_display_name": "GEORGE IVANOK MUNOZ CASTILLO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C03",
+      "title": "Verificar fichas, configuración y precios públicos del escenario",
+      "owner": "george",
+      "reviewer": "lucian",
+      "start": "2026-10-29",
+      "due": "2026-10-30",
+      "effort_hours": 2.5,
+      "depends_on": [
+        "C02"
+      ],
+      "acceptance": [
+        "Cada referencia comercial identifica modelo/configuración, cantidad, unidad, fuente y condiciones conocidas de precio, moneda e impuestos.",
+        "La matriz diferencia cumplimiento acreditado, incumplimiento y dato pendiente; no atribuye características de un modelo a otro.",
+        "Soportes, reproductor, licencia, red y garantía se incluyen o se señalan como partidas por cerrar, evitando dobles conteos; los precios publicados no se llaman cotizaciones recibidas."
+      ],
+      "status": "Por hacer",
+      "owner_name": "George Ivanok Muñoz Castillo",
+      "reviewer_name": "Lucian Neptalí Fernández Baca Castro",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-5",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-5",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "George Ivanok Muñoz Castillo",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-4"
+        ],
+        "summary": "C03 - Verificar fichas, configuración y precios públicos del escenario",
+        "assignee_display_name": "GEORGE IVANOK MUNOZ CASTILLO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C04",
+      "title": "Revisar el balance energético preliminar y sus límites",
+      "owner": "lucian",
+      "reviewer": "george",
+      "start": "2026-10-29",
+      "due": "2026-10-30",
+      "effort_hours": 2.5,
+      "depends_on": [
+        "C02"
+      ],
+      "acceptance": [
+        "Se calcula un escenario reproducible de demanda de tres terminales y auxiliares, con potencia, horas, Wh/día y pérdidas explícitas.",
+        "Generación y almacenamiento se expresan con sus entradas y energía útil; la tensión de batería no se utiliza como sustituto de capacidad en Ah/kWh.",
+        "Se distingue escenario de dimensionamiento final, se explican supuestos de recurso solar y se dejan pendientes inspección, altitud, compatibilidad y revisión especializada; no se garantiza autosostenibilidad."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Lucian Neptalí Fernández Baca Castro",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-6",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-6",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Lucian Neptalí Fernández Baca Castro",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-4"
+        ],
+        "summary": "C04 - Revisar el balance energético preliminar y sus límites",
+        "assignee_display_name": "LUCIAN NEPTALI FERNANDEZ BACA CASTRO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C05",
+      "title": "Conciliar presupuesto y costos pendientes",
+      "owner": "lucian",
+      "reviewer": "flavio",
+      "start": "2026-10-30",
+      "due": "2026-10-30",
+      "effort_hours": 2,
+      "depends_on": [
+        "C03",
+        "C04"
+      ],
+      "acceptance": [
+        "Cantidades por precio unitario, subtotales e impuestos se concilian y no subsiste la contradicción de S/ 128500 frente a S/ 140500.",
+        "Se separan equipos, integración, instalación, formación, operación y reposición, con incertidumbres visibles.",
+        "No se duplican kit solar, UPS, baterías, licencias o soporte; los importes desconocidos no se convierten en cero ni se presenta un subtotal como costo total."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Lucian Neptalí Fernández Baca Castro",
+      "reviewer_name": "Flavio Antony Cabeza Huillca",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-7",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-7",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Lucian Neptalí Fernández Baca Castro",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-5",
+          "INFORMA-6"
+        ],
+        "summary": "C05 - Conciliar presupuesto y costos pendientes",
+        "assignee_display_name": "LUCIAN NEPTALI FERNANDEZ BACA CASTRO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C06",
+      "title": "Cerrar plan, responsabilidades, riesgos y dependencias",
+      "owner": "lucian",
+      "reviewer": "george",
+      "start": "2026-10-29",
+      "due": "2026-10-30",
+      "effort_hours": 1.5,
+      "depends_on": [
+        "C02"
+      ],
+      "acceptance": [
+        "El plan distingue cierre de la entrega del 30 de octubre de validaciones posteriores y de la eventual implementación.",
+        "Las responsabilidades corresponden a los tres integrantes actuales y las acciones no acreditadas permanecen por hacer.",
+        "Se identifican respuestas a riesgos de contenido, integración, energía, instalación, costos y disponibilidad; no se imponen roles o autorizaciones institucionales inexistentes."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Lucian Neptalí Fernández Baca Castro",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-8",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-8",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Lucian Neptalí Fernández Baca Castro",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-4"
+        ],
+        "summary": "C06 - Cerrar plan, responsabilidades, riesgos y dependencias",
+        "assignee_display_name": "LUCIAN NEPTALI FERNANDEZ BACA CASTRO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C07",
+      "title": "Realizar revisión cruzada de coherencia y evidencia",
+      "owner": "flavio",
+      "reviewer": "george",
+      "start": "2026-10-30",
+      "due": "2026-10-30",
+      "effort_hours": 3,
+      "depends_on": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06"
+      ],
+      "acceptance": [
+        "Una lista breve de revisión comprueba relación problema, objetivos, alternativa, requisitos, energía, presupuesto e indicadores.",
+        "Se verifican fuentes utilizadas, fórmulas y contradicciones; los hallazgos críticos se corrigen o limitan expresamente la conclusión.",
+        "Se retiran cláusulas contractuales predeterminadas y evidencia histórica presentada como ejecución del equipo actual; no se promete nivel 4 ni una consigna de parcial no confirmada."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-9",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-9",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-3",
+          "INFORMA-4",
+          "INFORMA-5",
+          "INFORMA-6",
+          "INFORMA-7",
+          "INFORMA-8"
+        ],
+        "summary": "C07 - Realizar revisión cruzada de coherencia y evidencia",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "C08",
+      "title": "Validar presentación final y dejar lista la entrega",
+      "owner": "flavio",
+      "reviewer": "lucian",
+      "start": "2026-10-30",
+      "due": "2026-10-30",
+      "effort_hours": 3,
+      "depends_on": [
+        "C07"
+      ],
+      "acceptance": [
+        "PDF compilado y revisado visualmente: carátula/equipo correctos, sin fecha literal en carátula, índice y tablas legibles, planos y gráficos con procedencia.",
+        "PDF y fuentes editables corresponden a la misma versión; no se usan guiones tipográficos largos y las referencias técnicas funcionan.",
+        "Los tres integrantes disponen de la versión a entregar y pueden explicar problema, alternativas, costos y límites; no se registra una entrega efectuada sin constancia."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "Lucian Neptalí Fernández Baca Castro",
+      "phase": "Cierre de primera entrega",
+      "jira": {
+        "key": "INFORMA-10",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-10",
+        "parent": "INFORMA-1",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-10-30",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-9"
+        ],
+        "summary": "C08 - Validar presentación final y dejar lista la entrega",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V01",
+      "title": "Gestionar acceso y responsables para la validación local",
+      "owner": "flavio",
+      "reviewer": "lucian",
+      "start": "2026-11-02",
+      "due": "2026-11-03",
+      "depends_on": [
+        "C08"
+      ],
+      "acceptance": [
+        "Se identifica interlocutor de la EPIIS para información/contenidos y contacto de TI o infraestructura según corresponda.",
+        "Se documentan solicitudes y autorizaciones de acceso para ubicaciones y revisión técnica, sin asumir aprobación por falta de respuesta.",
+        "El alcance autorizado y las dependencias externas quedan registrados."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "Lucian Neptalí Fernández Baca Castro",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-11",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-11",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-11-03",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-10"
+        ],
+        "summary": "V01 - Gestionar acceso y responsables para la validación local",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V02",
+      "title": "Contrastar necesidad, fuentes y operación editorial",
+      "owner": "flavio",
+      "reviewer": "george",
+      "start": "2026-11-03",
+      "due": "2026-11-06",
+      "depends_on": [
+        "V01"
+      ],
+      "acceptance": [
+        "Se contrastan canales, tipos de contenido, responsables y dificultades de actualización con registros u observación autorizada.",
+        "Cada hallazgo registra fuente, método y limitación; cualquier entrevista o consulta se incorpora sólo después de realizarse.",
+        "Se priorizan contenidos y se revisan hipótesis y metas; se identifica qué información de la encuesta puede respaldarse y qué sigue pendiente."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-12",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-12",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-11-06",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-11"
+        ],
+        "summary": "V02 - Contrastar necesidad, fuentes y operación editorial",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V03",
+      "title": "Levantar condiciones de los tres puntos propuestos",
+      "owner": "george",
+      "reviewer": "flavio",
+      "start": "2026-11-04",
+      "due": "2026-11-06",
+      "depends_on": [
+        "V01"
+      ],
+      "acceptance": [
+        "Los tres puntos del plano se relacionan con dimensiones, circulación, visibilidad, red, equipos reutilizables y disponibilidad eléctrica observables.",
+        "Los recorridos y las cantidades pendientes se registran con evidencia y no se confunden con un diseño aprobado.",
+        "Las comprobaciones de circuitos, protecciones, estructura y cubierta que requieren especialista quedan coordinadas o como bloqueos explícitos; los estudiantes no las certifican."
+      ],
+      "status": "Por hacer",
+      "owner_name": "George Ivanok Muñoz Castillo",
+      "reviewer_name": "Flavio Antony Cabeza Huillca",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-13",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-13",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "George Ivanok Muñoz Castillo",
+        "due": "2026-11-06",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-11"
+        ],
+        "summary": "V03 - Levantar condiciones de los tres puntos propuestos",
+        "assignee_display_name": "GEORGE IVANOK MUNOZ CASTILLO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V04",
+      "title": "Ensayar gestión de contenidos y modo kiosco",
+      "owner": "george",
+      "reviewer": "flavio",
+      "start": "2026-11-09",
+      "due": "2026-11-12",
+      "depends_on": [
+        "V02",
+        "V03"
+      ],
+      "acceptance": [
+        "Un ensayo limitado, con datos de prueba identificados y tres destinos lógicos, comprueba crear, revisar, programar, publicar y retirar contenido.",
+        "Se registran resultados esperados/obtenidos para permisos, caducidad, desconexión, retorno de servicio y restricción de navegación.",
+        "Se identifican prestaciones demostradas y limitaciones sin atribuir integración real con sistemas institucionales no autorizados."
+      ],
+      "status": "Por hacer",
+      "owner_name": "George Ivanok Muñoz Castillo",
+      "reviewer_name": "Flavio Antony Cabeza Huillca",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-14",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-14",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "George Ivanok Muñoz Castillo",
+        "due": "2026-11-12",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-12",
+          "INFORMA-13"
+        ],
+        "summary": "V04 - Ensayar gestión de contenidos y modo kiosco",
+        "assignee_display_name": "GEORGE IVANOK MUNOZ CASTILLO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V05",
+      "title": "Contrastar viabilidad energética con apoyo especializado",
+      "owner": "george",
+      "reviewer": "lucian",
+      "start": "2026-11-09",
+      "due": "2026-11-13",
+      "depends_on": [
+        "V03"
+      ],
+      "acceptance": [
+        "Se contrastan carga, horario de uso, recurso solar, sombras, área disponible y condiciones de altitud con fuentes y revisión competente.",
+        "La propuesta identifica conjunto compatible de módulos, inversor, almacenamiento si procede, protecciones y estrategia sin inyección, con sus límites.",
+        "Si no se obtiene revisión especializada, la configuración permanece preliminar y se registra la dependencia; no se aprueba instalación ni autonomía."
+      ],
+      "status": "Por hacer",
+      "owner_name": "George Ivanok Muñoz Castillo",
+      "reviewer_name": "Lucian Neptalí Fernández Baca Castro",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-15",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-15",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "George Ivanok Muñoz Castillo",
+        "due": "2026-11-13",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-13"
+        ],
+        "summary": "V05 - Contrastar viabilidad energética con apoyo especializado",
+        "assignee_display_name": "GEORGE IVANOK MUNOZ CASTILLO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V06",
+      "title": "Solicitar y comparar ofertas del conjunto funcional",
+      "owner": "lucian",
+      "reviewer": "george",
+      "start": "2026-11-16",
+      "due": "2026-11-18",
+      "depends_on": [
+        "V04",
+        "V05"
+      ],
+      "acceptance": [
+        "Las solicitudes usan la misma especificación y cantidades para terminales, servicios e infraestructura, con variante energética distinguida.",
+        "Las respuestas obtenidas identifican configuración, impuestos, moneda, stock, entrega en Cusco, garantía, instalación, integración y exclusiones.",
+        "Se buscan al menos dos referencias/ofertas comparables por paquete crítico cuando haya mercado; la falta de respuesta se registra y no se presenta como cotización recibida ni cierre económico."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Lucian Neptalí Fernández Baca Castro",
+      "reviewer_name": "George Ivanok Muñoz Castillo",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-16",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-16",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "Lucian Neptalí Fernández Baca Castro",
+        "due": "2026-11-18",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-14",
+          "INFORMA-15"
+        ],
+        "summary": "V06 - Solicitar y comparar ofertas del conjunto funcional",
+        "assignee_display_name": "LUCIAN NEPTALI FERNANDEZ BACA CASTRO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V07",
+      "title": "Recalcular costo total y comparación A0/A1/A2",
+      "owner": "lucian",
+      "reviewer": "flavio",
+      "start": "2026-11-18",
+      "due": "2026-11-19",
+      "depends_on": [
+        "V02",
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "acceptance": [
+        "Presupuesto y costo de operación se recalculan con cantidades observadas, alcance comparable y fuentes, conservando pendientes no resueltos.",
+        "Se evalúan por separado valor del canal informativo y aporte/costo del sistema energético; se revisa sensibilidad a uso, soporte, generación y reposición.",
+        "La recomendación sigue siendo condicional si faltan datos críticos; no se declara rentabilidad o ahorro de caja sin fundamento."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Lucian Neptalí Fernández Baca Castro",
+      "reviewer_name": "Flavio Antony Cabeza Huillca",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-17",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-17",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "Lucian Neptalí Fernández Baca Castro",
+        "due": "2026-11-19",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-12",
+          "INFORMA-14",
+          "INFORMA-15",
+          "INFORMA-16"
+        ],
+        "summary": "V07 - Recalcular costo total y comparación A0/A1/A2",
+        "assignee_display_name": "LUCIAN NEPTALI FERNANDEZ BACA CASTRO",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    },
+    {
+      "id": "V08",
+      "title": "Documentar decisión revisada y siguiente versión",
+      "owner": "flavio",
+      "reviewer": "lucian",
+      "start": "2026-11-20",
+      "due": "2026-11-20",
+      "depends_on": [
+        "V07"
+      ],
+      "acceptance": [
+        "Los tres integrantes revisan la evidencia y el fundamento de continuar, ajustar o descartar componentes, con sus aportes registrados cuando ocurran.",
+        "Se actualizan requisitos, costos, riesgos, límites y tareas pendientes en una versión coherente.",
+        "No se atribuye aprobación institucional ni ejecución material; se organiza la siguiente entrega según la consigna efectivamente disponible."
+      ],
+      "status": "Por hacer",
+      "owner_name": "Flavio Antony Cabeza Huillca",
+      "reviewer_name": "Lucian Neptalí Fernández Baca Castro",
+      "phase": "Validación posterior",
+      "jira": {
+        "key": "INFORMA-18",
+        "url": "https://unsaac-team-v2a056y1.atlassian.net/browse/INFORMA-18",
+        "parent": "INFORMA-2",
+        "status": "Por hacer",
+        "assignee_name": "Flavio Antony Cabeza Huillca",
+        "due": "2026-11-20",
+        "start_field": null,
+        "reviewer_field": null,
+        "blocking_links_created": false,
+        "dependency_keys_for_future_linking": [
+          "INFORMA-17"
+        ],
+        "summary": "V08 - Documentar decisión revisada y siguiente versión",
+        "assignee_display_name": "FLAVIO ANTONY CABEZA HUILLCA",
+        "verification_source": "jira_verificacion_filas.json"
+      }
+    }
+  ],
+  "jira": {
+    "project_key": "INFORMA",
+    "board_url": "https://unsaac-team-v2a056y1.atlassian.net/jira/software/projects/INFORMA/boards/2?filter=&groupBy=none",
+    "mapping_source": "jira_claves_confirmadas.json y jira_verificacion_filas.json",
+    "confirmed_date": "2026-10-29",
+    "confirmed_native_fields": [
+      "Clave",
+      "Épica principal",
+      "Responsable",
+      "Vencimiento",
+      "Estado"
+    ],
+    "description_only": [
+      "Inicio propuesto",
+      "Revisor propuesto",
+      "Dependencias locales"
+    ],
+    "native_start_field_configured": false,
+    "native_blocking_links_created": false,
+    "invitations": {
+      "sent_confirmed_student_codes": [
+        "211265",
+        "204800"
+      ],
+      "acceptance_confirmed": false,
+      "evidence": "jira_invitaciones.png"
+    },
+    "verification": {
+      "source": "jira_verificacion_filas.json",
+      "rows": 19,
+      "activities": 18,
+      "epics": 2,
+      "tasks": 16,
+      "screenshot": "jira_proyecto_creado.png"
+    }
+  }
+}

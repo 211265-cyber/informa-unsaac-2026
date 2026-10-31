@@ -1,0 +1,103 @@
+% INFORMA UNSAAC. Compilar con XeLaTeX.
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[spanish,es-tabla,es-noshorthands]{babel}
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{TeX Gyre Heros}}
+\usepackage[margin=2.54cm,headheight=16pt,headsep=16pt,footskip=25pt]{geometry}
+\usepackage{graphicx,tabularx,xltabular,booktabs,longtable,array,makecell,enumitem,microtype}
+\usepackage{fancyhdr,xcolor,amsmath,amssymb,tikz,titlesec,caption,float}
+\usepackage{icomma}% coma decimal en fórmulas: 40,60 sin espacio de puntuación
+\usepackage{setspace,etoolbox,needspace,xurl,hyperref}
+% Corrección local compatible con longtable 4.24; incidencia oficial latex3/latex2e 1907.
+% No modifica la instalación de LaTeX; en versiones corregidas no altera la macro.
+\makeatletter
+\patchcmd{\LT@output}{\vss}{\vskip0pt plus\maxdimen minus\normalbaselineskip}{}{}
+\patchcmd{\LT@output}{\vss}{\vskip0pt plus\maxdimen minus\normalbaselineskip}{}{}
+\makeatother
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{202020}
+\definecolor{graytext}{HTML}{505050}
+\definecolor{light}{HTML}{F3F3F3}
+\definecolor{rulegray}{HTML}{909090}
+% Color tomado del escudo institucional; carátula, árbol de problemas y puertas del Gantt.
+\definecolor{unsaacrojo}{HTML}{852225}
+% Paleta de diagramas: servicio TI, infraestructura y energía, pruebas y gestión.
+\definecolor{tiazul}{HTML}{2E5C8A}
+\definecolor{energia}{HTML}{B7791F}
+\definecolor{verdeprueba}{HTML}{3C7A68}
+\definecolor{grisgestion}{HTML}{6B6B6B}
+\hypersetup{hidelinks,pdftitle={Implementación piloto de paneles informativos interactivos con energía solar en la EPIIS, con proyección a la UNSAAC},pdfauthor={Cabeza Huillca, Flavio Antony; Muñoz Castillo, George Ivanok; Fernández Baca Castro, Lucian Neptalí}}
+\urlstyle{same}
+\Urlmuskip=0mu plus 2mu
+\setstretch{1.18}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\clubpenalty=10000
+\brokenpenalty=10000
+\renewcommand{\arraystretch}{1.22}
+\setlength{\tabcolsep}{5pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=3pt,topsep=5pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=3pt,topsep=5pt,parsep=0pt}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{18pt}{7pt}
+\titlespacing*{\subsection}{0pt}{12pt}{5pt}
+\titlespacing*{\subsubsection}{0pt}{9pt}{4pt}
+\pretocmd{\section}{\Needspace*{10\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace*{6\baselineskip}}{}{}
+\captionsetup{font=small,labelfont=bf,justification=centering,skip=7pt,hypcap=false}
+\AtBeginEnvironment{titlepage}{\hypersetup{pageanchor=false}}
+\AfterEndEnvironment{titlepage}{\hypersetup{pageanchor=true}}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{3}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{graytext}Formulación de Proyectos de TI}
+\fancyhead[R]{\small\color{graytext}INFORMA UNSAAC}
+\fancyfoot[L]{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\estado}[1]{\textbf{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\shadebox}[1]{\par\vspace{3pt}\noindent\colorbox{light}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\strut #1\strut}}\par\vspace{3pt}}
+\newcommand{\source}[1]{\par\vspace{2pt}{\small\color{graytext}\emph{Fuente:} #1\par}}
+\addto\captionsspanish{\renewcommand{\refname}{Referencias}}
+
+\setlength{\LTpre}{4pt}\setlength{\LTpost}{6pt}\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\newcommand{\tabla}[2]{\par\begingroup\small\setstretch{1.05}\renewcommand{\arraystretch}{1.12}\begin{xltabular}{\linewidth}{#1}#2\end{xltabular}\par\endgroup}
+% Los cuadros de esta entrega caben completos en una página.
+% Conservarlos como bloque evita filas de cierre y subtotales aislados.
+\newcommand{\cuadro}[5]{\par\begingroup\small\setstretch{1.05}\renewcommand{\arraystretch}{1.12}
+\begin{minipage}{\linewidth}
+\captionof{table}{#2}\label{#1}
+\begin{tabularx}{\linewidth}{#3}
+\toprule #4\\\midrule
+#5\bottomrule
+\end{tabularx}
+\end{minipage}\par\endgroup}
+% Cuadro extenso que puede continuar en la página siguiente con el encabezado repetido.
+% longtable incrementa el contador de cuadros por sí mismo; se compensa al cerrar.
+\newcommand{\cuadrolargo}[5]{\par\Needspace*{7\baselineskip}\begingroup\small\setstretch{1.05}\renewcommand{\arraystretch}{1.12}\setlength{\LTpre}{0pt}
+\captionof{table}{#2}\label{#1}\nopagebreak
+\begin{xltabular}{\linewidth}{#3}
+\toprule #4\\\midrule\endhead
+\bottomrule\endfoot
+#5
+\end{xltabular}\addtocounter{table}{-1}\par\endgroup}
+\newcommand{\figura}[4]{\par\begingroup\centering\includegraphics[width=\linewidth,height=#4,keepaspectratio]{#1}\par\captionof{figure}{#2}\label{#3}\par\endgroup}
+% Fichas comparativas con imagen referencial y enlaces. Ocupan casi una página:
+% se colocan como flotantes [p] para que el texto siguiente complete la página previa.
+\newcommand{\formatofichas}{\footnotesize\setstretch{1.0}\renewcommand{\arraystretch}{1.1}\setlength{\tabcolsep}{3pt}}
+\newcommand{\fuentefichas}[1]{\par\vspace{3pt}{\footnotesize\raggedright\color{graytext}\emph{Fuente:} #1\par}}
+\newcommand{\imgficha}[2]{\begin{minipage}[t]{\linewidth}\centering\raisebox{-\height}{\includegraphics[width=\linewidth,height=#2,keepaspectratio]{#1}}\end{minipage}}
+\newcommand{\enlace}[1]{{\scriptsize\url{#1}}}

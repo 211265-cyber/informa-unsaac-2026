@@ -1,0 +1,200 @@
+\clearpage
+\section{Especificaciones técnicas y dimensionamiento}\label{sec:especificaciones}
+\subsection{Criterio de redacción del requerimiento}
+Las especificaciones se redactan por desempeño, sin marca, modelo, fabricante ni procedencia. El Reglamento de la Ley N.° 32069 dispone que el requerimiento no incluya exigencias desproporcionadas ni descripciones que orienten la contratación hacia un producto, salvo una compatibilización aprobada \cite{compatibilizacion}. La compatibilización procede cuando la entidad posee equipamiento preexistente que debe complementarse; el piloto no tiene ese caso.
+
+Cada especificación indica el valor mínimo, su propósito y la razón del valor elegido. Las marcas aparecen sólo en los cuadros comparativos de la sección \ref{sec:seleccion}, que contrastan las ofertas con estas especificaciones y eligen una referencia de valorización. El anexo C registra de qué documento se tomó cada característica. Una oferta de otra marca será aceptada si acredita con la ficha del fabricante el cumplimiento de todos los mínimos.
+
+\cuadro{tab:et_resumen}{Especificaciones técnicas del requerimiento}{@{}P{1.3cm}P{4.6cm}P{1.6cm}Y@{}}{\textbf{Código}&\textbf{Bien o servicio}&\textbf{Cantidad}&\textbf{Propósito}}{
+ET-01 & Terminal interactivo de consulta & 3 & Consulta táctil en los tres pisos\\*
+ET-02 & Plataforma central de contenidos y base de datos & 1 servicio & Edición, aprobación, distribución y respaldo\\
+ET-03 & Red local y cableado estructurado & 7 enlaces & Conexión de terminales, NVR y enlace institucional\\
+ET-04 & Videovigilancia de los terminales & 3 cámaras, 1 NVR & Protección de los equipos y evidencia de incidentes\\
+ET-05 & Inversor híbrido con cargador & 1 & Conversión FV, carga de batería y respaldo\\
+ET-06 & Módulos fotovoltaicos & 6 & Generación de 3,69 kWp\\
+ET-07 & Batería de litio con BMS & 1 & Cuatro horas de autonomía de cargas críticas\\
+ET-08 & Estructura de montaje FV & 2 conjuntos & Fijación segura en la cubierta\\
+ET-09 & Protecciones, tablero, conductores y tierra & 1 sistema & Seguridad eléctrica DC y AC\\
+ET-10 & Medición y monitoreo energético & 1 conjunto & Exportación cero y registro de energía\\
+}
+
+\subsection{Decisiones de dimensionamiento}
+El cuadro \ref{tab:decisiones} explica por qué se adopta cada cantidad o capacidad y no un valor menor o mayor. Los cálculos de respaldo se desarrollan en las subsecciones siguientes y en el balance energético.
+
+\cuadrolargo{tab:decisiones}{Por qué se adopta cada valor y no otro}{@{}P{2.4cm}P{2.6cm}P{1.8cm}Y@{}}{\textbf{Decisión}&\textbf{Alternativas evaluadas}&\textbf{Valor adoptado}&\textbf{Razón}}{
+Número de terminales & 2, 3 o 6 & 3 & Uno por piso cubre las tres zonas de tránsito de los planos; 2 deja un piso sin punto de consulta y 6 duplica inversión y energía sin demanda medida\\*
+Tamaño de pantalla & 43, 55 o 65 pulgadas & 55 & 43 pulgadas reduce el área de lectura en 39\%; 65 la aumenta en 40\%, pero también masa, consumo, precio y obstrucción del pasillo\\
+Resolución & FHD o 4K & 4K & Texto nítido en formato vertical a 1 a 3 m; las ofertas de 55 pulgadas ya la incluyen\\
+Brillo & 350, 400 a 500 o más de 700 cd/m\textsuperscript{2} & 400 mínimo & Suficiente en interior; los paneles de más de 700 cd/m\textsuperscript{2} se destinan a vitrinas y elevan el consumo\\
+Memoria RAM & 4, 8, 16 o 32 GB & 8 mínimo; 16 de referencia & 4 GB es el mínimo de Windows 11 y no deja margen al reproductor 4K; 16 GB ya viene en las ofertas comparadas; 32 GB no tiene carga que lo justifique\\
+SSD del terminal & 128, 256 o 512 GB & SSD de 256 GB & Sistema, actualizaciones y biblioteca local necesitan unos 96 GB con 25\% libre; 256 GB es la menor capacidad ofrecida y 512 GB no aporta uso\\
+Cámaras & 0, 3 o 6 & 3 & Una por terminal cubre equipo y usuario; sin cámaras el riesgo de daño queda sin evidencia; 6 duplica costo y datos personales sin necesidad\\
+Canales del NVR & 4, 8 o 16 & 4 & Tres cámaras más una reserva; 8 o 16 canales pagan capacidad ociosa\\
+Disco de grabación & 1, 2 o 4 TB & 2 TB & 30 días requieren unos 1\,069 GB; 1 TB no alcanza y 4 TB supera el plazo de conservación\\
+Cable de red & Cat 5e, Cat 6 o Cat 6A; cobre o CCA & Cat 6 de cobre LSZH & Gigabit con margen a 250 MHz; Cat 6A sirve a 10 Gb/s, no requerido; CCA no es cobre y se calienta con PoE; LSZH por recorrer vías de evacuación\\
+Puertos del switch & 5, 8, 16 o 24 & 8 & Seis puertos usados y dos libres; 5 puertos no alcanza y 16 o 24 sólo agregan costo y consumo\\
+Servidor del CMS & Físico propio, VM o VPS & VM institucional o VPS & Tres pantallas no justifican comprar y mantener un servidor; 2 vCPU, 8 GB y 100 GB cubren el cálculo con margen doble\\
+Inversor & 3, 4, 5 o 6 kW & 4 kW, 16 A por MPPT & La carga es de 640 W; el criterio decisivo es la corriente del módulo de 15,15 A y la operación a 3\,400 m, que el modelo de 3 kW comparado no cumple\\
+Batería & 2,4; 4,8 o 9,6 kWh & 4,8 kWh & 2,4 kWh entrega 1,38 kWh de diseño, 2,2 horas; 4,8 kWh entrega 2,76 kWh, 4,3 horas; 9,6 kWh duplica costo para 8,6 horas no requeridas\\
+Módulos FV & 5, 6 u 8 & 6 & Con 4 HSP y factor 0,75, cinco módulos generan 9,23 kWh/día, por debajo de los 9,79 kWh/día requeridos; seis generan 11,07; ocho ocupan más cubierta sin necesidad\\*
+}
+
+\subsection{ET-01 Terminal interactivo de consulta}
+\cuadro{tab:et01}{ET-01: terminal interactivo de consulta, tres unidades}{@{}P{2.7cm}Y Y@{}}{\textbf{Parámetro}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+Formato & Tótem vertical de piso con pantalla de 55 pulgadas $\pm$1, base anclable y acceso técnico con llave & Lectura a 1 a 3 m en pasillos y protección contra manipulación\\*
+Pantalla & 3\,840 $\times$ 2\,160 en vertical; brillo de 400 cd/m\textsuperscript{2} como mínimo, preferible 450 a 500 & Texto legible bajo iluminación interior y reflejos moderados\\
+Superficie táctil & Infrarroja o capacitiva, 10 contactos simultáneos como mínimo, vidrio protector & Consulta por una o dos personas sin pérdida de respuesta\\
+Procesador & x86-64 de 4 núcleos o más incluido en la lista de procesadores admitidos por Windows 11, con decodificación 4K por hardware; o SoC Android con reproductor soportado & Reproductor, navegador y actualizaciones sin exigir gama máxima \cite{win11cpu}\\
+Memoria y almacenamiento & RAM de 8 GB como mínimo; SSD de 256 GB, durabilidad declarada de 100 TBW o más & Cinco años de escritura estimada suman 3,7 TB, muy por debajo de la durabilidad exigida\\
+Sistema operativo & Windows 11 Pro o equivalente con licencia y bloqueo de kiosco; Android 13 o superior si se elige esa ruta & Soporte de seguridad durante el horizonte; Windows 10 no se acepta \cite{win10fin}\\
+Conectividad & Ethernet RJ45 Gigabit; Wi-Fi opcional & Enlace estable por cable, ET-03\\
+Energía & 220 V, 60 Hz; potencia máxima declarada del conjunto de 200 W o menos & Cota del balance energético; mayor consumo obliga a recalcular\\
+Ambiente & Operación entre 0 y 40\,°C; aptitud a 3\,400 m declarada o demostrada & Condiciones de Cusco\\
+Garantía & 1 año como mínimo con atención en Cusco; preferible 3 años & Continuidad del piloto y repuestos\\
+}
+La memoria de 8 GB es el mínimo exigido y 16 GB la referencia de las ofertas. El SSD se dimensiona así: Windows 11 exige 64 GB, la biblioteca local del reproductor ocupa unos 11 GB y los registros 2 GB. El total de 77 GB, con 25\% de espacio libre, da unos 96 GB. Las ofertas comparadas parten de 256 GB sin diferencia de precio; 512 GB no tendría uso en el horizonte. Se exige durabilidad y no la marca del SSD: con unos 2 GB escritos al día, cualquier unidad de consumo general con 100 TBW resiste más de cien años de esa carga.
+
+\subsection{ET-02 Plataforma central de contenidos y base de datos}
+\cuadro{tab:et02}{ET-02: plataforma central de contenidos y base de datos}{@{}P{2.7cm}Y Y@{}}{\textbf{Parámetro}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+Despliegue & Máquina virtual institucional o servidor privado virtual con sistema Linux de soporte extendido y contenedores & Separar plataforma y terminales; actualizar sin tocar el kiosco\\*
+Procesamiento & 2 vCPU y 8 GB de RAM & Tres destinos y pocos editores concurrentes; ver cálculo\\
+Almacenamiento & SSD o NVMe de 100 GB & Biblioteca, base de datos, registros y copias locales con margen doble\\
+Base de datos & Motor relacional que exija la versión del CMS, con copia transaccional diaria & Integridad de avisos, versiones y auditoría\\
+Copias & Diarias, retención de 30 días y una copia fuera del servidor, cifrada & RPO de 24 h y restauración ensayada\\
+Acceso & HTTPS con certificado válido; administración con cuentas individuales y segundo factor o VPN & Seguridad del servicio público\\
+Transferencia & 1 TB/mes como mínimo & Descarga de paquetes de las tres terminales\\
+}
+\cuadro{tab:et02_calculo}{Cálculo de capacidad de la plataforma central}{@{}Y r P{5.2cm}@{}}{\textbf{Componente}&\textbf{Estimación}&\textbf{Base}}{
+Sistema operativo y contenedores & 20 GB & Imagen base, CMS, servidor web y mensajería\\*
+Biblioteca de medios & 12 GB & 500 avisos de 2 MB y 30 videos de 150 MB, con dos versiones\\
+Base de datos y registros & 4 GB & Doce meses de avisos, auditoría y estado de terminales\\
+Copias locales & 14 GB & Siete días de copia antes de su envío externo\\\midrule
+\textbf{Total con margen doble} & \textbf{100 GB} & 50 GB estimados $\times$ 2 por crecimiento\\
+Memoria & 8 GB & 6 GB estimados: sistema 1, base de datos 2, CMS 2, caché y mensajería 1\\
+}
+Un servidor físico propio exigiría compra, espacio, energía, reposición y soporte para sólo tres pantallas. La alternativa elegida y su costo se comparan en la sección \ref{sec:seleccion}.
+
+\subsection{ET-03 Red local y cableado estructurado}
+\cuadro{tab:et03}{ET-03: red local y cableado estructurado}{@{}P{2.7cm}Y Y@{}}{\textbf{Parámetro}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+Cable & Categoría 6 U/UTP de cobre sólido de 23 o 24 AWG, chaqueta LSZH; no se acepta CCA & Gigabit y PoE sin calentamiento; menor emisión de humo en vías de evacuación\\*
+Longitud & Enlace permanente de 90 m como máximo y canal de 100 m & Límite del cableado de cobre; los recorridos estimados no superan 50 m\\
+Terminación & Jack keystone Cat 6 en ambos extremos, faceplate, patch panel y patch cords Cat 6 & Enlaces sustituibles y certificables\\
+Identificación & Etiqueta en ambos extremos y plano de recorridos & Mantenimiento y diagnóstico\\
+Switch & 8 puertos 10/100/1000 administrables, VLAN IEEE 802.1Q, QoS, gestión web o SNMP y al menos un puerto de enlace & Separar terminales, cámaras y administración\\
+Gabinete & De pared, 6 RU, con puerta y llave, bandeja, organizador y regleta & Proteger equipos activos en el circuito crítico\\
+Canalización & Canaleta de PVC con tapa o tubería, sin cables expuestos en zonas de tránsito & Seguridad y orden\\
+Pruebas & Mapa de cableado, continuidad y longitud de cada enlace, con registro & Aceptación PE5\\
+}
+\cuadro{tab:metrado_red}{Metrado de partida del cableado de red}{@{}P{1.0cm}Y r@{}}{\textbf{ID}&\textbf{Enlace desde el gabinete del tercer piso}&\textbf{Metros}}{
+L1 & Terminal del primer piso & 45\\*
+L2 & Terminal del segundo piso & 30\\
+L3 & Terminal del tercer piso & 15\\
+L4 & Cámara del primer piso & 48\\
+L5 & Cámara del segundo piso & 33\\
+L6 & Cámara del tercer piso & 18\\
+L7 & Enlace al punto de red institucional & 20\\\midrule
+& Subtotal de recorridos & 209\\
+& Holgura de 10\% por trazado y 2 m de reserva por enlace & 35\\
+& \textbf{Total estimado frente a una caja de 305 m} & \textbf{244}\\
+}
+El gabinete se ubica en el tercer piso, junto al tablero crítico y al banco, para acortar el recorrido DC desde la cubierta. Las distancias son de partida y se medirán en el levantamiento. Una caja de 305 m cubre el total con 61 m de reserva; una segunda caja sólo se justificaría si el levantamiento superara ese valor. Se prevén 53 tramos de canaleta de 2 m para el 50\% del recorrido que no tenga canalización existente.
+
+El switch usa seis puertos: enlace institucional, tres terminales, NVR y monitoreo del inversor. Quedan dos libres, es decir 25\% de reserva. Las cámaras se conectan a los puertos PoE propios del NVR. Así su red queda separada de la red de consulta y el switch no necesita entregar potencia.
+
+\subsection{ET-04 Videovigilancia de los terminales}
+La videovigilancia protege equipos de unos S/ 10\,000 cada uno, ubicados en zonas de tránsito libre, y aporta evidencia ante daños o hurto, riesgo R11. No se usa para controlar asistencia ni identificar usuarios del servicio y no incluye reconocimiento facial. Se aplicará la normativa de protección de datos personales y la directiva de la autoridad nacional sobre videovigilancia: aviso visible, finalidad limitada, acceso restringido y conservación por un plazo determinado \cite{datos}. El diseño fija 30 días, plazo que se confirmará con la norma vigente.
+
+\cuadro{tab:et04}{ET-04: videovigilancia de los terminales}{@{}P{2.7cm}Y Y@{}}{\textbf{Parámetro}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+Cámara & IP de 4 MP, 2\,560 $\times$ 1\,440; lente de 2,8 mm; H.265; IR de 20 m o más; PoE IEEE 802.3af; 6 W como máximo; ONVIF & Ver el terminal y su entorno a 2 a 5 m, también con baja luz\\*
+Grabador & NVR de 4 canales o más con 4 puertos PoE, 40 Mbps de entrada como mínimo, 1 bahía SATA y usuarios con permisos & Grabación local en el circuito con respaldo\\
+Disco & De videovigilancia, uso continuo, 2 TB & 30 días de conservación según el cálculo\\
+Grabación & Continua en horario de servicio y por evento fuera de él; hora sincronizada & Evidencia con fecha válida y menor almacenamiento\\
+Acceso & Cuentas individuales, registro de consultas y exportación sólo por solicitud autorizada & Protección de datos personales\\
+Señalización & Un aviso por ubicación & Información al titular de los datos\\
+}
+\cuadro{tab:cctv_calculo}{Cálculo de grabación, ancho de banda y potencia}{@{}Y r P{5.0cm}@{}}{\textbf{Magnitud}&\textbf{Resultado}&\textbf{Base}}{
+Grabación continua en servicio & 32,4 GB/día & 3 cámaras $\times$ 2 Mbps $\times$ 12 h\\*
+Grabación por evento fuera de servicio & 3,2 GB/día & 10\% de actividad en las 12 h restantes\\
+Conservación de 30 días & 1\,069 GB & (32,4 + 3,2) $\times$ 30\\
+Ocupación de un disco de 2 TB & 53\% & 1\,069 GB entre 2\,000 GB\\
+Alternativa de grabación continua 24 h & 1\,944 GB & Dejaría el disco al 97\%, sin margen\\
+Ancho de banda de entrada & 12 Mbps & 3 cámaras $\times$ 4 Mbps de pico, frente a 40 Mbps exigidos\\
+Potencia PoE & 12,9 W & 3 cámaras $\times$ 4,3 W de la opción elegida\\
+}
+La tasa de 2 Mbps corresponde a una escena interior estática con H.265 y se medirá en el ensayo. Si resultara mayor, se reducirá la grabación continua o se ajustará el disco antes de aceptar el sistema.
+
+\subsection{ET-05 a ET-08 Subsistema fotovoltaico}
+\cuadro{tab:et05}{ET-05: inversor híbrido con cargador}{@{}P{2.7cm}Y Y@{}}{\textbf{Parámetro}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+Salida & Monofásica 220 a 230 V, 60 Hz; 3 kW nominales como mínimo & 640 W de carga simultánea con margen para transitorios y ampliación\\*
+Respaldo & Salida de 3 kVA como mínimo; conmutación de 20 ms o menos & Las terminales no deben reiniciarse en un corte\\
+Entrada FV & 2 MPPT; 16 A de entrada y 20 A de cortocircuito por MPPT como mínimo; tensión máxima de 500 V o más & Imp de 15,15 A e Isc de 16,02 A del módulo; Voc de la cadena en frío de 318,94 V\\
+Batería & Litio de baja tensión, 48 V; 60 A de carga y descarga como mínimo; BMS por CAN o RS485 & Banco ET-07 con protección coordinada\\
+Altitud & 3\,500 m o más, con reducción de potencia documentada si corresponde & Cusco se ubica cerca de 3\,400 m\\
+Otros & IP65 o más; eficiencia máxima de 97\% o más; control de exportación cero con medidor; monitoreo & Instalación interior protegida y registro\\
+Garantía & 5 años como mínimo & Horizonte del piloto\\
+}
+\cuadro{tab:et0608}{ET-06 a ET-08: módulos, batería y estructura}{@{}P{2.7cm}Y Y@{}}{\textbf{Elemento}&\textbf{Mínimo exigido}&\textbf{Propósito y sustento}}{
+ET-06 Módulos & 600 Wp o más; eficiencia de 21\% o más; Imp no mayor que la corriente del MPPT; garantía de producto de 12 años y de potencia de 25 años & Seis unidades para 3,69 kWp en 16,2 m$^2$\\*
+ET-07 Batería & LiFePO4 de 48 a 51,2 V; 4,8 kWh nominales; profundidad de 80\% o más; 6\,000 ciclos al 80\% o más; 60 A continuos; carga de 0 a 45\,°C como mínimo; BMS compatible documentado; garantía de 5 años; UN38.3 & 2,76 kWh de diseño para 2,56 kWh de cuatro horas\\
+ET-08 Estructura & Aluminio anodizado o acero galvanizado; inclinación de 10 a 20° hacia el norte; compatible con módulos de 2\,382 $\times$ 1\,134 mm; fijación sin dañar la impermeabilización; cálculo de viento & Cusco está a 13,5° S; 15° favorece la autolimpieza con lluvia\\
+}
+
+\subsection{ET-09 y ET-10 Protecciones, conductores, tierra y medición}
+\cuadro{tab:et0910}{ET-09 y ET-10: protecciones, tablero, conductores, tierra y medición}{@{}P{3.1cm}P{4.4cm}Y@{}}{\textbf{Elemento}&\textbf{Mínimo exigido}&\textbf{Sustento del valor}}{
+Seccionamiento DC & Interruptor de 25 A y 600 V DC como mínimo & 1,25 $\times$ Isc de 16,02 A da 20,0 A; tensión en frío de 318,94 V\\*
+Sobretensiones DC & Protector 2P de 600 V DC, 20 a 40 kA & Descargas en la cubierta\\
+Fusible de cadena & No requerido con una cadena por MPPT & Sólo se exige con tres o más cadenas en paralelo\\
+Cable FV & 6 mm² de 1,5 kV para uso solar, con conectores MC4 & Caída de 0,54\% en 15 m\\
+Batería & Cable de 35 mm² y fusible de 150 A & 100 A de descarga máxima por 1,25 da 125 A; 150 A es el valor comercial siguiente y el cable lo admite\\
+Entrada de red y salida de respaldo & Termomagnéticos 2P de 32 A con conductor de 6 mm² & Entrada máxima del inversor de 27,3 A y salida de respaldo de 21,7 A\\
+Circuitos derivados & Dos termomagnéticos 2P de 16 A, uno para terminales y otro para red y cámaras, con diferencial de 30 mA cada uno & Carga de 2,73 A y 0,2 A; protección de personas\\
+Sobretensiones AC & Protector tipo 2 de 275 V y 40 kA & Equipos electrónicos sensibles\\
+Tablero & Adosable de 18 polos con riel DIN & 14 polos ocupados y 4 de reserva\\
+Conductores AC & LSZH de 2,5 mm² en circuitos derivados & Caída de 0,78\% en 45 m\\
+Puesta a tierra & Pozo con barra de cobre de 5/8 pulg. $\times$ 2,4 m, cemento conductivo y conductor de 10 mm²; resistencia de 25 $\Omega$ o menos & Referencia del CNE, Utilización \cite{cne}; medición con telurómetro\\
+ET-10 Medición & Medidor bidireccional monofásico Modbus RS485 compatible con el inversor; monitoreo con registro exportable & Exportación cero y separación de energía FV, red, batería y cargas\\
+}
+\cuadro{tab:caida_tension}{Comprobación de caída de tensión}{@{}P{3.2cm}Y r r@{}}{\textbf{Tramo}&\textbf{Datos}&\textbf{Caída V}&\textbf{\%}}{
+Cadena FV al inversor & 6 mm², 15 m de ida, 15,15 A, 243,6 V & 1,33 & 0,54\\*
+Batería al inversor & 35 mm², 2 m de ida, 100 A, 51,2 V & 0,20 & 0,39\\
+Circuito de terminales & 2,5 mm², 45 m de ida, 2,73 A, 220 V & 1,72 & 0,78\\
+Circuito de red y cámaras & 2,5 mm², 5 m de ida, 0,2 A, 220 V & 0,01 & 0,00\\
+}
+La caída se calcula con $\Delta V = 2LI\rho/S$ y $\rho = 0,0175\ \Omega\,\mathrm{mm^2/m}$. El criterio de diseño adoptado es de 1,5\% en DC y 2,5\% en circuitos AC derivados; todos los tramos lo cumplen con holgura. El profesional responsable confirmará secciones, recorridos y protecciones en el diseño ejecutivo.
+
+\subsection{Cuadro de cargas eléctricas por equipo}
+\cuadro{tab:cargas}{Cuadro de cargas del circuito crítico}{@{}P{3.6cm}r r r r Y@{}}{\textbf{Equipo}&\textbf{Cant.}&\textbf{W c/u}&\textbf{h/día}&\textbf{Wh/día}&\textbf{Fuente del valor}}{
+Terminal interactivo & 3 & 200,0 & 12 & 7\,200 & Cota de diseño ET-01\\*
+Cámara IP & 3 & 4,3 & 24 & 310 & Ficha de la opción elegida\\
+NVR con disco & 1 & 12,0 & 24 & 288 & Cota; 4,25 W publicados sin disco en una opción comparada\\
+Switch administrable & 1 & 10,0 & 24 & 240 & Cota; sin carga PoE\\
+Medidor y monitoreo & 1 & 2,0 & 24 & 48 & Cota\\
+Reserva de comunicaciones & 1 & 3,1 & 24 & 74 & Completa la cota de 40 W\\\midrule
+\textbf{Subtotal} & & 640,0 & & \textbf{8\,160} & 600 W de terminales y 40 W de comunicaciones\\
+Autoconsumo del inversor & 1 & 15,0 & 24 & 360 & Supuesto; la ficha no lo publica\\\midrule
+\textbf{Total del escenario} & & 655,0 & & \textbf{8\,520} & Coincide con el balance energético\\
+}
+Los equipos de comunicación identificados suman 36,9 W y 886 Wh/día; la reserva de 3,1 W completa la cota de 40 W usada en el balance. El total de 8,52 kWh/día es el mismo escenario del cuadro \ref{tab:energia}. Las cotas sin ficha se reemplazarán por la medición del ensayo.
+
+\subsection{Mantenimiento de pantallas, equipos y sistema FV}
+El mantenimiento se planifica por equipo y no sólo como una partida global. El cuadro \ref{tab:mant_detalle} fija la actividad, la frecuencia, el responsable y su base de costo. Los importes anuales alimentan la partida de mantenimiento del cuadro \ref{tab:opex}.
+
+\cuadrolargo{tab:mant_detalle}{Plan de mantenimiento por equipo}{@{}P{2.4cm}Y P{2.2cm}P{2.6cm}@{}}{\textbf{Equipo}&\textbf{Actividad}&\textbf{Frecuencia}&\textbf{Responsable}}{
+Pantalla y vidrio & Limpieza con el equipo apagado, paño de microfibra y limpiador sin amoníaco ni abrasivos; nunca rociar sobre la pantalla & Diaria o según uso & Operación local\\*
+Marco táctil & Retirar polvo de los sensores, comprobar 10 contactos y calibrar si hay desvío & Mensual & TI\\
+Interior del tótem & Polvo en ventiladores y rejillas, conexiones, temperatura interna y estado SMART del SSD & Semestral & Técnico\\
+Software del terminal & Actualizaciones de sistema, controladores y reproductor en ventana programada, con retorno & Mensual & TI\\
+Uso del panel & Apagado fuera de horario y rotación de contenido para evitar imagen fija prolongada & Programado en el CMS & TI y editores\\
+Cámaras y NVR & Limpieza del domo, hora sincronizada, grabación y ocupación del disco & Mensual & TI\\
+Red & Puertos, etiquetas, patch cords y registro del switch & Semestral & TI\\
+Módulos FV & Limpieza con agua sin detergentes abrasivos, temprano; conectores y estructura & Semestral & Personal competente\\
+Inversor y batería & Alarmas, temperatura, estado de carga y salud, firmware & Mensual por monitoreo & Responsable técnico\\
+Tablero y tierra & Ajuste de bornes, prueba del diferencial y medición de la resistencia de tierra & Anual & Electricista competente\\*
+}
+\cuadro{tab:mant_costo}{Costo anual del mantenimiento local y energético}{@{}Y P{5.2cm}r r@{}}{\textbf{Concepto}&\textbf{Base}&\textbf{A1 S/}&\textbf{A2 S/}}{
+Insumos de limpieza & Paños, limpiador y elementos de protección & 140,00 & 140,00\\*
+Mantenimiento preventivo de terminales & 2 visitas $\times$ 3 terminales $\times$ 1 h $\times$ S/ 60 & 360,00 & 360,00\\
+Limpieza y revisión FV & 2 visitas $\times$ 2 h $\times$ S/ 50 & 0,00 & 200,00\\\midrule
+\textbf{Total anual} & & \textbf{500,00} & \textbf{700,00}\\
+}
+Las revisiones de cámaras, NVR, red y software forman parte de las 48 HP anuales de soporte TI. La medición de tierra y la prueba del diferencial se realizan en la visita preventiva. Los repuestos críticos son patch cords, jacks, un disco de reserva cuando el uso lo justifique, conectores MC4 y fusibles; se adquirirán con cargo a la contingencia o a la reposición cuando se identifique la falla.

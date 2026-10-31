@@ -1,0 +1,108 @@
+{
+  "currency": "PEN, soles constantes de 2026",
+  "published": "49933.67",
+  "conditional_tax_reserve": "5129.99",
+  "own_provisions": "4465.00",
+  "A2_base": "84848.66",
+  "A1_base": "75639.17",
+  "FV_increment_base": "9209.49",
+  "investment": {
+    "A0": "9196.00",
+    "A1": "83203.09",
+    "A2": "93333.53"
+  },
+  "opex_year": {
+    "A0": "4560.00",
+    "A1": "8037.44",
+    "A2": "7314.98"
+  },
+  "replacement_year5": {
+    "A0": "0.00",
+    "A1": "4978.47",
+    "A2": "4978.47"
+  },
+  "tco_5_years": {
+    "A0": "31996.00",
+    "A1": "128368.76",
+    "A2": "134886.90"
+  },
+  "energy_annual_kWh": "1921.8",
+  "grid_tariff_assumption": "0.80",
+  "solar_share_assumption": "0.60",
+  "annual_solar_energy_used_kWh": "1153.08",
+  "present_value_8pct": {
+    "rate": "0.08",
+    "annuity_factor_years_1_5": "3.9927",
+    "single_factor_year_5": "0.6806",
+    "vac": {
+      "A0": "27402.76",
+      "A1": "118682.52",
+      "A2": "125928.38"
+    },
+    "difference_A2_A1": "7245.86",
+    "basis": "precios de mercado; tasa del Anexo 11, Directiva 001-2019-EF/63.01, por verificar al registrar la inversion"
+  },
+  "published_prices_verified_on": "2026-10-30",
+  "cost_effectiveness": {
+    "indicator": "ICE = VAC al 8% / estudiantes de la poblacion objetivo, horizonte de 5 anios",
+    "target_population_students": {
+      "min": "830",
+      "central": "850",
+      "max": "870"
+    },
+    "population_source": "matricula referencial de la EPIIS proporcionada por el equipo; confirmar con el registro oficial 2026-II",
+    "ice_per_student_central": {
+      "A0": "32.24",
+      "A1": "139.63",
+      "A2": "148.15"
+    },
+    "ice_range_870_830": {
+      "A0": [
+        "31.50",
+        "33.02"
+      ],
+      "A1": [
+        "136.42",
+        "142.99"
+      ],
+      "A2": [
+        "144.75",
+        "151.72"
+      ]
+    },
+    "ice_per_student_year_central": {
+      "A0": "6.45",
+      "A1": "27.93",
+      "A2": "29.63"
+    },
+    "incremental_per_student_central": {
+      "A1_vs_A0": "107.39",
+      "A2_vs_A1": "8.52"
+    }
+  },
+  "published_by_group": {
+    "terminales": "28499.97",
+    "energia": "16986.70",
+    "red_y_videovigilancia": "4447.00"
+  },
+  "services": {
+    "hours_person": 408,
+    "amount": "25320.00"
+  },
+  "FV_increment_with_contingency": "10130.44",
+  "exchange_rate_PEN_per_USD": {
+    "value": "3.457",
+    "source": "BCRP serie PD04640PD, SBS venta, 2026-10-09"
+  },
+  "selected_references": {
+    "ET-01": "Prodimer TIPI7-55, 9499.99",
+    "ET-02": "VM institucional o VPS; valorizado a USD 14.99/mes de renovacion, 720.00/anio",
+    "ET-03": "Cable Cat 6 cobre LSZH 305 m 666.00; switch Dahua S4210-8GT-110 517.00",
+    "ET-04": "Camara Dahua IPC-HDW1431T1P-S6 219.00; NVR Dahua NVR1104HS-P-S3/H 292.00; disco SkyHawk 2 TB 699.00",
+    "ET-05": "Tensite AH4M-2 6537.03",
+    "ET-06": "Jinko JKM615N-66HL4M-BDV 405.35",
+    "ET-07": "Tensite TS-L5000/LV 4178.47",
+    "ET-08": "Estructura inclinada 15 grados para 3 modulos 459.61",
+    "ET-10": "Medidor SDM230 502.41 y T-Dongle 147.84"
+  }
+}

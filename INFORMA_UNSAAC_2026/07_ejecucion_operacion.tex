@@ -1,0 +1,445 @@
+\section{Metodología de ejecución y gobierno del proyecto}
+\label{sec:int_metodologia}
+\subsection{Adaptación del enfoque de gestión}
+La ejecución combinará planificación de instalaciones con desarrollo y configuración iterativos del servicio de información. Las ubicaciones, la cubierta, los circuitos, el conjunto FV y las compras requieren decisiones verificadas antes de intervenir. En cambio, la interfaz, los permisos, las plantillas y el flujo editorial pueden ensayarse en incrementos y corregirse antes de distribuirlos a las tres terminales.
+
+El enfoque predictivo ordenará la ingeniería, el metrado, las autorizaciones de instalación, el suministro y la puesta en servicio eléctrica. El enfoque iterativo permitirá comprobar con usuarios si las categorías, la lectura vertical, el QR y la consulta cumplen su propósito. Un cambio de interfaz no habilitará por sí mismo una modificación de carga eléctrica o de ubicación; sus efectos se revisarán conjuntamente.
+
+\cuadro{tab:int_enfoque}{Aplicación del enfoque según el tipo de trabajo}{@{}P{2.8cm}Y Y@{}}{\textbf{Frente}&\textbf{Forma de trabajo}&\textbf{Control de avance}}{
+Infraestructura y energía & Diseño y cantidades revisados antes de adquirir e instalar; secuencia por especialidad & Acta de revisión técnica, inventario y verificación de seguridad\\*
+CMS, cliente y contenido & Incrementos de configuración, consulta y continuidad sobre un entorno de ensayo & Demostración, casos de aceptación y registro de cambios\\
+Integración y operación & Ensayos del conjunto, formación y transferencia con responsables definidos & Evidencia de pruebas, manuales y decisión de puesta en servicio\\
+}
+
+Cada incremento conservará requisitos, versión de configuración, conjunto de datos de ensayo y resultado de revisión. El tablero organizará trabajo, bloqueos y evidencias. El control técnico y la aceptación del servicio se documentarán en las puertas de avance, conforme a la autorización y los recursos disponibles.
+
+\subsection{Gobierno y niveles de decisión}
+La unidad que asuma la operación deberá identificar un responsable del servicio y a los emisores autorizados. TI deberá identificar quién administrará la plataforma, las credenciales y la recuperación. La instalación requerirá profesionales competentes para electricidad, FV y estructura según las intervenciones efectivamente necesarias. La asignación concreta de personas se formalizará antes de comprometer sus actividades.
+
+La coordinación de ejecución integrará alcance, suministro, configuración, costo, cronograma y riesgos. El equipo formulador conservará trazabilidad y revisión de las decisiones. Los usuarios evaluarán el servicio y la usabilidad; los especialistas competentes revisarán instalación, estructura y alimentación.
+
+\cuadro{tab:int_decisiones}{Autoridad requerida para las decisiones de ejecución}{@{}P{3.0cm}Y Y@{}}{\textbf{Decisión}&\textbf{Función que debe resolver}&\textbf{Evidencia que se conservará}}{
+Alcance y recursos & Responsable institucional del proyecto con áreas participantes & Alcance, presupuesto y condiciones de autorización\\*
+Configuración y datos & Responsable TI y responsable del servicio editorial & Configuración revisada, permisos y fuentes aceptadas\\
+Intervención física & Profesionales competentes y responsables de infraestructura & Diseño, restricciones y verificaciones de instalación\\
+Servicio y continuidad & Responsable de operación, TI y usuarios designados & Pruebas, incidencias pendientes y transferencia\\
+}
+
+\subsection{Cambios y configuración de referencia}
+La configuración de referencia identificará las tres ubicaciones, terminales y revisiones, CMS y cliente, circuitos críticos, conjunto FV, banco, interfaces y documentos aplicables. No bastará con registrar la marca: se conservarán modelo, variante, firmware, accesorios y condición de soporte.
+
+Cada solicitud de cambio registrará identificador, motivo, solicitante, evidencia y efecto en requisitos, consumo, costo, plazo, riesgos y aceptación. La coordinación propondrá mantener, ajustar o rechazar; resolverá la función competente para el alcance afectado. Un cambio que altere seguridad, energía, permisos o financiamiento requerirá revisar la puerta correspondiente antes de ejecutarse.
+
+Los ajustes editoriales ordinarios podrán realizarse dentro de plantillas y permisos aprobados. Un cambio de modelo de terminal, banco o inversor, una nueva integración o una ampliación de ubicaciones tendrá revisión técnica y económica. Toda versión desplegada conservará posibilidad de retorno a la última configuración estable, con respaldo previo y criterio de reversión definido.
+
+\section{Estructura del trabajo, recursos y programación}
+\label{sec:int_edt}
+\subsection{Paquetes de trabajo y conciliación del esfuerzo}
+La estructura de desglose del trabajo, EDT, organiza la implementación por resultados verificables. Sus paquetes se relacionan con E1 a E6: diagnóstico y decisión; diseño y especificación; adquisición y preparación; servicio integrado; transferencia; evaluación y cierre.
+
+El cuadro siguiente distribuye las \textbf{408 horas-persona de ejecución} consideradas en el cuadro \ref{tab:estimaciones}. Se conservan sus bases de estimación: 40 HP de ingeniería, 100 de CMS, 60 de interfaz y contenido, 96 de instalación, 48 de pruebas, 24 de documentación y formación, y 40 de coordinación. Son esfuerzo agregado por funciones, no dedicación comprometida de los tres integrantes ni duración del proyecto.
+
+\cuadro{tab:int_edt_a}{EDT de preparación y servicio de información}{@{}P{0.8cm}P{2.9cm}Y r@{}}{\textbf{ID}&\textbf{Paquete}&\textbf{Desglose y resultado}&\textbf{HP}}{
+W1 & Ingeniería y levantamiento & W1.1 servicio TI: 8; W1.2 respaldo: 16; W1.3 generación FV: 16. Cada frente incluye levantamiento, diseño y revisión. Resultado: especificación e instalación diseñadas & 40\\*
+W2 & CMS y cliente & W2.1 entorno y accesos: 24; W2.2 edición y destinos: 32; W2.3 continuidad y versiones: 28; W2.4 integración de configuración: 16. Resultado: plataforma demostrable & 100\\
+W3 & Interfaz y contenido & W3.1 consulta y navegación: 20; W3.2 plantillas y contenido inicial: 20; W3.3 revisión y ajustes: 20. Resultado: experiencia de consulta y paquete inicial & 60\\
+}
+
+\cuadro{tab:int_edt_b}{EDT de instalación, verificación y transferencia}{@{}P{0.8cm}P{2.9cm}Y r@{}}{\textbf{ID}&\textbf{Paquete}&\textbf{Desglose y resultado}&\textbf{HP}}{
+W4 & Instalación & W4.1 servicio TI, red y videovigilancia: 36; W4.2 respaldo: 32; W4.3 generación FV: 28. Incluye recepción técnica, siete enlaces, gabinete, cámaras, montaje y comprobaciones por frente. Resultado: conjunto disponible para integración & 96\\*
+W5 & Pruebas y puesta en servicio & W5.1 servicio TI: 32; W5.2 respaldo: 8; W5.3 generación FV: 8. Incluye protocolos, ensayo y resolución por frente. Resultado: aceptación técnica y funcional & 48\\
+W6 & Transferencia & W6.1 documentación, formación y transferencia comunes: 20; W6.2 específicas FV: 4. Resultado: responsables capacitados y expediente transferido & 24\\
+W7 & Coordinación y control & W7.1 coordinación común: 32; W7.2 coordinación FV: 8. Incluye arranque, suministro, cambios y cierre. Resultado: decisiones y versiones trazables & 40\\\midrule
+\multicolumn{3}{l}{\textbf{Total de esfuerzo de implementación}} & \textbf{408}\\
+}
+
+La valorización utilizará las tarifas y provisiones del cuadro \ref{tab:estimaciones}, con la misma separación entre servicio TI, respaldo y generación FV que se aplique a la comparación económica. Los componentes, materiales y licencias no se sumarán como nuevas horas de trabajo. Las horas empleadas en la formulación del proyecto no se suman a este esfuerzo de ejecución. Esperas de suministro y autorizaciones pueden aumentar duración sin aumentar proporcionalmente horas de trabajo.
+
+Las comprobaciones iniciales de W4 corresponden a la instalación; W5 verifica el servicio integrado y registra aceptación. W6 incluye la documentación y formación iniciales. La operación, mantenimiento y medición posterior del piloto se controlarán en OPEX. Si el alcance de ingeniería, programación o ensayos supera estas bases, se revisarán esfuerzo y presupuesto antes de comprometer su ejecución.
+
+\subsection{Incrementos del servicio TI}
+El CMS se configurará primero en un entorno aislado del servicio público. Los incrementos permitirán detectar pronto si la plataforma elegida necesita extensiones, licencias o trabajo no previsto. Cada revisión incluirá un emisor, un responsable de revisión y una función TI una vez designados; el registro indicará quién participó realmente.
+
+\cuadro{tab:int_incrementos}{Incrementos previstos de CMS, cliente e interfaz}{@{}P{1.0cm}Y Y@{}}{\textbf{Incr.}&\textbf{Contenido verificable}&\textbf{Condición de salida}}{
+I1 & Campos del aviso, perfiles, aprobación y consulta con datos de ensayo & No se publica sin fuente, vigencia y autorización; navegación revisada\\*
+I2 & Programación, destinos, QR, medios y supervisión & Versiones correctas en tres destinos lógicos; permisos y vínculos probados\\
+I3 & Paquete persistente, caducidad local, reconexión y recuperación & Corte y reinicio ensayados; registros, respaldo y configuración reproducibles\\
+}
+
+Al disponer de equipos se repetirán sobre el terminal seleccionado los casos dependientes de reproductor, sistema, táctil y reinicio. Los cambios aprobados actualizarán conjuntamente especificación, manual y configuración.
+
+\subsection{Cronograma de referencia de dieciséis semanas}
+La semana 1 comenzará cuando se disponga de autorización, responsables y recursos mínimos de arranque. La programación supone que el suministro crítico estará disponible al terminar la semana 6. Esta condición se comprobará con los plazos ofertados; una entrega posterior obligará a revisar el camino que conduce a instalación y aceptación.
+
+\cuadro{tab:int_cronograma}{Programación de los paquetes de implementación}{@{}P{0.8cm}P{2.5cm}Y r@{}}{\textbf{EDT}&\textbf{Periodo relativo}&\textbf{Responsable funcional y dependencia}&\textbf{HP}}{
+W1 & Semanas 1 a 2 & Ingeniería e infraestructura, con TI y servicio; requiere G0 & 40\\*
+W2 & Semanas 3 a 14 & Responsable de configuración TI; requisitos y primera revisión G1 & 100\\
+W3 & Semanas 3 a 14 & Interfaz y responsables de contenido; fuentes y criterios de consulta & 60\\
+W4 & Semanas 7 a 10 & Instalación por especialidad; G1 y suministro conforme G2 & 96\\
+W5 & Preparación 3 a 6; ejecución 11 a 16 & Responsable de pruebas y especialistas; entorno definido y G3 para ensayo integrado & 48\\
+W6 & Semanas 15 a 16 & Formación y operación; versión candidata y revisión G4 & 24\\
+W7 & Semanas 1 a 16 & Coordinación; revisión semanal de los demás paquetes & 40\\
+}
+
+La figura \ref{fig:gantt} representa esa programación. Los incrementos I1, I2 e I3 del servicio TI ocupan bloques de cuatro semanas, de modo que G2 disponga del primer incremento demostrable y G4 de la versión candidata. La secuencia física de ingeniería, suministro, instalación y pruebas carece de holgura: un retraso del suministro desplaza G3, G4 y G5.
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,
+  etiqueta/.style={anchor=west,inner sep=0pt},
+  horas/.style={anchor=east,inner sep=0pt,text=graytext},
+  enbarra/.style={font=\scriptsize\bfseries,text=white,inner sep=0pt},
+  hito/.style={diamond,fill=unsaacrojo,draw=white,line width=0.4pt,inner sep=0pt,minimum width=8.5pt,minimum height=8.5pt},
+  rotg/.style={font=\scriptsize\bfseries,text=unsaacrojo,inner sep=1pt,anchor=south}]
+\def\xo{5.4}\def\u{0.55}
+\def\gbar#1#2#3#4{\fill[rounded corners=1.5pt,#4] ({\xo+(#1-1)*\u+0.035},{#3-0.17}) rectangle ({\xo+(#2)*\u-0.035},{#3+0.17});}
+% Franjas alternas, columna de operación y rejilla semanal
+\foreach \y in {-1.45,-2.69,-3.93,-5.17,-6.41} \fill[light] (0,\y-0.31) rectangle (15.8,\y+0.31);
+\fill[tiazul!6] (14.36,-0.3) rectangle (15.8,-6.72);
+\foreach \w in {0,...,16} \draw[black!14,line width=0.3pt] ({\xo+\w*\u},-0.3) -- ({\xo+\w*\u},-6.72);
+% Encabezado
+\node[font=\scriptsize\bfseries,text=graytext] at ({\xo+8*\u},0.45) {Semana desde la autorización};
+\node[font=\scriptsize\bfseries,text=tiazul] at (15.08,0.45) {Operación};
+\node[etiqueta,font=\scriptsize\bfseries,text=graytext] at (0,0) {PAQUETE DE TRABAJO};
+\node[horas,font=\scriptsize\bfseries] at (5.25,0) {HP};
+\foreach \w in {1,...,16} \node[font=\scriptsize,text=graytext] at ({\xo+(\w-0.5)*\u},0) {\w};
+\node[font=\scriptsize,text=tiazul] at (15.08,0) {$\geq$ 30 días};
+% Puertas de avance
+\node[etiqueta,font=\footnotesize\itshape] at (0,-0.8) {Puertas de avance};
+\foreach \g/\w in {0/0,1/2,2/6,3/10,4/14,5/16}{
+  \draw[unsaacrojo!50,dash pattern=on 1.5pt off 1.5pt,line width=0.5pt] ({\xo+\w*\u},-0.8) -- ({\xo+\w*\u},-6.72);
+  \node[hito] at ({\xo+\w*\u},-0.8) {};
+  \node[rotg] at ({\xo+\w*\u},-0.66) {G\g};
+}
+\draw[unsaacrojo!50,dash pattern=on 1.5pt off 1.5pt,line width=0.5pt] (15.62,-0.8) -- (15.62,-6.72);
+\node[hito] at (15.62,-0.8) {};
+\node[rotg] at (15.62,-0.66) {G6};
+% Paquetes
+\node[etiqueta] at (0,-1.45) {W1 Ingeniería y levantamiento}; \node[horas] at (5.25,-1.45) {40};
+\gbar{1}{2}{-1.45}{energia}
+\node[etiqueta,text=graytext] at (0,-2.07) {Suministro crítico};
+\draw[energia,rounded corners=1.5pt,dash pattern=on 2.2pt off 1.4pt,line width=0.8pt] ({\xo+2*\u+0.06},-2.22) rectangle ({\xo+6*\u-0.06},-1.92);
+\node[font=\scriptsize,text=energia] at ({\xo+4*\u},-2.07) {plazo ofertado};
+\node[etiqueta] at (0,-2.69) {W2 CMS y cliente}; \node[horas] at (5.25,-2.69) {100};
+\gbar{3}{6}{-2.69}{tiazul}\gbar{7}{10}{-2.69}{tiazul}\gbar{11}{14}{-2.69}{tiazul}
+\node[enbarra] at ({\xo+4*\u},-2.69) {I1};
+\node[enbarra] at ({\xo+8*\u},-2.69) {I2};
+\node[enbarra] at ({\xo+12*\u},-2.69) {I3};
+\node[etiqueta] at (0,-3.31) {W3 Interfaz y contenido}; \node[horas] at (5.25,-3.31) {60};
+\gbar{3}{14}{-3.31}{tiazul!55}
+\node[etiqueta] at (0,-3.93) {W4 Instalación}; \node[horas] at (5.25,-3.93) {96};
+\gbar{7}{10}{-3.93}{energia}
+\node[etiqueta] at (0,-4.55) {W5 Pruebas y puesta en servicio}; \node[horas] at (5.25,-4.55) {48};
+\gbar{3}{6}{-4.55}{verdeprueba!35}\gbar{11}{16}{-4.55}{verdeprueba}
+\node[font=\scriptsize,text=verdeprueba!70!black] at ({\xo+4*\u},-4.55) {preparación};
+\node[enbarra] at ({\xo+13*\u},-4.55) {ejecución};
+\node[etiqueta] at (0,-5.17) {W6 Transferencia}; \node[horas] at (5.25,-5.17) {24};
+\gbar{15}{16}{-5.17}{verdeprueba}
+\node[etiqueta] at (0,-5.79) {W7 Coordinación y control}; \node[horas] at (5.25,-5.79) {40};
+\gbar{1}{16}{-5.79}{grisgestion}
+\node[enbarra] at ({\xo+8*\u},-5.79) {revisión semanal de avance, riesgos y cambios};
+\node[etiqueta,text=graytext] at (0,-6.41) {Seguimiento de operación};
+\draw[tiazul,rounded corners=1.5pt,dash pattern=on 2.2pt off 1.4pt,line width=0.8pt] (14.46,-6.56) rectangle (15.62,-6.26);
+\node[font=\scriptsize,text=tiazul] at (15.04,-6.41) {medición};
+\draw[black!35,line width=0.4pt] (0,-6.8) -- (15.8,-6.8);
+\node[etiqueta,font=\footnotesize\bfseries] at (0,-7.08) {Total de implementación};
+\node[horas,font=\footnotesize\bfseries,text=black] at (5.25,-7.08) {408};
+% Leyenda
+\begin{scope}[shift={(0.55,-7.62)},font=\scriptsize]
+\fill[tiazul,rounded corners=1pt] (0,-0.09) rectangle (0.42,0.09); \node[etiqueta] at (0.52,0) {Servicio TI};
+\fill[energia,rounded corners=1pt] (2.3,-0.09) rectangle (2.72,0.09); \node[etiqueta] at (2.82,0) {Infraestructura y energía};
+\fill[verdeprueba,rounded corners=1pt] (6.15,-0.09) rectangle (6.57,0.09); \node[etiqueta] at (6.67,0) {Pruebas y transferencia};
+\fill[grisgestion,rounded corners=1pt] (9.85,-0.09) rectangle (10.27,0.09); \node[etiqueta] at (10.37,0) {Coordinación};
+\draw[black!60,dash pattern=on 2pt off 1.2pt,line width=0.7pt,rounded corners=1pt] (12.05,-0.09) rectangle (12.47,0.09); \node[etiqueta] at (12.57,0) {Espera o medición};
+\end{scope}
+\end{tikzpicture}
+\captionof{figure}{Diagrama de Gantt de la implementación y del seguimiento}\label{fig:gantt}
+\end{center}
+
+El seguimiento abarcará, como mínimo, treinta días posteriores a la puesta en servicio. No se comprimirá dentro de las dos semanas finales de implementación. La disponibilidad del servicio, las horas de trabajo y las fechas de calendario se registrarán como magnitudes distintas.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,node distance=6mm,every node/.style={font=\small,align=center},bx/.style={draw,rounded corners=2pt,text width=3.55cm,minimum height=1cm,inner sep=5pt}]
+\node[bx] (d) {Diseño revisado\\G1};
+\node[bx,right=of d] (s) {Suministro conforme\\G2};
+\node[bx,right=of s] (i) {Instalación verificada\\G3};
+\node[bx,below=10mm of s] (c) {CMS e interfaz\\Incrementos I1 a I3};
+\node[bx,below=10mm of i] (p) {Integración y pruebas\\G4};
+\node[bx,below=8mm of p] (t) {Transferencia\\G5};
+\draw[->](d)--(s);\draw[->](s)--(i);
+\draw[->](d.south)|-(c.west);
+\draw[->](c)--(p);\draw[->](i)--(p);\draw[->](p)--(t);
+\end{tikzpicture}
+\captionof{figure}{Dependencias principales del suministro, el servicio TI y la aceptación}
+\label{fig:int_dependencias}
+\end{center}
+
+\subsection{Puertas de avance}
+Cada puerta conservará evidencia revisada, observaciones, responsable de resolución y decisión de avanzar, ajustar o detener. Su aprobación dependerá del cumplimiento de las condiciones indicadas.
+
+\cuadro{tab:int_puertas_a}{Puertas de preparación e instalación}{@{}P{0.8cm}P{2.2cm}Y@{}}{\textbf{Hito}&\textbf{Referencia}&\textbf{Condición verificable}}{
+G0 & Antes de semana 1 & Alcance, recursos de arranque, responsables y autorización de acceso identificados\\*
+G1 & Fin de semana 2 & Ubicaciones, cargas, requisitos, metrado, compatibilidad y esquema de instalación revisados por las funciones competentes\\
+G2 & Fin de semana 6 & Equipos y materiales recibidos conforme a configuración; licencias, manuales y accesorios identificados; primer incremento demostrable\\
+G3 & Fin de semana 10 & Instalación y protecciones verificadas, observaciones de seguridad resueltas y entorno disponible para integración\\
+}
+
+\cuadro{tab:int_puertas_b}{Puertas de liberación y evaluación}{@{}P{0.8cm}P{2.2cm}Y@{}}{\textbf{Hito}&\textbf{Referencia}&\textbf{Condición verificable}}{
+G4 & Fin de semana 14 & Versión candidata integrada; casos críticos superados, permisos y recuperación probados; registro de incidencias revisado\\*
+G5 & Fin de semana 16 & Servicio aceptado para operación, manuales y formación comprobados, responsables y soporte disponibles\\
+G6 & Después del seguimiento & Resultados de al menos treinta días revisados, costos e incidencias observados y decisión sobre continuidad o ampliación\\
+}
+
+La energización requerirá revisión especializada; la publicación, fuentes y responsables autorizados. Los pendientes críticos de seguridad, integridad, permisos o capacidad de operación impedirán liberar el componente afectado.
+
+\section{Suministro, instalación y configuración del conjunto}
+\label{sec:int_instalacion}
+\subsection{Comparación funcional y recepción técnica}
+La consulta a proveedores utilizará una misma lista de cantidades, funciones y condiciones. La comparación distinguirá equipo suelto de terminal completo, garantía de fabricante de soporte local, y componentes de generación de sistema energético instalado. Cada respuesta conservará variante, revisión, vigencia de precio, impuestos, accesorios, destino y exclusiones.
+
+La matriz de conformidad se completará con estados \emph{acreditado}, \emph{requiere ensayo}, \emph{sin evidencia suficiente} o \emph{no conforme}. Se registrará el documento y apartado que respaldan cada característica y se aclararán las prestaciones omitidas antes de recomendar la configuración.
+
+\cuadro{tab:int_conformidad}{Matriz de comprobación del suministro}{@{}P{0.9cm}P{2.9cm}Y@{}}{\textbf{ID}&\textbf{Objeto}&\textbf{Evidencia y criterio de conformidad}}{
+S1 & Tres terminales & Modelo exacto, 55 pulgadas, orientación, resolución, brillo, táctil, cómputo, sistema soportado y licencia; demostrar cliente, anclaje y consumo del conjunto\\*
+S2 & CMS y reproductor & Funciones y licencias de la versión propuesta; probar perfiles, aprobación, destinos, copia local y caducidad en el equipo real\\
+S3 & Conjunto energético & Módulos, inversor, banco y BMS compatibles; límites ambientales, protecciones y control de exportación y esquema de respaldo documentados y verificables\\
+S4 & Instalación y servicios & Cantidades y recorridos, materiales, montaje, formación, respaldo, documentación y soporte con alcance identificable\\
+S5 & Costo comparable & Precio y moneda, impuestos declarados, transporte a campus, stock, plazos, accesorios, garantía y exclusiones sin doble conteo\\
+}
+
+En la recepción se contrastarán cantidades, números de serie, revisión, integridad física y accesorios con la configuración aceptada. Se registrarán daños, faltantes, sustituciones propuestas y resolución. Una sustitución requerirá repetir la comprobación de interfaces, consumo, licencias y pruebas afectadas.
+
+\subsection{Ingeniería y preparación de la instalación}
+El levantamiento comprobará tránsito, accesibilidad, reflejos, superficie de apoyo, alimentación, recorridos de red, cubierta y accesos de mantenimiento. El diseño definitivo determinará anclajes, conductores, protecciones, maniobra y ajustes. Se conservarán las plantas de referencia y se emitirá una revisión nueva cuando el levantamiento obligue a modificarlas.
+
+La ingeniería verificará tensión y corriente FV en las condiciones de trabajo, compatibilidad con MPPT, BMS y banco, potencia útil y comportamiento de transferencia. También comprobará límites ambientales y de altitud del modelo exacto. La expresión seis módulos o batería de 4,8 kWh seguirá siendo una base de cálculo hasta cerrar esas verificaciones y las cargas reales.
+
+La preparación de la cubierta incluirá revisión de cargas, puntos de fijación, impermeabilización, sombras y espacio para intervención. La inclinación y orientación responderán al estudio del sitio. Ningún operario deberá inferir una distribución de apoyos a partir del costo equivalente por módulo utilizado en la estimación económica.
+
+Los especialistas definirán el circuito de cargas críticas, la separación y transferencia de red, la protección del banco y los medios de aislamiento. Las intervenciones se coordinarán con el responsable de las instalaciones, incluyendo control de acceso, desenergización cuando corresponda y restitución del servicio. Este plan establece verificaciones y responsables; los parámetros de ejecución se tomarán del diseño revisado y de los manuales exactos.
+
+\cuadro{tab:int_documentos_instalacion}{Documentos que habilitan y registran la instalación}{@{}P{3.2cm}Y@{}}{\textbf{Documento}&\textbf{Contenido verificable}}{
+Diseño y metrado & Plano de ubicación, unifilar, recorridos, cargas, materiales, cálculos y responsables de revisión\\*
+Configuración de equipos & Modelo, variante, firmware, ajustes de carga y transferencia, interfaces y límites ambientales\\
+Control de montaje & Series, fijaciones, identificación de circuitos, materiales instalados y observaciones resueltas\\
+Verificación de seguridad & Resultados de comprobaciones indicadas por diseño y fabricante, responsable competente e instrumentos utilizados\\
+Configuración final & Plano actualizado de lo instalado, inventario, cambios, manuales y puntos de aislamiento identificados\\
+}
+
+La red de las terminales utilizará direccionamiento y segmentación acordados con TI. Se identificarán tres puntos, sus recorridos y pruebas; los dispositivos de comunicaciones del circuito crítico se contabilizarán en energía y respaldo. El CMS alojado fuera de ese circuito tendrá continuidad propia y no se considerará protegido por la batería del pabellón.
+
+\subsection{Configuración de CMS, cliente y contenidos}
+El entorno de ensayo reproducirá las versiones del CMS, reproductor y sistema que se pretenden desplegar. Se instalarán sólo componentes y extensiones identificados; las cuentas iniciales se cambiarán o retirarán según la configuración segura. Se registrarán dominios autorizados, copias, actualización y recuperación.
+
+La configuración editorial seguirá la secuencia borrador, revisión, aprobación, publicación y retiro o vencimiento. Se definirán campos obligatorios, categorías, fuente autorizada, fechas y destinos. Las facultades o unidades futuras se incorporarán como ámbitos de contenido cuando exista una decisión de ampliación, evitando conceder permisos sobre terminales ajenas.
+
+El cliente verificará la versión del paquete, almacenará medios y metadatos necesarios y confirmará qué versión aplica. Una dirección web externa no será considerada disponible sin conexión sólo por aparecer en una lista de reproducción. Los avisos que requieran un servicio remoto mostrarán una alternativa clara durante una desconexión.
+
+La caducidad local deberá funcionar con una referencia temporal comprobada. Si el reloj o el paquete no permiten determinar vigencia con suficiente confianza, se mostrará un estado de contingencia y se evitará presentar un aviso dudoso como actual. Al reconectar se sustituirá el paquete de forma íntegra y se registrará el resultado, conservando una versión estable para recuperación.
+
+\subsection{Libro de datos y configuración del servicio}
+Se mantendrá un libro de datos que permita interpretar información, configurar el servicio y reconstruir cambios sin depender de su autor. Contendrá diccionario, catálogos, reglas, versiones y relación con las evidencias. Las credenciales no se incluirán en manuales de consulta pública; se custodiarán mediante el procedimiento de TI.
+
+\cuadro{tab:int_libro_datos}{Contenido mínimo del libro de datos}{@{}P{2.9cm}Y Y@{}}{\textbf{Objeto}&\textbf{Campos o referencias}&\textbf{Regla de control}}{
+Aviso & Identificador, título, categoría, emisor, fuente, responsable, inicio, vencimiento y estado & No publicar sin fuente y aprobación; distinguir retirar de eliminar\\*
+Destino y paquete & Terminal, ubicación, grupo, versión, medios e instante de aplicación & Asociar cada cliente con una versión y registrar integridad\\
+Actores y auditoría & Cuenta, función, ámbito, acción, resultado e instante con zona horaria & Acceso autorizado; cambios y revisión reconstruibles\\
+Operación y energía & Incidencia, equipo, estado, medición, unidad, método y origen & Distinguir dato observado, cálculo y estimación\\
+Configuración y respaldo & Versiones, parámetros, dependencias, copias y procedimiento de restauración & Acceso restringido y relación entre datos, medios y configuración\\
+}
+
+El libro incluirá catálogos de estado y categoría, formato de exportación, reglas de conservación y tratamiento de registros incompletos. En una corrección se conservarán motivo, autor y valor previo cuando corresponda. Las copias permitirán recuperar avisos, medios y configuración como conjunto.
+
+\section{Plan de pruebas y aceptación}
+\label{sec:int_pruebas}
+\subsection{Condiciones y datos de ensayo}
+El responsable de pruebas preparará entrada, resultado esperado, procedimiento, evidencia y criterio de salida de cada caso. Se registrarán equipo y configuración, versiones, fecha, condiciones de red y alimentación, responsable, resultado obtenido e incidencia. Los datos de ensayo se identificarán y se retirarán de la vista pública al terminar.
+
+El conjunto inicial propuesto contendrá veinticuatro avisos sintéticos: doce aprobados y vigentes, cuatro borradores sin aprobación, cuatro vencidos y cuatro incompletos o inválidos. De los doce vigentes, seis se asignarán a todas las terminales y dos a cada destino particular; cada terminal deberá recibir ocho de ese conjunto. Se usarán cuentas de ensayo con permisos diferenciados y una cuenta sin autorización de publicación.
+
+Los medios, vínculos y horarios del conjunto se definirán antes del ensayo. Se añadirán casos límite de inicio y vencimiento, reloj incorrecto, formato no admitido y actualización interrumpida.
+
+\subsection{Pruebas funcionales y editoriales}
+\cuadro{tab:int_pruebas_funcionales}{Aceptación de funciones de información}{@{}P{0.8cm}P{2.7cm}Y@{}}{\textbf{ID}&\textbf{Caso}&\textbf{Resultado medible propuesto}}{
+PF1 & Campos y aprobación & Los cuatro incompletos no se publican; los cuatro borradores no aparecen sin aprobación; cada rechazo conserva motivo\\*
+PF2 & Destinos y versión & Cada terminal muestra los ocho avisos vigentes que le corresponden y confirma versión; no muestra los de otro destino\\
+PF3 & Publicación y caducidad & El paquete conectado se aplica en hasta cinco minutos; cada aviso se retira o advierte al alcanzar el vencimiento según la política aprobada\\
+PF4 & Consulta y QR & Detalle, fuente y vigencia coinciden; los vínculos autorizados abren el recurso previsto y permiten continuar la consulta en móvil\\
+PF5 & Registro y corrección & Cada cambio deja autor, resultado, revisión e instante; exportación y registros permiten reconstruir el aviso ensayado\\
+}
+
+La sincronización se medirá desde la aprobación efectiva hasta la versión aplicada por cada cliente, con relojes y condiciones de ensayo registrados. Se comprobará el contenido visible y se informarán los valores individuales y el peor resultado de las tres terminales.
+
+El ensayo de capacidad utilizará 500 avisos sintéticos y medios dentro de los límites de la política. En cada terminal se realizarán al menos 100 consultas locales de detalle, distribuidas entre categorías y avisos; se registrarán tiempos individuales y errores. El criterio de aceptación será que al menos el 95\% de los intentos muestre el detalle en hasta tres segundos, con el equipo, cliente y paquete de contenidos previstos.
+
+\subsection{Seguridad, desconexión y recuperación}
+\cuadro{tab:int_pruebas_continuidad}{Pruebas de permisos y continuidad}{@{}P{0.8cm}P{2.7cm}Y@{}}{\textbf{ID}&\textbf{Caso}&\textbf{Resultado exigible}}{
+PC1 & Acceso no autorizado & La cuenta de ensayo no publica fuera de su ámbito, no administra usuarios y no accede al escritorio desde la interfaz pública; denegación registrada\\*
+PC2 & Corte y arranque sin red & Las tres terminales recuperan un paquete local autorizado después de reiniciar; muestran estado y última sincronización; objetivo inicial: consulta recuperada en cinco minutos desde alimentación estable\\
+PC3 & Vencimiento sin red & Los cuatro avisos vencidos no se muestran como vigentes; el cambio de hora o reloj no confiable activa el tratamiento de contingencia definido\\
+PC4 & Actualización interrumpida & Se conserva una versión coherente, sin mezcla de medios y metadatos; tras reconectar se concilia el paquete y se registra la incidencia\\
+PC5 & Restauración del CMS & Se recuperan datos, medios y configuración en entorno controlado; otra persona reconstruye un aviso y verifica permisos antes de habilitar publicación\\
+PC6 & Videovigilancia & Cada cámara graba en horario de servicio y por evento fuera de él, con hora sincronizada; sólo cuentas autorizadas consultan; la ocupación medida proyecta 30 días de conservación en el disco\\
+}
+
+La prueba de recuperación medirá el punto de copia utilizado y el tiempo necesario para restablecer funciones prioritarias. Los objetivos de pérdida máxima de veinticuatro horas de datos recuperables y recuperación en ocho horas de atención se validarán con los responsables de operación.
+
+\subsection{Pruebas de energía, instalación y accesibilidad}
+Los ensayos eléctricos se realizarán conforme al diseño y a los procedimientos del responsable competente. Antes de ensayar corte o transferencia se verificará que las maniobras no comprometan equipos, personas o servicios ajenos al piloto. Se registrarán carga real, estado del banco, temperatura, instrumentos y límites de interrupción.
+
+\cuadro{tab:int_pruebas_energia}{Verificaciones del conjunto físico y energético}{@{}P{0.8cm}P{2.7cm}Y@{}}{\textbf{ID}&\textbf{Caso}&\textbf{Criterio y evidencia}}{
+PE1 & Instalación y ubicación & Correspondencia con diseño, identificación, anclaje, recorridos y protecciones; circulación y acceso técnico verificados\\*
+PE2 & Transferencia y restitución & Comportamiento de las tres terminales y comunicaciones registrado; sin realimentación no autorizada; modo de retorno y reinicios comprobados\\
+PE3 & Autonomía & Suministrar las cargas críticas reales durante cuatro horas bajo condiciones iniciales y límites documentados, sin exceder ajustes de protección; si no se logra, revisar conjunto y aceptación\\
+PE4 & Generación y control & Registros distinguibles de generación, red, batería y cargas; consigna de exportación y protección de interconexión comprobadas según diseño y condiciones de prueba\\
+PE5 & Cableado de red & Los siete enlaces superan mapa de cableado, continuidad y longitud de 90 m o menos; etiquetas en ambos extremos y plano actualizado\\
+}
+
+La prueba de cuatro horas verificará la configuración disponible y sus condiciones de ensayo; no demostrará por sí sola desempeño al final de la vida de la batería o durante todos los periodos del año. Las restricciones ambientales, degradación y reposición se revisarán mediante fichas, diseño y seguimiento.
+
+La aceptación de accesibilidad incluirá lectura desde aproximaciones reales, contraste, alcance de controles, altura, espacio de aproximación y alternativa QR. En los casos acordados, al menos el 90\% de las tareas de consulta deberá completarse sin ayuda no prevista. El informe identificará participantes, tareas, intentos, errores, barreras y composición de la muestra evaluada.
+
+\subsection{Tratamiento de hallazgos y liberación}
+Los hallazgos se clasificarán por efecto sobre seguridad, autorización, integridad, consulta y continuidad. Un defecto que permita contenido no autorizado, exposición de datos, riesgo de instalación o pérdida del servicio esencial impedirá liberar el componente afectado. Los defectos menores conservarán responsable, plazo y criterio de corrección.
+
+Una corrección repetirá el caso que falló y los casos afectados por su cambio. El registro de aceptación relacionará requisito, versión, prueba y evidencia. La decisión G4 distinguirá condiciones superadas, limitaciones y pendientes; G5 comprobará además que existe capacidad real para operar la versión aceptada.
+
+\section{Formación, transición y puesta en operación}
+\label{sec:int_transicion}
+\subsection{Capacitación por función}
+La formación utilizará la versión que se pondrá en servicio, con ejercicios y comprobación de tareas. Se aprovecharán los manuales y el entorno de ensayo para practicar errores, caducidad, desconexión y recuperación. Una lista de asistencia acreditará participación cuando ocurra; la capacidad se comprobará mediante una tarea realizada.
+
+\cuadro{tab:int_formacion}{Plan de formación y evidencia por función}{@{}P{2.6cm}Y Y@{}}{\textbf{Destinatario}&\textbf{Contenido y ejercicio}&\textbf{Evidencia de preparación}}{
+Editores y revisores & Crear, validar, programar, corregir y retirar avisos; resolver rechazo y fuente dudosa & Ejecutar un ciclo editorial sin publicar fuera del ámbito ni dejar vigencia incompleta\\*
+TI y soporte & Altas, permisos, versiones, copia, restauración, actualización y diagnóstico & Recuperar un entorno de ensayo y verificar cliente y registro\\
+Operación local & Inspección visual, limpieza permitida, consulta, reporte y respuesta a desconexión & Identificar terminal y síntoma, registrar incidencia y aplicar sólo acciones autorizadas\\
+}
+
+W6 distribuirá sus 24 HP entre documentación, preparación, formación y transferencia, distinguiendo trabajo común y específico FV. Las sesiones se programarán según funciones y disponibilidad. Las necesidades de formación especializada adicionales se incorporarán al alcance y al presupuesto.
+
+\subsection{Documentación y traspaso}
+El expediente de transferencia contendrá inventario con series y garantías, configuración final, planos actualizados, versiones y licencias, libro de datos, pruebas, manual editorial, manual TI y guía de operación local. Añadirá contactos de soporte confirmados, copias recuperables, ubicación de credenciales bajo custodia y criterios de escalamiento.
+
+Los manuales deberán permitir a otra persona identificar una versión, publicar un aviso autorizado, restaurar la plataforma y localizar los medios de aislamiento definidos por el especialista. Se distinguirán acciones permitidas al operador de intervenciones reservadas a personal competente. Los documentos se entregarán en formato reutilizable y con su revisión.
+
+\subsection{Transición controlada}
+La puesta en operación utilizará un conjunto inicial limitado de contenido institucional validado. Se mantendrán los canales oficiales y la página o destino de consulta móvil para evitar que la instalación física se convierta en una barrera. El horario de publicación y la responsabilidad de retirar contenido anterior quedarán definidos.
+
+Antes del cambio se comprobarán respaldo, permisos, versión de los tres clientes, contactos y plan de retorno. Si aparece un defecto crítico, se suspenderá la publicación o el componente afectado y se recuperará la configuración estable. La comunicación de contingencia indicará el canal oficial alternativo, sin mostrar avisos dudosos como actuales.
+
+G5 registrará fecha de inicio operativo, responsables, versión, pendientes aceptados y comienzo del seguimiento. El cierre del traspaso requerirá responsables de custodia, actualización y mantenimiento.
+
+\section{Operación, continuidad y mantenimiento}
+\label{sec:int_operacion}
+\subsection{Modelo de operación y objetivos de servicio}
+La operación distinguirá gestión editorial, administración TI, soporte local y mantenimiento energético. Se acordarán calendario de servicio, horas de atención y responsables de ausencia. Los objetivos siguientes, SLO, son propuestas internas para confirmar con esas capacidades; no constituyen un acuerdo contractual de disponibilidad.
+
+\cuadro{tab:int_slo}{Objetivos iniciales de servicio y su medición}{@{}P{3.0cm}Y P{3.2cm}@{}}{\textbf{Objetivo}&\textbf{Medición}&\textbf{Criterio propuesto}}{
+Vigencia y autorización & Avisos públicos con fuente, revisión, inicio y vencimiento entre total revisado & 100\% en las revisiones programadas\\*
+Propagación & Tiempo de aprobación a versión aplicada por cliente conectado & Hasta cinco minutos por terminal\\
+Detección de desconexión & Intervalo sin comunicación del cliente; comprobación del estado local & Señal inicial a los quince minutos; no equivale automáticamente a pantalla fuera de servicio\\
+Recuperación, RTO & Tiempo desde detección validada hasta restablecer funciones prioritarias, computado en la ventana de atención acordada & Hasta ocho horas de atención\\
+Pérdida de datos, RPO & Distancia temporal entre el punto recuperado y el incidente & Hasta veinticuatro horas\\
+Continuidad de cargas & Horas registradas con carga crítica y condiciones de banco documentadas & Objetivo de cuatro horas\\
+}
+
+El RTO requerirá registrar aviso, detección validada, inicio de atención, restauración y validación, sin omitir las esperas dentro de la ventana acordada. Las ocurridas fuera de esa ventana se informarán junto con la indisponibilidad total. El RPO se comprobará con la última copia íntegra recuperada, no con la fecha de un archivo que no haya sido restaurado. Si las horas y recursos de soporte no sostienen estos objetivos, se ajustarán servicio y presupuesto antes de confirmarlos.
+
+La supervisión combinará comunicación técnica, versión aplicada y comprobación visual. Una terminal puede conservar consulta local durante una caída de red; se registrarán por separado disponibilidad de consulta, conectividad y capacidad de recibir contenido nuevo. Los intervalos sin evidencia suficiente se informarán como no determinados.
+
+\subsection{Rutinas editoriales e incidencias}
+Antes de cada publicación se revisarán fuente, destinatario, vigencia, vínculo y medio. Durante el horario de servicio se comprobarán avisos próximos a vencer y mensajes urgentes. La publicación de proyectos o contactos personales requerirá autorización específica y una regla de retiro; el interés en colaborar no habilitará difundir cualquier dato.
+
+El registro de incidencia contendrá terminal o servicio, síntoma, instante, impacto, evidencia, responsable, acción y cierre. Las incidencias de seguridad o instalación se derivarán de inmediato a la función competente. Un operador local podrá registrar, aislar una función de publicación o seguir una guía autorizada; no realizará cambios improvisados en banco, circuitos o protecciones.
+
+El cierre de incidencia incluirá verificación de la consulta y de la versión, además de la desaparición del mensaje de error. Cuando corresponda se revisarán causa, medidas preventivas, tiempo de interrupción y cambio del riesgo residual. Los fallos repetidos generarán una revisión de configuración, soporte o alcance.
+
+\subsection{Respaldo y recuperación}
+Se realizará una copia diaria inicial del CMS, medios, configuración y libro de datos, con control de acceso y separación del sistema de producción. Se verificarán integridad y registro de ejecución. El calendario de restauración de ensayo se definirá según cambios y criticidad; se propone comprobarlo al transferir y después de cambios mayores.
+
+La recuperación se efectuará en un entorno controlado antes de habilitar publicación. Se comprobarán permisos, fuentes, versiones, medios y vigencia del contenido recuperado. Un aviso que venció después de la copia no deberá reaparecer como actual al restaurarla. También se verificará que los clientes reciban una versión coherente y que el punto de recuperación cumpla el RPO.
+
+Las actualizaciones conservarán respaldo, prueba previa y plan de retorno. El inventario de versiones y soporte permitirá programar parches, renovaciones y sustituciones según riesgos y compatibilidad.
+
+\subsection{Mantenimiento y repuestos}
+\cuadro{tab:int_mantenimiento}{Rutinas de mantenimiento propuestas}{@{}P{2.7cm}Y Y@{}}{\textbf{Frecuencia de partida}&\textbf{Actividad}&\textbf{Responsable y evidencia}}{
+Cada día de servicio & Inspección visual de terminales, consulta, avisos y condición externa; revisar alertas & Operación local y editorial: lista breve e incidencias\\*
+Semanal & Conciliar versiones, espacio de almacenamiento, copias y permisos modificados & TI: registro de revisión y acciones\\
+Mensual & Revisar fallos, capacidad, soporte, indicadores y cambios; comprobar conservación de documentación & Responsable del servicio con TI: decisión de ajuste\\
+Semestral y tras evento relevante & Mantenimiento físico/FV conforme al manual y estado; revisar fijaciones, protecciones, banco y conexiones & Personal competente: informe y acciones; visitas de referencia del OPEX\\
+}
+
+La frecuencia física final dependerá de polvo, clima, acceso y recomendaciones de los equipos exactos. La limpieza de módulos y las intervenciones en altura o electricidad tendrán procedimiento y personal competente. El plan semestral no impedirá atender antes una condición insegura o una degradación detectada.
+
+La lista de repuestos diferenciará consumibles y elementos críticos: conectores compatibles, elementos de protección del diseño, dispositivos de comunicación, almacenamiento del reproductor y componentes específicos del terminal o banco. Su adquisición considerará compatibilidad, plazo de reposición, garantía y costo.
+
+Cuando un componente requiera reemplazo se conservarán serie, falla, versión, costo, disposición y prueba posterior. Un equipo que cambie consumo, BMS, firmware o comportamiento de transferencia repetirá las verificaciones afectadas. La reposición se reflejará en el costo de ciclo de vida y en el inventario.
+
+\subsection{Fin de vida y gestión de activos}
+Se mantendrán fechas de instalación, garantía, soporte y condición de cada activo. La decisión de reparar, reutilizar o sustituir considerará seguridad, soporte, disponibilidad, consumo y costo. Las baterías y elementos electrónicos se gestionarán de forma diferenciada, conservando identificación y condiciones de almacenamiento y transporte indicadas por el responsable.
+
+Antes de retirar un terminal o almacenamiento se revocarán credenciales, se retirarán datos y se comprobará que su destino no conserve acceso al servicio. Los activos reutilizables se transferirán con su estado; los residuos de aparatos eléctricos y electrónicos, RAEE, y baterías se coordinarán con patrimonio, proveedor o gestor especializado según corresponda. Se conservará constancia de entrega y destino, evitando que el cierre del proyecto deje equipos sin responsable.
+
+\section{Medición del piloto y decisión de continuidad}
+\label{sec:int_piloto}
+\subsection{Línea base y diseño de medición}
+Antes de habilitar el servicio se medirá cómo una persona localiza avisos equivalentes mediante los canales disponibles. Se utilizarán categorías de oportunidades, trámites y eventos, con tareas y fuentes identificadas. Se registrarán tiempo, éxito, errores, ayuda y condiciones de acceso, sin emplear la intención declarada en una encuesta como medida de uso real.
+
+La comparación mantendrá una dificultad similar y distinguirá participantes nuevos de quienes ya conocen la respuesta. El orden de las tareas se alternará cuando sea posible para reducir efecto de aprendizaje. El diseño registrará tamaño y composición de la muestra, procedimiento de selección y límites. Las conclusiones describirán las observaciones disponibles; no se atribuirá representatividad estadística sin un diseño que la sustente.
+
+El seguimiento se extenderá al menos treinta días después de G5. El calendario identificará días y horas programados, días sin servicio y eventos que alteren la demanda. Se recogerán datos automáticos cuando sean confiables y se contrastarán con revisión de contenido y comprobaciones visuales. La energía requerirá lecturas separables y una frontera de medición acordada por el responsable técnico.
+
+\cuadro{tab:int_medicion}{Plan de indicadores para el seguimiento}{@{}P{2.9cm}Y Y@{}}{\textbf{Indicador}&\textbf{Cálculo y fuente}&\textbf{Frecuencia y responsable}}{
+Vigencia editorial & $100N_{\mathrm{correctos}}/N_{\mathrm{revisados}}$; contenido visible, fuente y fechas & Apertura del servicio y tras publicación; responsable editorial\\*
+Consulta exitosa & $100N_{\mathrm{tareas\ logradas}}/N_{\mathrm{tareas\ válidas}}$; ficha de tarea y ayuda requerida & Línea base y piloto; responsable de evaluación\\
+Tiempo de búsqueda & Mediana en tareas comparables; reducción $100(t_b-t_p)/t_b$ si $t_b>0$ & Línea base y piloto; evaluación con usuarios\\
+Propagación & Minutos desde aprobación a versión aplicada, por cada una de las tres terminales & Registro por publicación y ensayo; TI\\
+Uso & Consultas o aperturas definidas por instrumento, diferenciadas de pruebas y comprobaciones & Resumen diario; operación y TI\\
+Disponibilidad de consulta & Horas verificadas de consulta válida entre horas programadas; objetivo inicial de al menos 98\% por terminal & Registro de incidencias y comprobación local; operación\\
+}
+
+Un denominador cero se informará como no evaluable. Las verificaciones del operador y las pruebas no se sumarán como utilización de estudiantes. Si se registran aperturas QR, se documentará qué evento cuenta y su limitación: una apertura no demuestra lectura completa, postulación o beneficio académico.
+
+La disponibilidad se calculará por terminal para evitar que dos equipos operativos oculten la falla del tercero. Se informarán interrupciones, mantenimiento y horas sin evidencia suficiente. La falta de comunicación con el CMS se distinguirá de la falla del servicio local; no se obtendrá disponibilidad sólo de la última señal de red.
+
+\subsection{Seguimiento energético y económico}
+La medición energética distinguirá generación, energía de red, carga y descarga del banco y energía de las cargas. Se indicarán punto de medición, unidad, intervalo, instrumento y pérdidas incluidas. El responsable técnico conciliará el balance para evitar contar dos veces energía almacenada y después descargada.
+
+La fracción solar aprovechada se informará sólo cuando las lecturas permitan atribuir energía renovable a las cargas dentro de una frontera coherente. Una generación DC estimada no se dividirá directamente entre consumo AC medido sin explicar conversión y pérdidas. Los días de menor recurso y los periodos sin actividad se analizarán por separado.
+
+Se conservarán costo de instalación observado, cambios, operación, incidencias, mantenimiento y reposición. La comparación A1/A2 mantendrá mismo servicio y respaldo, aplicando el puente del cuadro \ref{tab:incremental}. Se distinguirán costo evitado de red, tiempo editorial y capacidad de atención; el tiempo disponible no se declarará ahorro de caja si no evita un gasto.
+
+Treinta días permiten evaluar el funcionamiento del piloto y detectar problemas. Su energía no se extrapolará automáticamente a todo el año o a otros edificios. La decisión de expansión solar requerirá complementar esa observación con el periodo crítico, el recurso y las condiciones particulares del siguiente sitio.
+
+\subsection{Panel de resultados y revisión}
+El cuadro \ref{tab:int_panel_resultados} define el registro que se completará al revisar las evidencias del piloto. Cada resultado incluirá valor, periodo, fuente y estado de evaluación.
+
+\cuadro{tab:int_panel_resultados}{Registro previsto para la evaluación del piloto}{@{}P{3.0cm}P{3.5cm}Y@{}}{\textbf{Resultado}&\textbf{Referencia de evaluación}&\textbf{Valor, evidencia y estado}}{
+Vigencia y consulta & 100\% de avisos revisados correctos; consulta exitosa al menos 90\% & Por medir: ventana, muestra, valor y fuente\\*
+Tiempo y propagación & Reducción objetivo 30\%; aplicación en hasta cinco minutos por terminal & Por medir: línea base, tiempos y versión\\
+Continuidad & Recuperación de tres clientes; objetivos RPO 24 h y RTO 8 h de atención & Por ensayar: copia, tiempos y resultado\\
+Energía & Cuatro horas bajo condiciones de prueba; aporte FV medido & Por medir: cargas, banco, energía y límites\\
+Costo y operación & Presupuesto revisado, costo observado y responsables efectivos & Por registrar: diferencias, incidencias y decisión\\
+}
+
+La revisión semanal del piloto relacionará indicador, incidente, causa, acción y responsable. Las desviaciones darán lugar a análisis de causa y decisión. Los cambios de método o umbral conservarán motivo, fecha y efecto en comparabilidad.
+
+\subsection{Escalar, ajustar o cerrar}
+La continuidad del servicio y su ampliación se resolverán con evidencias de utilidad, seguridad, operación y costo. No se multiplicará el número de terminales por el solo interés inicial en la tecnología.
+
+\cuadro{tab:int_decision_final}{Criterios para decidir después del piloto}{@{}P{2.1cm}Y Y@{}}{\textbf{Decisión}&\textbf{Condición}&\textbf{Salida documentada}}{
+Escalar & Consulta y gestión útiles, pruebas críticas superadas, operación sostenible y costo por nueva ubicación sustentado & Alcance por edificio, responsables, recursos y revisión de capacidad\\*
+Ajustar & Beneficio plausible con brechas corregibles de contenido, interfaz, continuidad o dimensionamiento & Acciones, costo, plazo y nueva ventana de verificación\\
+Continuar A1 o A0 & La mejora informativa es útil, pero terminales adicionales o solar no justifican su costo o restricciones & Alcance reducido con comparación actualizada y servicio preservado\\
+Cerrar componente & Riesgo, costo o utilidad no aceptables, o ausencia de capacidad de operación & Retiro o transferencia ordenados, disposición de activos y comunicación del canal alternativo\\
+}
+
+Para escalar se requerirá que las tres terminales y el flujo editorial hayan superado los casos críticos, que los responsables puedan operar y recuperar el servicio y que los resultados de usuarios sean interpretables respecto de la línea base. Las desviaciones de metas se resolverán expresamente; una mejora de uso no compensará una condición insegura o una publicación no autorizada.
+
+La expansión mantendrá contenido por ámbito, control de permisos, supervisión y capacidad editorial. Cada edificio tendrá revisión de demanda, ubicaciones, red, alimentación, recursos solares y mantenimiento. El banco o servidor del piloto no se supondrá capaz de absorber automáticamente nuevas cargas.
+
+\subsection{Cierre y lecciones aprendidas}
+El cierre de implementación y el cierre de evaluación serán actos diferenciados. El primero registrará lo instalado y aceptado, la transferencia y las obligaciones pendientes identificadas; el segundo contrastará valor observado, costo, incidencias y decisión sobre el futuro del servicio.
+
+El expediente final conservará configuración, inventario, pruebas, resultados, costos, cambios y responsables. Las lecciones registrarán qué supuesto cambió, qué evidencia lo mostró, qué decisión se tomó y qué efecto tuvo. Se revisarán especialmente suficiencia de los canales, utilidad del táctil y QR, costo de mantener contenido vigente, persistencia del cliente y valor incremental de la energía solar.
+
+Las conclusiones se derivarán de esa evidencia. Un componente ajustado o descartado podrá constituir una decisión adecuada si evita una inversión sin utilidad o capacidad suficiente y mantiene el acceso a información institucional confiable.

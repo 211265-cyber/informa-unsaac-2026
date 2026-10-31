@@ -1,0 +1,336 @@
+[
+  {
+    "file": "encuesta_01.png",
+    "original_xref": 46,
+    "sha256": "fe7a975306d16c0f72728ff5536b87ccd5b7c3c30d5791c93feb6560f3722fc7",
+    "size": [
+      1187,
+      887
+    ]
+  },
+  {
+    "file": "encuesta_02.png",
+    "original_xref": 49,
+    "sha256": "ffc168a2777595d58febe657a2161d7636e8f5133d142d63b265d3d34e1c1974",
+    "size": [
+      987,
+      587
+    ]
+  },
+  {
+    "file": "encuesta_03.png",
+    "original_xref": 50,
+    "sha256": "f37eca9aa023277cdcd512bc08c3dde664a301da18f536e4cac8d1888f843a44",
+    "size": [
+      1085,
+      686
+    ]
+  },
+  {
+    "file": "encuesta_04.png",
+    "original_xref": 53,
+    "sha256": "c26dc2249cbe362e0759922d7c7276cc23007c8e25b5a12b67766a0f7b59e55d",
+    "size": [
+      794,
+      614
+    ]
+  },
+  {
+    "file": "encuesta_05.png",
+    "original_xref": 54,
+    "sha256": "37a1977765e1b176998a73d50c630c1f8ea366e27302ddf7d7a5efb37fa22f28",
+    "size": [
+      987,
+      586
+    ]
+  },
+  {
+    "file": "encuesta_06.png",
+    "original_xref": 57,
+    "sha256": "89f20d42bd04e7b0c88101fcb572dcac5887f82b94325f02bed5c077d4ce0c82",
+    "size": [
+      898,
+      636
+    ]
+  },
+  {
+    "file": "encuesta_07.png",
+    "original_xref": 58,
+    "sha256": "d7688457d09c5c348b319e450c26fa8b8f74d08af566e5e4143b8ce600e810ec",
+    "size": [
+      1087,
+      586
+    ]
+  },
+  {
+    "file": "encuesta_08.png",
+    "original_xref": 61,
+    "sha256": "5010ee0685f2899403e4e4613598d4fd061c3faf08205fcda9d2e8b2366a4f15",
+    "size": [
+      1086,
+      686
+    ]
+  },
+  {
+    "file": "encuesta_09.png",
+    "original_xref": 62,
+    "sha256": "ae0e53863d45b87baa90dd54b289405a384154102bead33026bc6b8291feaf24",
+    "size": [
+      987,
+      586
+    ]
+  },
+  {
+    "file": "encuesta_10.png",
+    "original_xref": 65,
+    "sha256": "e98c002d3bef01ac03603be5ceac9302930e98ad9dbff28c001b318bf2955626",
+    "size": [
+      882,
+      809
+    ]
+  },
+  {
+    "file": "planta_piso_1.png",
+    "original_xref": 158,
+    "sha256": "914a305e341c74046d34988d7719be58b906f5b034a8953f7a65dc1b68b35e06",
+    "size": [
+      1088,
+      960
+    ]
+  },
+  {
+    "file": "detalle_piso_1.png",
+    "original_xref": 161,
+    "sha256": "bf7bbfa0eebeb8ef08963a4fc940bc99243a5420f6fee680d4da7f7ea5801328",
+    "size": [
+      1063,
+      755
+    ]
+  },
+  {
+    "file": "planta_piso_2.png",
+    "original_xref": 162,
+    "sha256": "1312dfc8da267e3fc35f334e91c8e1068673fe318a00f8aa6804f06f9faa2af1",
+    "size": [
+      978,
+      780
+    ]
+  },
+  {
+    "file": "detalle_piso_2.png",
+    "original_xref": 165,
+    "sha256": "44a2f71bedee11748a98e7c361ab6f06a42acb6190d026d4156bfede607fe396",
+    "size": [
+      869,
+      698
+    ]
+  },
+  {
+    "file": "planta_piso_3.png",
+    "original_xref": 168,
+    "sha256": "876757f28cbdb2d816655d465bd83b69b9ea9fcab663da1830ce247b80b71059",
+    "size": [
+      804,
+      728
+    ]
+  },
+  {
+    "file": "detalle_piso_3.png",
+    "original_xref": 169,
+    "sha256": "9ab0db3681a8f5e08c77df9bdb8d3e94b1fbad06e7b97a06287e41cc40cf7f8a",
+    "size": [
+      893,
+      727
+    ]
+  },
+  {
+    "file": "concepto_terminal.png",
+    "original_xref": 172,
+    "sha256": "01dc51783c2d0bc5a47e087610e560233e02123662a06b848f039fdbcf0d6ed8",
+    "size": [
+      1024,
+      1536
+    ]
+  },
+  {
+    "file": "concepto_interfaz.png",
+    "original_xref": 173,
+    "sha256": "73e4aa833af2e03287a176d8c3615cb7fe0a8bf1376eafacddae0ad3b40ec551",
+    "size": [
+      1024,
+      1536
+    ]
+  },
+  {
+    "file": "visualizacion_ubicacion.png",
+    "original_xref": 194,
+    "sha256": "b051a0fc0dc793af12269229add6323d114b075712f89e4fe62b6fce9046f48b",
+    "size": [
+      768,
+      1344
+    ]
+  },
+  {
+    "file": "foto_ingreso.png",
+    "original_xref": 198,
+    "sha256": "4c69db5f402841598909e42bcf20c05d627bb8d9a981ad9dcf401371c921b936",
+    "size": [
+      1280,
+      960
+    ]
+  },
+  {
+    "file": "foto_murales.png",
+    "original_xref": 199,
+    "sha256": "9d3671f32e6a2b84264d1287a5240b62a7b5153caf4dc4cf84684c8f4e950769",
+    "size": [
+      1280,
+      960
+    ]
+  },
+  {
+    "file": "foto_pasillo.png",
+    "original_xref": 202,
+    "sha256": "e9b36e1590aba4e81f89ef094187341f66715d81f6a2d6e64957bbb75104c8ab",
+    "size": [
+      960,
+      1280
+    ]
+  },
+  {
+    "file": "mercado_totem_prodimer.jpg",
+    "source_page": "https://prodimerperu.com/producto/totem-interactivo-55-prodimer-peru/",
+    "source_image_url": "https://prodimerperu.com/wp-content/uploads/2026/06/TOTEM-PRODIMER-55-2.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "aa7b6bb82e617efe6fca868b2da6a225050e22ab0fc48175304a68195c332fdc",
+    "original_size": [
+      1600,
+      1600
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "79dc08c02bc56e3a6043789673d0bf81cf92b453a72b086faae971bdd2ee8ae9",
+    "size": [
+      335,
+      900
+    ]
+  },
+  {
+    "file": "mercado_totem_firstview.jpg",
+    "source_page": "https://www.perudataconsult.net/products/totem-interactivo-aio-electronics-55-touch-core-i7-13va-16gb-ddr4-ssd-256gb-w11pro-1-ano-fvd-d550m",
+    "source_image_url": "https://www.perudataconsult.net/cdn/shop/files/totem-1_9079a4dd-b94a-46e5-a063-dfc98ec8256e.jpg?v=1758993488",
+    "retrieved": "2026-10-30",
+    "original_sha256": "968ade0549e14d4a2808b4f9f2c4bb34628e1b6ed3450a2385c41e049fb86f30",
+    "original_size": [
+      2000,
+      2000
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "3957c56864257d009904876407139a0c5bde59b75eefbf60c2e19778e5cb88df",
+    "size": [
+      342,
+      900
+    ]
+  },
+  {
+    "file": "mercado_totem_touchdata.jpg",
+    "source_page": "https://touchdata.pe/producto/totem-vertical-touch-55/",
+    "source_image_url": "https://touchdata.pe/wp-content/uploads/2017/05/totem55webvj.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "ef0a7b2319b574640cee674ecad4a0c3791e1a664d146ca5f92898b2487426ea",
+    "original_size": [
+      500,
+      667
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "50e92f83d762ca4cbc2c4efe4131d3f748d238dd9d7df48e2db50400df42bcbe",
+    "size": [
+      500,
+      667
+    ]
+  },
+  {
+    "file": "mercado_totem_visionsystems.jpg",
+    "source_page": "https://visionsystemsperu.com/producto/totems-pantallas-publicitarias-leds-interactivos-touchs-screen-55-windows-android/",
+    "source_image_url": "https://visionsystemsperu.com/wp-content/uploads/2026/01/foto3.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "690cd65fc35e301b1a42caffc5d1e31364ed7b4b44e63448b4d83c12a1b5e7f1",
+    "original_size": [
+      644,
+      757
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "045dc1ed189f9a2d922da5cd287e888b35bce720dc6c977e4281368cb935cdd5",
+    "size": [
+      620,
+      686
+    ]
+  },
+  {
+    "file": "mercado_fv_jinko615.jpg",
+    "source_page": "https://autosolar.pe/paneles-solares-24v/panel-solar-jinko-tiger-neo-bifacial-615w-n-type",
+    "source_image_url": "https://cdn.autosolar.pe/images/1002232/panel-solar-jinko-tiger-neo-bifacial-615w-n-type-684992fe19b4e.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "dacb64e21ed998e660eafe433b45b53680f94012772bee7a177dfe7e52f80e36",
+    "original_size": [
+      1080,
+      1080
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "59c9bcc9fd6dc8614045f6158c369957bd199e9efe8db714563ae9252ef66498",
+    "size": [
+      246,
+      700
+    ]
+  },
+  {
+    "file": "mercado_fv_trina625.jpg",
+    "source_page": "https://autosolar.pe/paneles-solares/panel-solar-bifacial-625w-trina-solar",
+    "source_image_url": "https://cdn.autosolar.pe/images/1002343/panel-solar-bifacial-625w-trina-solar-698dfb53e7a67.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "a2b5db59ef0d9a15568783c20ffedc50bbb54951445047f2ed75d28ba707ca31",
+    "original_size": [
+      800,
+      1000
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "93984b92f8e3ec44abf281706269295f222910be898284131ae88393b4925eaa",
+    "size": [
+      298,
+      700
+    ]
+  },
+  {
+    "file": "mercado_fv_longi640.jpg",
+    "source_page": "https://autosolar.pe/paneles-solares-24v/panel-solar-bifacial-longi-lr8-66hvd-640m-hi-mo-640w",
+    "source_image_url": "https://cdn.autosolar.pe/images/1006015/panel-solar-bifacial-longi-lr8-66hvd-640m-hi-mo-640w-69a9f09bd1a5f.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "b91e7d49578c6fac732ebc140c8eabf1e2e753dd5eb660f069bc7ae77f93b781",
+    "original_size": [
+      1080,
+      1080
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "954375ada48ed87bfc22068551430b26a278e57ffa415fb64d73e32550f4cf32",
+    "size": [
+      548,
+      700
+    ]
+  },
+  {
+    "file": "mercado_fv_longi505.jpg",
+    "source_page": "https://autosolar.pe/paneles-solares-24v/panel-solar-longi-lr5-66hph-himo5-505w",
+    "source_image_url": "https://cdn.autosolar.pe/images/1006012/panel-solar-longi-lr5-66hph-himo5-505w.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "517dcd3528bb31fc447cd0162ea1fe397f7daff605cb1a3d080e05cc026e5de7",
+    "original_size": [
+      800,
+      1000
+    ],
+    "processing": "recorte de márgenes claros y reducción proporcional; sin otra edición",
+    "sha256": "7d37f1505e2c0428b90bb3ad0110741fc6b57a63a0ad2933cfaac0e5dbb5bc2f",
+    "size": [
+      422,
+      700
+    ]
+  }
+]

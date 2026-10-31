@@ -1,0 +1,223 @@
+\clearpage
+\section{Características técnicas del sistema}
+\subsection{Alcance funcional y arquitectura}
+El producto es un \textbf{servicio de información institucional}, compuesto por gestión editorial, consulta pública, distribución y continuidad. El piloto comprende tres terminales interiores de 55 pulgadas, red local de siete enlaces, videovigilancia de los terminales, CMS y cliente, contenido inicial, respaldo, subsistema FV, instalación, pruebas, capacitación y documentación. No incluye ampliar a toda la universidad, remodelación general, gestión de trámites con datos personales ni reemplazo de sistemas académicos.
+
+La plataforma utilizará una administración central y clientes identificados por terminal y grupo. Se separarán publicación, consulta y supervisión mediante interfaces documentadas, con una base de datos y repositorio de medios respaldados. Esta arquitectura modular permite ampliar destinos y sustituir clientes sin rediseñar la gestión editorial.
+
+\begin{center}
+\begin{tikzpicture}[node distance=6mm,>=Latex,every node/.style={font=\small,align=center},box/.style={draw,rounded corners=2pt,text width=12.7cm,inner sep=6pt}]
+\node[box] (f) {Fuentes autorizadas y emisores de la escuela\\Aviso, vínculo oficial, responsable e inicio/vencimiento};
+\node[box,below=of f] (c) {CMS: borrador, revisión, aprobación y programación\\Cuentas individuales, permisos y registro de cambios};
+\node[box,below=of c] (d) {Distribución de paquetes por versión y terminal\\Medios, vigencia, destino y confirmación de recepción};
+\node[box,below=of d] (t) {Tres clientes públicos en modo kiosco\\Consulta táctil, QR, copia local y retorno al inicio};
+\node[box,below=of t] (m) {Supervisión y continuidad\\Última comunicación, versión, incidencias y recuperación};
+\draw[->](f)--(c);\draw[->](c)--(d);\draw[->](d)--(t);\draw[<->](t)--(m);
+\end{tikzpicture}
+\captionof{figure}{Arquitectura funcional del servicio de información}
+\label{fig:arquitectura}
+\end{center}
+
+\subsection{Proceso editorial y modelo de información}
+Cada aviso tendrá identificador, título, categoría, emisor, fuente oficial, texto o medio, inicio, vencimiento, destino y versión. La operación distinguirá contenido en borrador, en revisión, aprobado, publicado, vencido y retirado. El editor preparará; el revisor comprobará fuente y vigencia; el sistema publicará sólo la versión autorizada.
+
+La primera operación utilizará carga validada de fuentes oficiales. Cada integración automática requerirá titular, autorización, formato, frecuencia, autenticación, campos y manejo de errores. La versión y la fuente del aviso permitirán rastrear su publicación y retirada.
+
+El cuadro \ref{tab:fuentes_contenido} identifica de dónde procede cada tipo de información, quién la entrega y cómo ingresa al servicio. Los emisores son propuestos y la dirección de escuela los designará antes de la puesta en servicio.
+
+\cuadro{tab:fuentes_contenido}{Origen, emisor y forma de ingreso de la información publicada}{@{}P{2.7cm}P{3.6cm}Y P{2.0cm}@{}}{\textbf{Información}&\textbf{Fuente oficial y emisor propuesto}&\textbf{Forma de ingreso y control}&\textbf{Vigencia}}{
+Trámites y calendario & Dirección de escuela y secretaría académica; calendario y resoluciones de la universidad & El editor transcribe el aviso y enlaza el documento oficial; revisión antes de publicar & Hasta la fecha límite\\*
+Becas y créditos & Unidades de bienestar y oficinas de becas; convocatorias oficiales externas & Aviso con enlace a la convocatoria y fecha de cierre; dato exigido por el art. 11.4 & Hasta el cierre\\
+Eventos y capacitación & Escuela, centro federado y unidades organizadoras & Formulario interno del emisor y aprobación del revisor & Hasta el evento\\
+Oportunidades profesionales & Convenios, prácticas y bolsa de trabajo de la universidad & Sólo ofertas con entidad identificada y enlace verificable & Hasta la postulación\\
+Investigación y proyectos & Docentes responsables y grupos de investigación & Ficha autorizada por el titular; sin datos personales no consentidos & Semestral\\
+Avisos urgentes & Dirección de escuela & Publicación prioritaria con doble verificación y retiro programado & Horas o días\\
+}
+El servicio no genera información propia ni reemplaza el documento oficial. Muestra un resumen verificable y el QR al documento de origen. Cuando una fuente se integre de forma automática, su formato y frecuencia se acordarán con el titular, conforme al requisito RF09.
+
+\cuadro{tab:requisitos}{Requisitos funcionales y evidencia de aceptación}{@{}P{1.0cm}P{3.1cm}Y@{}}{\textbf{ID}&\textbf{Función}&\textbf{Criterio verificable}}{
+RF01 & Consulta pública & Buscar categorías y abrir detalle; fuente y vigencia visibles, sin cuenta del estudiante\\*
+RF02 & Edición y aprobación & Crear, revisar y programar; impedir publicación sin campos y autorización requeridos\\
+RF03 & Destinos & Publicar en una, varias o todas las terminales; confirmar versión aplicada\\
+RF04 & Caducidad & Retirar o advertir avisos vencidos, incluso bajo la política local de contingencia\\
+RF05 & Consulta QR & Abrir vínculo institucional desde móvil; no encerrar información sólo en el edificio\\
+RF06 & Continuidad & Conservar paquete aprobado y recuperar consulta tras corte de red y reinicio\\
+RF07 & Supervisión & Registrar última comunicación, versión y errores; generar y asignar incidencia\\
+RF08 & Auditoría & Conservar autor, revisor, fecha y cambios; exportar registro autorizado\\
+RF09 & Integración condicionada & Validar esquema y permisos antes de consumir fuentes automáticas\\
+}
+Se priorizan RF01 a RF08. Las funciones de colaboración difundirán proyectos y contactos autorizados. RF09 se incorporará después de acreditar acceso e interoperabilidad con la fuente institucional.
+
+\subsection{Experiencia de consulta e interfaz}
+La consulta se organiza por oportunidades, eventos, trámites, información académica y proyectos de colaboración. Cada detalle mostrará fuente, fecha y vigencia; un código QR permitirá continuar la lectura en móvil. El inicio recuperará una vista simple tras inactividad y evitará formularios con datos personales en la terminal pública.
+\begin{center}
+\includegraphics[width=0.47\linewidth,height=12cm,keepaspectratio]{imagenes/concepto_terminal.png}\hfill
+\includegraphics[width=0.47\linewidth,height=12cm,keepaspectratio]{imagenes/concepto_interfaz.png}\par
+\captionof{figure}{Diseño conceptual del terminal y de la consulta por categorías}\label{fig:concepto}
+\end{center}
+Los bocetos orientan la organización visual. La versión funcional se adaptará a las categorías aprobadas, al reproductor y a las pruebas de legibilidad, navegación y accesibilidad.
+\begin{center}
+\includegraphics[height=14cm,keepaspectratio]{imagenes/visualizacion_ubicacion.png}\par
+\captionof{figure}{Visualización conceptual del emplazamiento propuesto}\label{fig:visualizacion}
+\end{center}
+\subsection{Datos, interfaces y trazabilidad}
+La gestión editorial mantendrá un modelo de información único para las terminales y la consulta móvil. La publicación separará el aviso de sus destinos, de modo que una corrección genere una nueva versión y se propague de forma controlada.
+
+\cuadro{tab:datos}{Modelo lógico de información del servicio}{@{}P{2.5cm}Y Y@{}}{\textbf{Entidad}&\textbf{Datos esenciales}&\textbf{Relación y control}}{
+Aviso y versión & Identificador, categoría, título, texto/medio, fuente, emisor y versión & Cada cambio conserva autor y fecha; publicación ligada a una versión\\*
+Publicación & Aviso/versión, destino, inicio, vencimiento y aprobación & Un aviso puede publicarse en varios destinos y franjas\\
+Terminal & Identificador, piso, cliente, versión aplicada y última comunicación & Destinos por terminal o grupo; estado técnico diferenciado de legibilidad\\
+Usuario y permiso & Cuenta, rol, destinos autorizados y estado & Publicación y administración separadas de consulta pública\\
+Incidencia & Síntoma, origen, prioridad, responsable y solución & Relacionada con terminal, versión o integración afectada\\
+Medición energética & Fecha, intervalo, kWh, origen y calidad del dato & Serie exportable; distingue FV, red, cargas y estimación de batería\\
+}
+Se documentarán formato de exportación, retención y restauración. Los paquetes de contenido identificarán versión y manifiesto de medios. La recepción comprobará integridad antes de activar una actualización; el cliente conservará una versión funcional de recuperación.
+
+\cuadro{tab:no_funcionales}{Condiciones no funcionales de diseño y prueba}{@{}P{2.6cm}Y@{}}{\textbf{Aspecto}&\textbf{Criterio de trabajo}}{
+Respuesta de consulta & Detalle local en hasta 3 s para 95\% de intentos del ensayo; medir con el paquete y equipo previstos\\*
+Capacidad inicial & 3 destinos físicos, 500 avisos de prueba y medios con tamaño y formato limitados por política\\
+Publicación & Versión aprobada disponible en hasta 5 min en terminal conectada durante el ensayo\\
+Disponibilidad & Objetivo inicial 98\% del horario de servicio, con interrupciones y mantenimiento registrados\\
+Recuperación & RPO de hasta 24 h para contenido respaldado y RTO de hasta 8 h de atención; restauración ensayada\\
+Seguridad y acceso & Administración autenticada, permisos por destino, tráfico protegido y salida del kiosco restringida\\
+Mantenibilidad & Inventario, configuración versionada, registros exportables, actualización probada y ruta de sustitución del cliente\\
+}
+Los objetivos se medirán durante el piloto. La aceptación inicial utilizará los casos de prueba; el seguimiento verificará su continuidad en el horario real de operación.
+
+\subsection{Requerimientos de software y selección de plataforma}
+Se compararán dos rutas sobre los mismos casos de uso: \textbf{configurar un CMS de señalización existente} y \textbf{desarrollar un CMS con cliente específico}. La primera puede reducir trabajo inicial; la segunda permite adaptar flujos, pero aumenta responsabilidad de mantenimiento y pruebas.
+
+Xibo ofrece funciones documentadas de usuarios, grupos, pantallas, programación y acciones táctiles \cite{xibousers,xibotouch,xibodisplays}. Permite evaluar un CMS configurable. La compatibilidad del reproductor, las licencias por plataforma y el alojamiento se comprobarán para el conjunto concreto; software abierto no significa implantación ni operación sin costo \cite{xibolic}.
+
+Un cliente web o PWA es otra opción; sus funciones de almacenamiento deben diseñarse y comprobarse. Microsoft documenta que el modo de señalización de Edge utiliza InPrivate \cite{edge}. Por ello, no se garantiza persistencia de contenidos después de reiniciar sólo por utilizar un navegador. El ensayo exigirá reinicio sin red; si la configuración no conserva los paquetes, se requerirá un reproductor con almacenamiento persistente o un paquete local controlado.
+
+\cuadro{tab:software}{Comparación de rutas de software}{@{}P{3.0cm}Y Y@{}}{\textbf{Criterio}&\textbf{CMS configurable}&\textbf{CMS y cliente propios}}{
+Publicación y destinos & Configurar funciones existentes y demostrar permisos & Implementar y probar flujo completo\\*
+Interacción & Validar acciones táctiles en reproductor real & Diseñar interfaz y navegación específicas\\
+Sin conexión & Probar medios descargados y caducidad; URL externa no queda copiada automáticamente & Diseñar caché persistente, versiones y recuperación\\
+Costo & Configuración, licencias aplicables, alojamiento y soporte & Análisis, desarrollo, pruebas, despliegue y mantenimiento\\
+Decisión & Preferible si satisface los casos sin extensiones costosas & Justificable si hay brechas funcionales relevantes y capacidad de soporte\\
+}
+Se recomienda demostrar primero la ruta configurable. El presupuesto reserva trabajo de adaptación; si los ensayos exigen desarrollo mayor, se revisará esfuerzo y alternativa antes de comprometer alcance.
+
+\subsection{Hardware y ubicación}
+\cuadro{tab:hardware}{Especificaciones funcionales del piloto}{@{}P{3.0cm}Y P{2.5cm}@{}}{\textbf{Componente}&\textbf{Características propuestas}&\textbf{Cantidad}}{
+Terminal completo & Interior, piso anclable, aproximadamente 55 pulgadas, vertical 4K, mínimo 10 contactos táctiles y acceso técnico protegido & 3 unidades\\*
+Visualización & Panel 4K vertical; brillo de referencia mínimo 400 nits en interior y legibilidad verificada; 450 a 500 nits preferibles con reflejos & En cada terminal\\
+Cómputo y sistema & Cliente Windows con 16 GB/256 GB como referencia, o Android con recursos demostrados; sistema licenciado y soporte documentado & Integrado o incluido\\
+Red & Cableado Cat 6 de cobre, switch administrable y gabinete; direccionamiento y segmentación acordados; Wi-Fi sólo si se valida & 7 enlaces y 1 gabinete\\
+Videovigilancia & Una cámara IP por terminal y grabador local con 30 días de conservación & 3 cámaras y 1 NVR\\
+CMS y respaldo & Alojamiento, copias separadas, cuentas de gestión y recuperación & 1 servicio central\\
+Alimentación & Circuito de cargas críticas, protecciones y puesta a tierra según diseño; FV y batería compatibles & 1 sistema integrado\\
+}
+El cuadro resume la función de cada componente. Los mínimos exigibles, sin marca ni modelo, se desarrollan como especificaciones ET-01 a ET-10 en la sección \ref{sec:especificaciones}. La opción de mercado usada para valorizar cada uno se elige en la sección \ref{sec:seleccion}. El suministro identificará CPU exacta, edición y licencia del sistema, potencia máxima, garantía e instalación.
+
+Se adopta una cota de diseño de 200 W por terminal completo. Las ofertas comparadas publican 95 W sin condición de medición, y la ficha de una ruta Android de 55 pulgadas declara 108 W típicos y 155 W máximos \cite{prodimer,hikvision}. Una oferta con mayor consumo obligará a recalcular el sistema energético. El horario del servicio es de 12 horas al día. La aprobación de un cliente Android incluirá instalación del reproductor, persistencia, legibilidad y soporte de actualizaciones.
+
+La distribución por piso y la propuesta de interfaz se desarrollan en las secciones siguientes. El diseño de instalación incluirá circulación, alcance de uso, anclajes y condiciones de mantenimiento.
+
+\subsection{Emplazamiento y distribución del piloto}
+Se plantea un terminal por piso. El levantamiento contrastará las posiciones de los planos con tránsito, visibilidad, reflejos, aproximación, circulación y acceso de mantenimiento. La definición final incorporará los recorridos de red y del circuito protegido.
+
+\subsubsection{Primer piso}
+\begin{center}
+\includegraphics[width=\linewidth,height=12.2cm,keepaspectratio]{imagenes/planta_piso_1.png}\par
+\vspace{0.15cm}
+\includegraphics[width=\linewidth,height=5.0cm,keepaspectratio]{imagenes/detalle_piso_1.png}\par
+\captionof{figure}{Planta y detalle de ubicación propuesta en el primer piso}\label{fig:piso1}
+\end{center}
+\clearpage
+\subsubsection{Segundo piso}
+\begin{center}
+\includegraphics[width=\linewidth,height=13cm,keepaspectratio]{imagenes/planta_piso_2.png}\par
+\vspace{0.25cm}
+\includegraphics[width=\linewidth,height=5.5cm,keepaspectratio]{imagenes/detalle_piso_2.png}\par
+\captionof{figure}{Planta y detalle de ubicación propuesta en el segundo piso}\label{fig:piso2}
+\end{center}
+\clearpage
+\subsubsection{Tercer piso}
+\begin{center}
+\includegraphics[width=\linewidth,height=13cm,keepaspectratio]{imagenes/planta_piso_3.png}\par
+\vspace{0.25cm}
+\includegraphics[width=\linewidth,height=5.5cm,keepaspectratio]{imagenes/detalle_piso_3.png}\par
+\captionof{figure}{Planta y detalle de ubicación propuesta en el tercer piso}\label{fig:piso3}
+\end{center}
+\clearpage
+
+\subsection{Seguridad, accesibilidad y continuidad}
+\begin{itemize}
+\item Cuentas individuales para administración; permisos por función y destino; consulta pública sin acceso al escritorio ni a la edición.
+\item Conexión protegida, actualizaciones controladas, dominios autorizados y credenciales fuera de la interfaz pública.
+\item Botones legibles, contraste, retorno al inicio por inactividad y alternativa mediante QR; altura y aproximación verificadas en la ubicación.
+\item Audio desactivado por defecto o limitado según condiciones del espacio. No depender sólo de audio o color para comunicar información.
+\item Copia diaria inicial de CMS, medios y configuración; ensayo de restauración. Objetivos de trabajo: pérdida de datos recuperables hasta 24 h y recuperación en 8 h de atención, por acordar con TI.
+\item Durante desconexión, mostrar última sincronización y consultar sólo contenido local permitido por su vigencia. Las alertas urgentes no se presentarán como actuales sin confirmación.
+\end{itemize}
+La última comunicación del cliente no demuestra por sí sola que la pantalla esté encendida o sea legible. Se combinará supervisión técnica con comprobación visual y reporte de usuarios.
+
+\input{10_comparacion_energia.tex}
+\subsection{Sistema de alimentación fotovoltaica}
+La topología propuesta suministrará un circuito de cargas críticas mediante generación FV, banco de batería e inversor/cargador con respaldo de red y aislamiento apropiado. Se propone operación sin exportación programada, con medidor compatible, CT y consignas verificadas. El diseño definirá la conexión de red, el circuito de respaldo, la transferencia, el tratamiento de neutro y tierra y las protecciones de interconexión. El control de exportación limita flujos mediante medición; el aislamiento y la prevención de realimentación se comprobarán mediante el esquema eléctrico y sus pruebas.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,node distance=9mm,every node/.style={font=\small,align=center},box/.style={draw,text width=4.0cm,minimum height=1.0cm,inner sep=5pt}]
+\node[box] (pv) {Módulos FV\\Seccionamiento y protección DC};
+\node[box,right=17mm of pv] (inv) {Inversor/cargador\\MPPT y gestión de energía};
+\node[box,below=of pv] (bat) {Batería con BMS\\Protección y maniobra DC};
+\node[box,below=of inv] (red) {Red de respaldo\\Transferencia y aislamiento};
+\node[box,below=18mm of bat,text width=10cm] (load) {Circuito protegido de cargas críticas\\Tres terminales, switch, NVR y cámaras};
+\draw[->](pv)--(inv);\draw[<->](bat.east)--(inv.south west);
+\draw[->](red)--(inv);\draw[->](inv.east)--++(8mm,0)|-(load.east);
+\end{tikzpicture}
+\captionof{figure}{Esquema funcional de alimentación; unifilar por desarrollar}
+\label{fig:energia}
+\end{center}
+La solución central de respaldo se comprobará con las fuentes de alimentación de los terminales y el tiempo de transferencia. Cualquier UPS local adicional tendrá una función específica y se incorporará al presupuesto después del ensayo.
+
+\subsection{Recurso solar de referencia}
+Se consultó NASA POWER para el punto regional aproximado $13,52^\circ$ S y $71,96^\circ$ O, utilizando las medias mensuales de 2021 a 2025 \cite{nasa}. La irradiación horizontal media anual del conjunto es 4,83 kWh/m$^2$/día; los promedios mensuales de los cinco años varían de 4,48 a 5,27. La menor media mensual individual de la serie es 4,10. Se adopta 4 HSP para el escenario de diseño y 3 HSP para sensibilidad.
+\begin{center}
+\includegraphics[width=\linewidth]{imagenes/recurso_solar_nasa.png}\par
+\captionof{figure}{Recurso solar regional de referencia, NASA POWER 2021 a 2025}\label{fig:recurso}
+\end{center}
+La serie es un producto regional, no una medición de cubierta. La ingeniería incorporará coordenadas y cota del sitio, orientación, inclinación, sombras e irradiación sobre el plano de módulos. La aproximación horizontal se utiliza para el balance de formulación; las medias mensuales no describen cada día de nubosidad.
+\subsection{Balance energético de formulación}
+El cuadro \ref{tab:energia} fija supuestos de cálculo. La potencia del terminal completo deberá reemplazarse por ficha o medición con el brillo, cliente y periféricos reales.
+
+\cuadro{tab:energia}{Supuestos y resultados del escenario energético}{@{}Y P{4.5cm}@{}}{\textbf{Variable}&\textbf{Valor de formulación}}{
+Terminales y consumo completo supuesto & 3 unidades de 200 W cada una\\*
+Horario activo; apagado fuera de servicio & 12 h/día; 0 W restante supuesto\\
+Comunicaciones y videovigilancia & 40 W, 24 h/día; desglose en el cuadro \ref{tab:cargas}\\
+Potencia simultánea & $3(200)+40=640$ W\\
+Energía diaria de cargas & $3(0,200)(12)+0,040(24)=8,16$ kWh/día\\
+Energía para 4 horas de corte & $0,640(4)=2,56$ kWh AC\\
+Generación propuesta para estudiar & $6(615)=3\,690$ Wp, es decir 3,69 kWp\\
+Recurso y factor global supuestos & 4 HSP/día; factor 0,75\\
+Producción ilustrativa & $3,69(4)(0,75)=11,07$ kWh/día\\
+Sensibilidad con 3 HSP & 8,3025 kWh/día, antes de revisar auxiliares\\
+}
+HSP significa horas solares pico equivalentes. Los 4 HSP son una referencia conservadora respecto de las medias mensuales regionales; el factor 0,75 es un supuesto global de conversión. El diseño incorporará el plano de captación, las sombras y el periodo crítico. No se computa ganancia bifacial sin geometría y albedo comprobados, ni se añaden dos veces pérdidas ya incluidas en el factor.
+
+El mínimo aritmético con margen de 20\% sería:
+\[
+N_{\mathrm{FV}}=\left\lceil\frac{1,20(8,16)}{0,615(4)(0,75)}\right\rceil=6.
+\]
+Si se incorpora como sensibilidad un consumo propio adicional de 15 W del inversor durante 24 h, la carga equivalente aumenta a 8,52 kWh/día. Ese consumo es también supuesto; se reemplazará por dato del equipo y se delimitarán las pérdidas. Con 3 HSP, los 8,3025 kWh/día no cubrirían dicho escenario: se demuestra la dependencia del recurso y del horario.
+
+Para una batería nominal de 4,8 kWh, una profundidad de descarga de diseño de 80\%, capacidad remanente de 80\% y rendimiento batería a salida AC de 90\% permiten comprobar:
+\[
+E_{\mathrm{AC,diseño}}=4,8(0,80)(0,80)(0,90)=2,7648\ \mathrm{kWh}.
+\]
+El resultado supera 2,56 kWh con una holgura limitada; se deben descontar auxiliares y efectos de temperatura. No equivale a una garantía de cuatro horas. La capacidad de energía se relacionará con la tensión y los Ah de la referencia exacta.
+
+\subsection{Condiciones del emplazamiento y del montaje}
+La ingeniería contrastará cubierta, sombras, acceso, carga, anclajes e impermeabilización. La superficie geométrica de los seis módulos de referencia es 16,21 m$^2$ y su masa es 194,4 kg; el diseño añadirá estructura, separaciones y condiciones de trabajo seguro.
+
+Se definirán estructura y tornillería, inclinación y orientación, conductores por corriente y recorrido, conectores compatibles y canalizaciones. El suministro incluirá seccionamiento, protección próxima a batería, sobrecorriente, sobretensiones, protección diferencial indicada, tierra, equipotencialidad y señalización según el diseño.
+
+La instalación entregará unifilar, ajustes, metrado, registros de pruebas, manual y responsable de mantenimiento. Los siete enlaces de red y los recorridos del circuito crítico se conciliarán con las plantas y la accesibilidad del terminal; su metrado de partida figura en la sección \ref{sec:especificaciones}.
+
+\subsection{Escalabilidad y flexibilidad}
+El CMS identificará terminal, grupo y versión del paquete para permitir ampliaciones sin mezclar contenidos. Antes de aumentar unidades se probarán carga de publicación, almacenamiento, ancho de banda y soporte. El costo de expansión incluirá levantamiento por edificio, nuevos circuitos y capacidad editorial; no se obtiene multiplicando únicamente el precio de una pantalla.
+
+La autorización de una segunda etapa considerará utilidad demostrada, contenidos vigentes, continuidad de las tres terminales, costo de operación y responsables. No se promete cobertura de toda la UNSAAC con la infraestructura del piloto.

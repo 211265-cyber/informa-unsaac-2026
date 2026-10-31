@@ -1,0 +1,82 @@
+\section{Selección de referencias de mercado}\label{sec:seleccion}
+\subsection{Método de comparación y elección}
+Cada cuadro de esta sección compara opciones publicadas en Perú contra la especificación ET correspondiente. La ficha del fabricante respalda las características y la página del proveedor respalda precio, IGV y stock. Se marca \textbf{C} cuando la característica cumple y está documentada, \textbf{P} cuando falta acreditarla y \textbf{N} cuando no cumple.
+
+La regla de elección es la misma en todos los casos: entre las opciones sin N, se elige la de menor costo total; ante costos cercanos, prevalece la que tiene más características documentadas. La opción elegida sólo fija el valor referencial del presupuesto. El requerimiento sigue siendo genérico y cualquier equivalente que cumpla puede ofertar. Los precios se consultaron el 30 de octubre de 2026, incluyen IGV salvo indicación y el anexo C registra la procedencia de cada dato.
+
+Los proveedores de energía y de red son AutoSolar Perú, que publica precios con IGV incluido, y ARTEUS S.A.C., RUC 20608279637, cuyos términos indican que los precios incluyen IGV \cite{arteus}. Panacompu Perú se usó sólo como contraste, porque su página indica que no acepta pedidos en Perú durante el traslado de su almacén \cite{panacompu}.
+
+\subsection{Inversor híbrido, ET-05}
+\begin{table}[htbp]\formatofichas
+\caption{Inversores híbridos analizados como opción frente a ET-05}\label{tab:comp_inversor}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.25cm}YYYYY@{}}
+\toprule
+\textbf{Característica} & \textbf{Tensite AH4M-2} & \textbf{Solis S6-EH1P3K-L} & \textbf{Suntaic STH6M-2/GEN} & \textbf{Livoltek Hyper-5000} & \textbf{Growatt SPH3000}\\\midrule
+Potencia nominal & 4\,000 W & 3\,000 W & 6\,000 W & 5\,000 W & 3\,000 W\\
+MPPT y corriente por MPPT & 2; 16 A & 2; 16 A & 2; 15 A & 2; 14 A & 2; 12 A\\
+Cortocircuito por MPPT & 20 A & 24 A & 18 A & 17,5 A & No publicado\\
+Tensión FV máxima; rango MPPT & 550 V; 40 a 530 V & 600 V; 90 a 520 V & 550 V; 90 a 500 V & 600 V; 125 a 550 V & 550 V; 150 a 550 V\\
+Batería; corriente & 48 V, 40 a 60 V; 100 A & 42 a 58 V; 62,5 A & 42 a 59 V; 100 A & 40 a 60 V; 100 A & 42 a 59 V; 66 A\\
+Respaldo & 5\,000 VA; 10 ms & 3\,000 W & 6\,000 VA & 5\,000 W & 3\,000 W\\
+Eficiencia; IP & 97,6\%; IP66 & Por verificar & 98\%; IP65 & 97,8\%; IP65 & Cerca de 98\%; IP65\\
+Altitud de operación & 4\,000 m; reducción sobre 3\,000 m & Por verificar & 3\,000 m & No publicada & Por verificar\\
+Garantía & 10 años de producto & Por verificar & No publicada & No publicada & 5 años, ampliable a 10\\
+Precio con IGV & S/ 6\,537,03; sin IGV S/ 5\,539,86 & Sin precio publicado en Perú & S/ 4\,077,77 con 15\% de descuento & S/ 2\,960,94 & S/ 8\,368,82\\\midrule
+Corriente frente a 15,15 A & \textbf{C} & \textbf{C} & \textbf{N}: limita la cadena & \textbf{N}: limita la cadena & \textbf{N}: limita la cadena\\
+Altitud frente a 3\,400 m & \textbf{C} & \textbf{P} & \textbf{N} & \textbf{P} & \textbf{P}\\
+\textbf{Resultado} & \textbf{Elegida} & Sin precio verificable & No cumple ET-05 & No cumple ET-05 & No cumple ET-05\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de AutoSolar Perú y fichas técnicas enlazadas en ellas, consultadas el 30 de octubre de 2026 \cite{tensiteinv,suntaicinv,livoltek,growattsph}; Solis según su manual y ficha global \cite{solismanual2025,solisglobal2024}. La corriente de 15,15 A es la Imp STC del módulo elegido.}
+\end{table}
+El cuadro \ref{tab:comp_inversor} muestra que el precio más bajo no define la elección. Los modelos de 5 y 6 kW cuestan menos que el elegido, pero admiten 14 y 15 A por seguidor: con módulos de 15,15 A recortarían la producción en cada hora de sol. El modelo de 6 kW declara además 3\,000 m de altitud, por debajo de la cota de Cusco. El de 3 kW admite sólo 12 A y es el más caro. La referencia del informe anterior cumple la corriente, pero no tiene precio publicado en Perú ni altitud verificada. \textbf{Se elige el inversor de 4 kW} por cumplir corriente, altitud y batería de 48 V con ficha completa, stock y diez años de garantía.
+
+\subsection{Batería, ET-07}
+\cuadro{tab:comp_bateria}{Baterías LFP de 48 V analizadas como opción frente a ET-07}{@{}P{2.4cm}YYYY@{}}{\textbf{Característica}&\textbf{Tensite TS-L5000/LV}&\textbf{Pylontech US5000}&\textbf{Suntaic ST-L5000/LV}&\textbf{Felicity LPBF48100}}{
+Energía total y útil & 4,8 kWh; 4,3 kWh & 4,8 kWh; profundidad 95\% & 5,22 kWh; 4,7 kWh & 5 kWh útiles\\*
+Ciclos & Más de 6\,000 al 80\% & Más de 6\,000 al 95\% & No publicado & 6\,000 o más\\
+Corriente & 60 A nominal; 100 A continuos & No publicado & 50 A nominal; 100 A máx. & No publicado\\
+Temperatura de carga & 0 a 50\,°C & 0 a 50\,°C según manual & No publicado & No publicado\\
+Comunicación & CAN y RS485 & CAN y RS485 & CAN y RS485 & CAN y RS485\\
+Garantía & 5 años & 10 años & No publicado & No publicado\\
+Compatibilidad con el inversor elegido & Mismo fabricante & Por acreditar & Por acreditar & Por acreditar\\
+Precio con IGV & S/ 4\,178,47 & S/ 7\,493,00 en Sunperu; sin precio en AutoSolar & S/ 3\,535,17 con 28\% de descuento & S/ 3\,266,66\\\midrule
+\textbf{Resultado} & \textbf{Elegida} & Mayor costo; compatibilidad P & Ficha incompleta; compatibilidad P & Sin ficha enlazada; IP21\\
+}
+Las dos baterías más baratas no publican ciclos o garantía y su compatibilidad con el inversor elegido no está documentada \cite{suntaicbat,felicity}. La de mayor garantía cuesta S/ 3\,314,53 más y tampoco acredita compatibilidad con ese inversor \cite{sunperuus5000,pylonas,us5000manual}. \textbf{Se elige la batería del mismo fabricante del inversor}, con ficha completa, temperatura, ciclos y certificaciones \cite{tensitebat}. Si una oferta acredita la compatibilidad de una batería más barata con ficha completa, se aceptará como equivalente y el ahorro reducirá la contingencia.
+
+\subsection{Red, videovigilancia y almacenamiento, ET-03 y ET-04}
+\cuadro{tab:comp_red}{Opciones de red y videovigilancia y opción elegida}{@{}P{2.2cm}Y P{2.6cm}Y@{}}{\textbf{Componente}&\textbf{Opciones comparadas, precio con IGV}&\textbf{Elegida}&\textbf{Razón}}{
+Cámara IP de 4 MP & Dahua HDW1431T1P-S6, S/ 219; Dahua HDBW1431EN-S4, S/ 231; Dahua HDW2449T-S-IL, S/ 291 & HDW1431T1P-S6, S/ 219 & Menor precio con ficha completa: 2\,560 $\times$ 1\,440, 2,8 mm, H.265+, IR de 30 m, IP67, PoE 802.3af y 4,3 W; la tercera publica 1080p pese a su título\\*
+NVR de 4 canales PoE & Dahua NVR1104HS-P-S3/H, S/ 292; TP-Link VIGI NVR1004H-4P, S/ 280; Dahua NVR2104HS-P-4KS3, S/ 335; Hilook NVR-104H-D/4P, S/ 227 & NVR1104HS-P-S3/H, S/ 292 & 4 puertos PoE, 80 Mbps y disco de hasta 8 TB; misma marca de las cámaras, sin depender de ONVIF; S/ 12 sobre la opción de menor precio con datos equivalentes\\
+Switch de 8 puertos & D-Link DGS-1100-08P, S/ 327; Dahua S4210-8GT-110, S/ 517; Hikvision DS-3E1510P-SI, S/ 543; TP-Link SG2210MP, S/ 822 & S4210-8GT-110, S/ 517 & Menor precio entre los que documentan VLAN y gestión SNMP, con dos puertos de enlace; el de S/ 327 no publica 802.1Q y se aceptará si lo acredita\\
+Cable Cat 6 de 305 m & CCA de 24 AWG, S/ 147; cobre de 24 AWG LSZH, S/ 666; cobre LSZH-1, S/ 667; LSZH sin conductor declarado, S/ 535 & Cobre de 24 AWG LSZH, S/ 666 & El CCA no es cobre y no cumple ET-03; entre los de cobre declarado, el de menor precio\\
+Disco de 2 TB & Seagate SkyHawk ST2000VX017, S/ 699, disponible; WD22PURZ, S/ 271, agotado; WD23PURZ, S/ 313,16 en Panacompu, sin pedidos en Perú & SkyHawk, S/ 699 & Único disco de videovigilancia de 2 TB con stock verificable; si se repone una opción más barata se aceptará como equivalente\\*
+}
+Las fuentes de los precios y modelos del cuadro \ref{tab:comp_red} son \cite{arteuscctv,arteusred,panacompu}. En cámaras, NVR, switch y disco, la elección no es la opción más barata en todos los casos. Lo es entre las que documentan los mínimos de la especificación, como pide la regla de elección.
+
+\subsection{Alojamiento de la plataforma, ET-02}
+\cuadro{tab:comp_hosting}{Opciones de alojamiento de la plataforma central}{@{}P{3.0cm}P{3.4cm}P{3.0cm}Y@{}}{\textbf{Opción}&\textbf{Recursos}&\textbf{Precio publicado}&\textbf{Observación}}{
+Máquina virtual institucional & Según capacidad de TI & Sin compra & Preferente si TI la asigna con copias y soporte\\*
+Hostinger KVM 2 & 2 vCPU, 8 GB, 100 GB NVMe & USD 8,79/mes por 24 meses; renueva a USD 14,99/mes & Cumple ET-02; precio de renovación conocido\\
+Contabo Cloud VPS 4 & 4 vCPU, 8 GB, 100 GB SSD & EUR 4,40/mes por 24 meses & Cumple ET-02; requiere contrato de 24 meses y conversión desde euros\\
+DigitalOcean Basic & 4 vCPU, 8 GiB, 160 GiB SSD & USD 48,00/mes & Cumple, con costo muy superior\\
+Xibo Cloud Professional & CMS alojado por el fabricante & USD 4,90 por pantalla-mes & Sustituye el servidor, pero no el soporte local \cite{xibolic}\\
+}
+\textbf{Se elige la máquina virtual institucional} si TI la confirma. El presupuesto valoriza un servidor privado virtual equivalente con el precio de renovación de la opción KVM 2: USD 14,99 por 12 meses dan USD 179,88, es decir S/ 621,85 al tipo de cambio de 3,457 \cite{vps,bcrp}. La partida anual de S/ 720 cubre ese importe y S/ 98,15 para la copia externa. Se usa el precio de renovación y no el promocional, para no subestimar el costo del horizonte.
+
+\subsection{Resumen de opciones elegidas}
+\cuadro{tab:elegidas}{Opciones elegidas para valorizar el requerimiento}{@{}P{3.2cm}P{1.2cm}Y r P{1.4cm}@{}}{\textbf{Componente}&\textbf{ET}&\textbf{Opción elegida}&\textbf{Unitario S/}&\textbf{Cuadro}}{
+Terminal interactivo & ET-01 & Prodimer TIPI7-55, i7 13.\textsuperscript{a} gen., 16 GB, 256 GB & 9\,499,99 & \ref{tab:fichas-totems}\\*
+Plataforma central & ET-02 & Máquina virtual institucional o VPS equivalente & 720,00/año & \ref{tab:comp_hosting}\\
+Cable de red & ET-03 & Cat 6 de cobre de 24 AWG LSZH, 305 m & 666,00 & \ref{tab:comp_red}\\
+Switch & ET-03 & Dahua S4210-8GT-110 & 517,00 & \ref{tab:comp_red}\\
+Cámara & ET-04 & Dahua IPC-HDW1431T1P-S6 & 219,00 & \ref{tab:comp_red}\\
+NVR y disco & ET-04 & Dahua NVR1104HS-P-S3/H y SkyHawk de 2 TB & 991,00 & \ref{tab:comp_red}\\
+Inversor híbrido & ET-05 & Tensite AH4M-2, 4 kW & 6\,537,03 & \ref{tab:comp_inversor}\\
+Módulo FV & ET-06 & Jinko Tiger Neo de 615 Wp & 405,35 & \ref{tab:modulos_comparados}\\
+Batería & ET-07 & Tensite TS-L5000/LV, 4,8 kWh & 4\,178,47 & \ref{tab:comp_bateria}\\
+Estructura & ET-08 & Estructura inclinada de 15° para 3 módulos & 459,61 & \ref{tab:precios_energia}\\
+Medición & ET-10 & Medidor SDM230 Modbus y módulo de monitoreo & 650,25 & \ref{tab:precios_energia}\\
+}
+Las marcas del cuadro \ref{tab:elegidas} no forman parte del requerimiento. La entidad las usará sólo para fijar el valor referencial y comprobar que el mercado ofrece bienes que cumplen.

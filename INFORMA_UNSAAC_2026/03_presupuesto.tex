@@ -1,0 +1,216 @@
+\section{Evaluación económica y selección de alternativa}
+\subsection{Base de estimación}
+El análisis utiliza soles constantes de 2026 y un horizonte de cinco años. Se separan tres tipos de importe: precios publicados por proveedores identificados, estimaciones propias con base explícita y reservas condicionadas. La inversión comprende equipamiento, materiales, integración, instalación, pruebas y transferencia; la operación comprende soporte, alojamiento, mantenimiento, edición y energía.
+
+Cada partida se valoriza con la opción elegida en la sección \ref{sec:seleccion} y se identifica por su especificación ET, no por la marca. Los precios se consultaron el 30 de octubre de 2026. Incluyen IGV, salvo el de los terminales, cuya página no lo declara y para el cual se mantiene una reserva tributaria. La configuración de compra se cerrará con la oferta técnica y económica del conjunto.
+
+\subsection{Equipamiento con precio publicado}
+\cuadro{tab:precios_energia}{Terminales y subsistema energético con precio publicado}{@{}Y r r r@{}}{\textbf{Partida}&\textbf{Cant.}&\textbf{Unitario S/}&\textbf{Parcial S/}}{
+Tótem interactivo de 55 pulgadas, ET-01 & 3 & 9\,499,99 & 28\,499,97\\*\midrule
+Módulo FV de 615 Wp, ET-06 & 6 & 405,35 & 2\,432,10\\
+Inversor híbrido de 4 kW, ET-05 & 1 & 6\,537,03 & 6\,537,03\\
+Batería LFP de 48 V y 4,8 kWh, ET-07 & 1 & 4\,178,47 & 4\,178,47\\
+Medidor bidireccional Modbus, ET-10 & 1 & 502,41 & 502,41\\
+Módulo de monitoreo del inversor, ET-10 & 1 & 147,84 & 147,84\\
+Estructura inclinada para 3 módulos, ET-08 & 2 & 459,61 & 919,22\\
+Cable solar de 6 mm², rollo de 15 m & 4 & 101,42 & 405,68\\
+Conector MC4 macho-hembra & 4 & 10,70 & 42,80\\
+Interruptor DC de 25 A y 1\,500 V & 1 & 94,21 & 94,21\\
+Protector de sobretensiones DC de 600 V & 1 & 173,07 & 173,07\\
+Cable de batería de 35 mm² & 2 & 27,23 & 54,46\\
+Fusible ANL de 150 A & 1 & 39,39 & 39,39\\
+Termomagnético 2P de 32 A & 2 & 53,52 & 107,04\\
+Termomagnético 2P de 16 A & 2 & 40,46 & 80,92\\
+Diferencial 2P de 25 A y 30 mA, tipo A & 2 & 179,27 & 358,54\\
+Protector de sobretensiones AC de 275 V & 1 & 155,94 & 155,94\\
+Tablero adosable de 18 polos & 1 & 104,89 & 104,89\\
+Barra de cobre de 5/8 pulg. $\times$ 2,4 m & 1 & 298,17 & 298,17\\
+Conector de bronce de 5/8 pulg. & 2 & 6,35 & 12,70\\
+Cemento conductivo, bolsa de 25 kg & 2 & 170,91 & 341,82\\
+Cable NH-90 libre de halógenos de 2,5 mm², rollo & 3 & 240,72 & 722,16\\
+Tubo PVC SAP de 3/4 pulg. $\times$ 3 m & 15 & 11,17 & 167,55\\
+Tomacorriente 2P+T de 16 A con placa & 4 & 39,35 & 157,40\\\midrule
+\textbf{Subtotal del subsistema energético} & & & \textbf{18\,033,81}\\
+}
+\source{Terminal: precio por transferencia, IGV no indicado \cite{prodimer}. Energía: AutoSolar Perú, IGV incluido \cite{preciojinko,tensiteinv,tensitebat,autosolarfv,autosolarac,autosolarmed}. Cable, tubería y tomacorrientes: Promelsa, IGV no declarado en la página \cite{promelsa}.}
+
+\cuadro{tab:precios_red}{Red local y videovigilancia con precio publicado}{@{}Y r r r@{}}{\textbf{Partida}&\textbf{Cant.}&\textbf{Unitario S/}&\textbf{Parcial S/}}{
+Cable Cat 6 de cobre LSZH, caja de 305 m, ET-03 & 1 & 666,00 & 666,00\\*
+Jack keystone Cat 6, dos por enlace y dos de reserva & 16 & 13,00 & 208,00\\
+Patch panel modular de 24 puertos & 1 & 63,00 & 63,00\\
+Faceplate de 1 puerto & 7 & 3,00 & 21,00\\
+Caja adosable 2 $\times$ 4 & 7 & 7,00 & 49,00\\
+Patch cord Cat 6 de 1 m, lado del gabinete & 7 & 19,00 & 133,00\\
+Patch cord Cat 6 de 3 m, lado del equipo & 7 & 13,00 & 91,00\\
+Canaleta de 20 $\times$ 12 mm adhesiva, tramo de 2 m & 53 & 13,00 & 689,00\\
+Gabinete de pared de 9 RU con bandeja & 1 & 172,00 & 172,00\\
+Organizador horizontal de 1 RU & 1 & 17,00 & 17,00\\
+Regleta de 8 tomas para gabinete & 1 & 100,00 & 100,00\\
+Switch Gigabit administrable de 8 puertos, ET-03 & 1 & 517,00 & 517,00\\
+Grabador NVR de 4 canales PoE, ET-04 & 1 & 292,00 & 292,00\\
+Disco de videovigilancia de 2 TB, ET-04 & 1 & 699,00 & 699,00\\
+Cámara IP de 4 MP, ET-04 & 3 & 219,00 & 657,00\\\midrule
+\textbf{Subtotal de red y videovigilancia} & & & \textbf{4\,374,00}\\
+}
+\source{ARTEUS S.A.C., RUC 20608279637, precios con IGV incluido \cite{arteus,arteusred,arteuscctv}. Cantidades según el metrado del cuadro \ref{tab:metrado_red}.}
+
+Se conserva una reserva tributaria condicionada de S/ 5\,318,47 para las partidas cuya página no declara el IGV: 18\% de S/ 28\,499,97 de los terminales, es decir S/ 5\,129,99, y 18\% de S/ 1\,047,11 de cable, tubería y tomacorrientes, es decir S/ 188,48 \cite{igv}. Las demás partidas declaran IGV incluido, por lo que no se agrega de nuevo. Las ofertas cerrarán el tratamiento tributario, el transporte y el suministro.
+
+\subsection{Estimaciones propias y servicios}
+Las partidas del cuadro \ref{tab:estimaciones} no tienen precio publicado para el modelo exacto o dependen del metrado. Son estimaciones propias de planificación y se reemplazarán por cotizaciones.
+
+\cuadro{tab:estimaciones}{Estimaciones propias de materiales, logística y servicios}{@{}Y P{4.6cm}r@{}}{\textbf{Concepto}&\textbf{Base de estimación}&\textbf{S/}}{
+Reserva de licencia de sistema & 3 $\times$ 350 si se requiere adecuación & 1\,050,00\\*
+Logística de terminales & 3 $\times$ 400 & 1\,200,00\\
+Flete de equipos de energía y red a Cusco & 1 envío consolidado & 300,00\\
+Anclajes y fijación de la estructura FV & Pernos, tacos y sellos por metrado & 300,00\\
+Soporte y señalización del banco & 1 conjunto & 250,00\\
+Portafusible ANL y terminales de batería & 1 conjunto & 80,00\\
+Materiales AC menores & 10 m de 6 mm², 15 m de conductor de protección de 10 mm², cajas, curvas, uniones y rotulación & 250,00\\
+Señalética de videovigilancia & 3 $\times$ 15 & 45,00\\\midrule
+\textbf{Subtotal de provisiones} & & \textbf{3\,475,00}\\
+Ingeniería y levantamiento & 40 HP $\times$ 80 & 3\,200,00\\
+Instalación eléctrica, FV, red y videovigilancia & 96 HP $\times$ 65 & 6\,240,00\\
+Configuración y adaptación del CMS & 100 HP $\times$ 60 & 6\,000,00\\
+Interfaz y contenido inicial & 60 HP $\times$ 50 & 3\,000,00\\
+Pruebas y puesta en servicio & 48 HP $\times$ 60 & 2\,880,00\\
+Documentación y formación & 24 HP $\times$ 50 & 1\,200,00\\
+Coordinación y control & 40 HP $\times$ 70 & 2\,800,00\\\midrule
+\textbf{Subtotal de servicios, 408 HP} & & \textbf{25\,320,00}\\
+}
+HP significa horas-persona. La instalación incluye 16 HP para el tendido de los siete enlaces de red, el gabinete y las tres cámaras. La reserva de licencia cubre una eventual adecuación de edición o licencia para el kiosco y se retirará si la oferta ya la incluye. El escenario base configura un CMS autoalojado con reproductor Windows; sus licencias no generan cargo de compra, mientras la implantación, el alojamiento y el soporte sí están presupuestados \cite{xibolic}.
+
+\cuadro{tab:presupuesto}{Inversión de la alternativa integral A2}{@{}Y r@{}}{\textbf{Componente}&\textbf{S/}}{
+Terminales con precio publicado & 28\,499,97\\*
+Subsistema energético con precio publicado & 18\,033,81\\
+Red y videovigilancia con precio publicado & 4\,374,00\\
+Reserva tributaria condicionada: terminales y materiales AC & 5\,318,47\\
+Provisiones de logística, materiales y licencias & 3\,475,00\\
+Servicios de implementación, 408 HP & 25\,320,00\\\midrule
+\textbf{Base de planificación} & \textbf{85\,021,25}\\
+Contingencia: 10\% de la base & 8\,502,13\\\midrule
+\textbf{Inversión con reservas} & \textbf{93\,523,38}\\
+}
+El 60\% de la base procede de precios publicados y el 40\% de estimaciones y reservas. La contingencia atiende variaciones dentro del alcance; los cambios de configuración se evaluarán mediante un nuevo presupuesto. La reserva tributaria y la de sistema se conciliarán con las ofertas para evitar cargos duplicados.
+
+\subsection{Alternativas con alcance comparable}
+A1 mantiene tres terminales, el servicio TI, la red, la videovigilancia y cuatro horas objetivo de respaldo. Para aislar el efecto económico FV utiliza el mismo inversor y la misma batería de A2, preparados para una incorporación posterior de módulos. Una oferta con UPS distinta se evaluará por autonomía, transferencia, capacidad y costo equivalente.
+
+\cuadro{tab:incremental}{Costo adicional de generación FV sobre A1}{@{}Y r@{}}{\textbf{Componente incremental de A2}&\textbf{S/}}{
+Seis módulos FV & 2\,432,10\\*
+Estructura y anclajes & 1\,219,22\\
+Materiales DC: cable solar, conectores, interruptor y protector & 715,76\\
+Medidor bidireccional para exportación cero & 502,41\\
+Ingeniería FV: 16 HP $\times$ 80 & 1\,280,00\\
+Instalación FV: 28 HP $\times$ 65 & 1\,820,00\\
+Pruebas FV: 8 HP $\times$ 60 & 480,00\\
+Documentación adicional: 4 HP $\times$ 50 & 200,00\\
+Coordinación adicional: 8 HP $\times$ 70 & 560,00\\\midrule
+\textbf{Incremento antes de contingencia} & \textbf{9\,209,49}\\
+\textbf{Incremento con contingencia del 10\%} & \textbf{10\,130,44}\\
+}
+La batería, el inversor, el monitoreo, el tablero, la puesta a tierra, la red y la videovigilancia son comunes a A1 y A2. Se asigna cada componente una sola vez; las diferencias de ingeniería e instalación conservan las 408 HP totales de A2.
+
+A0 configura una página central y un proceso editorial con canales y dispositivos existentes. Su base es S/ 8\,360,00: 10 HP de análisis a 80; 40 HP de configuración a 60; 40 HP de interfaz a 50; 24 HP de prueba a 60; 12 HP de documentación a 50 y 16 HP de coordinación a 70. Se añade 10\% de contingencia. Esta opción permite comprobar la necesidad antes de invertir en terminales.
+
+\cuadro{tab:capex_alt}{Comparación de inversión por alternativa}{@{}P{1cm}Y r r@{}}{\textbf{Alt.}&\textbf{Resultado cubierto}&\textbf{Base S/}&\textbf{Con reservas S/}}{
+A0 & Canales ordenados y página central, sin nuevos terminales & 8\,360,00 & 9\,196,00\\*
+A1 & CMS, tres terminales, red, videovigilancia y respaldo preparado para FV & 75\,811,76 & 83\,392,94\\
+A2 & A1 más generación, integración y registro FV & 85\,021,25 & 93\,523,38\\
+}
+
+\subsection{Operación, energía y reposición}
+\cuadro{tab:opex}{Estimación anual de operación sin energía}{@{}Y r r r@{}}{\textbf{Concepto}&\textbf{A0 S/}&\textbf{A1 S/}&\textbf{A2 S/}}{
+Soporte TI, incluye cámaras y red: 24 HP en A0; 48 HP en A1 y A2, a 60 & 1\,440,00 & 2\,880,00 & 2\,880,00\\*
+Alojamiento y copias, cuadro \ref{tab:comp_hosting} & 720,00 & 720,00 & 720,00\\
+Mantenimiento local y energético, cuadro \ref{tab:mant_costo} & 0,00 & 500,00 & 700,00\\
+Edición: 80 HP $\times$ 30 & 2\,400,00 & 2\,400,00 & 2\,400,00\\\midrule
+\textbf{Subtotal anual} & \textbf{4\,560,00} & \textbf{6\,500,00} & \textbf{6\,700,00}\\
+}
+A0 supone capacidad libre y soporte comprobados en infraestructura existente. Si el levantamiento exige ampliar servidor, almacenamiento o conectividad, se incorporará ese costo antes de seleccionar la alternativa. El tiempo editorial es costo de capacidad institucional, aunque no origine una contratación adicional.
+
+El escenario energético adopta 200 días al año para terminales de 200 W, 12 horas al día, y comunicaciones de 40 W y auxiliares de 15 W durante todo el año:
+\[
+E_{\mathrm{anual}}=3(0,200)(12)(200)+(0,040+0,015)(24)(365)
+=1\,921,8\ \mathrm{kWh}.
+\]
+Con tarifa supuesta de S/ 0,80/kWh, A1 utiliza S/ 1\,537,44/año de red. En A2, una cobertura solar aprovechada supuesta de 60\% de la demanda reduce la compra de red a S/ 614,98/año. La cobertura se refiere a energía realmente utilizada por las cargas y no a toda la generación FV estimada. La tarifa se sustituirá por el pliego vigente y el recibo institucional \cite{pliego}; la cobertura se verificará con medición y coincidencia horaria.
+
+Para el año 5 se incluye una provisión de reposición de batería en A1 y A2 de S/ 4\,978,47: el precio de la batería elegida, S/ 4\,178,47, y S/ 800 de servicio. Coincide con su garantía de cinco años y es revisable según estado de salud, ciclos y temperatura. La igualdad del año de sustitución es un supuesto comparativo, porque el uso del banco puede diferir entre A1 y A2. Las demás reposiciones se revisarán con el inventario y su estado.
+
+\cuadro{tab:tco}{Costo de planificación a cinco años}{@{}Y r r r@{}}{\textbf{Concepto}&\textbf{A0 S/}&\textbf{A1 S/}&\textbf{A2 S/}}{
+Inversión con reservas & 9\,196,00 & 83\,392,94 & 93\,523,38\\*
+Operación anual con energía & 4\,560,00 & 8\,037,44 & 7\,314,98\\
+Cinco años de operación & 22\,800,00 & 40\,187,20 & 36\,574,90\\
+Reposición prevista en año 5 & 0,00 & 4\,978,47 & 4\,978,47\\\midrule
+\textbf{Total del horizonte} & \textbf{31\,996,00} & \textbf{128\,558,61} & \textbf{135\,076,75}\\
+}
+El total es un flujo de costos sin descuento en soles constantes de 2026, sin valor residual al cierre del horizonte. No se asignan ingresos al acceso gratuito ni valor monetario a mejoras no medidas. La comparación del servicio usará además consultas exitosas, tiempo de búsqueda y vigencia de información. A0 sigue siendo la alternativa de menor costo; la incorporación de terminales requiere demostrar su valor adicional frente a esa opción.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar stacked, width=\linewidth, height=7.2cm, bar width=1.35cm,
+  ymin=0, ymax=150, ylabel={Miles de soles}, ylabel style={font=\small},
+  symbolic x coords={A0,A1,A2}, xtick=data, xticklabels={A0 canales,A1 terminales,A2 terminales y FV},
+  tick label style={font=\small}, ymajorgrids, grid style={black!12}, axis line style={black!45},
+  enlarge x limits=0.28, legend style={at={(0.5,-0.17)},anchor=north,legend columns=3,font=\small,draw=none},
+  reverse legend=false, nodes near coords={}, axis x line*=bottom, axis y line*=left]
+\addplot[fill=tiazul,draw=tiazul!80!black] coordinates {(A0,9.196) (A1,83.393) (A2,93.523)};
+\addplot[fill=verdeprueba!75,draw=verdeprueba!80!black] coordinates {(A0,22.800) (A1,40.187) (A2,36.575)};
+\addplot[fill=energia!85,draw=energia!80!black] coordinates {(A0,0) (A1,4.978) (A2,4.978)};
+\legend{Inversión,Operación de cinco años,Reposición de batería}
+\node[font=\small\bfseries,anchor=south] at (axis cs:A0,31.996) {32,0};
+\node[font=\small\bfseries,anchor=south] at (axis cs:A1,128.559) {128,6};
+\node[font=\small\bfseries,anchor=south] at (axis cs:A2,135.077) {135,1};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Comparación de costos de inversión, operación y reposición a cinco años}\label{fig:tco}
+\end{center}
+
+El flujo sin descuento se complementa con el valor actual de costos, VAC, a la tasa social de descuento de 8\% de los parámetros de evaluación social del MEF \cite{mefparametros}. Aquí se aplica a precios de mercado como indicador de comparación: no reemplaza una evaluación social con precios sociales ni la verificación del parámetro vigente al registrar la inversión. Los factores de valor actual son 3,9927 para la operación de los años 1 a 5 y 0,6806 para la reposición del año 5.
+
+\cuadro{tab:vac}{Valor actual de costos a cinco años con tasa de 8\%}{@{}Y r r r@{}}{\textbf{Concepto}&\textbf{A0 S/}&\textbf{A1 S/}&\textbf{A2 S/}}{
+Inversión con reservas, año 0 & 9\,196,00 & 83\,392,94 & 93\,523,38\\*
+Valor actual de la operación, años 1 a 5 & 18\,206,76 & 32\,091,17 & 29\,206,59\\
+Valor actual de la reposición del año 5 & 0,00 & 3\,388,26 & 3\,388,26\\\midrule
+\textbf{Valor actual de costos} & \textbf{27\,402,76} & \textbf{118\,872,37} & \textbf{126\,118,23}\\
+}
+El orden de las alternativas se mantiene. La diferencia de A2 sobre A1 aumenta de S/ 6\,518,14 a S/ 7\,245,86 en valor actual, porque la inversión FV ocurre al inicio y el ahorro de energía se distribuye en el horizonte.
+
+\subsection{Costo-efectividad por estudiante}
+El servicio no genera ingresos y sus beneficios no se monetizan, por lo que la comparación utiliza el índice de costo-efectividad, ICE: el VAC dividido entre la población objetivo del cuadro \ref{tab:poblacion}. Se emplea el valor central de 850 estudiantes y el rango de 830 a 870.
+
+\cuadro{tab:ice}{Índice de costo-efectividad por estudiante a cinco años}{@{}Y r r r r@{}}{\textbf{Alternativa}&\textbf{VAC S/}&\textbf{ICE S/}&\textbf{Rango S/}&\textbf{S/ por año}}{
+A0 & 27\,402,76 & 32,24 & 31,50 a 33,02 & 6,45\\*
+A1 & 118\,872,37 & 139,85 & 136,63 a 143,22 & 27,97\\
+A2 & 126\,118,23 & 148,37 & 144,96 a 151,95 & 29,67\\\midrule
+A1 frente a A0 & 91\,469,61 & 107,61 & 105,14 a 110,20 & 21,52\\
+A2 frente a A1 & 7\,245,86 & 8,52 & 8,33 a 8,73 & 1,70\\
+}
+El ICE corresponde a 850 estudiantes; el rango aplica 870 y 830, y la última columna divide el ICE entre los cinco años del horizonte. Como las tres alternativas atienden a la misma población, el ICE conserva el orden del VAC; su aporte es expresar el costo incremental por estudiante. Frente a A0, los terminales de A1 cuestan S/ 107,61 adicionales por estudiante en cinco años, unos S/ 21,52 por estudiante-año. La generación FV de A2 añade S/ 8,52 por estudiante sobre A1. La decisión exige que la mejora medida en consulta exitosa y tiempo de búsqueda justifique esos importes. El índice se recalculará con la matrícula oficial y, en la evaluación del piloto, con usuarios efectivos.
+
+\subsection{Sensibilidad y reglas de decisión}
+La diferencia inicial A2-A1 es S/ 10\,130,44. El ahorro anual de energía del escenario es S/ 922,46 y el mantenimiento adicional FV es S/ 200: la diferencia neta anual es S/ 722,46. En cinco años A2 conserva un costo adicional de S/ 6\,518,14. El respaldo de cuatro horas es común y se evalúa con la misma prueba en ambas opciones.
+
+\cuadro{tab:sensibilidad}{Variables que pueden cambiar la decisión}{@{}P{3.5cm}Y@{}}{\textbf{Variación}&\textbf{Efecto sobre el escenario}}{
+Estimaciones propias +20\% & Añade S/ 5\,759,00 a la base A2 y S/ 6\,334,90 incluida contingencia\\*
+Cobertura solar de 30\% a 80\% & Ahorro bruto anual entre S/ 461,23 y S/ 1\,229,95 a tarifa supuesta de 0,80\\
+Tarifa entre S/ 0,60 y S/ 1,00 & Ahorro bruto entre S/ 691,85 y S/ 1\,153,08 con 60\% de cobertura\\
+Licencia y tributos ya incluidos & Reduce las reservas confirmadas en las ofertas hasta S/ 6\,368,47\\
+Opciones equivalentes más baratas & Batería o disco acreditados como equivalentes reducen la base sin cambiar las especificaciones\\
+Consumo de terminales o días de uso menores & Reduce energía evitada; recalcula costo incremental y generación aprovechable\\
+Reposición fuera del año 5 & Modifica el flujo del horizonte según estado y condiciones de garantía\\
+}
+El respaldo preparado para FV de A1 permite aislar el incremento solar; se contrastará además con ofertas de respaldo equivalente que puedan resultar más económicas. El ahorro del recibo, por sí solo, no recupera el incremento FV durante el horizonte analizado. A2 exige un objetivo institucional energético y ambiental explícito, coherente con el estándar de responsabilidad social y desarrollo sostenible, además de disponibilidad del presupuesto incremental y desempeño medido \cite{sineace2025}. A1 es la opción de menor costo entre las dos alternativas con terminales y respaldo comparables.
+
+Se adoptan las siguientes reglas:
+\begin{enumerate}
+\item Aplicar A0 cuando la validación de usuarios no justifique nuevos puntos físicos o aún no exista capacidad editorial.
+\item Elegir A1 cuando se demuestre valor de los terminales y se priorice costo de ciclo de vida y ejecución por etapas.
+\item Aprobar A2 cuando el conjunto sea compatible, la generación aprovechada y el objetivo institucional justifiquen el costo adicional y se financie su operación.
+\end{enumerate}
+La contratación solicitará la misma lista funcional a los proveedores, incluyendo configuración, impuestos, entrega en campus, instalación, aceptación, garantía, soporte y exclusiones. La recomendación se revisará con las ofertas y la línea base local.
+
+\subsection{Financiamiento y sostenibilidad}
+La unidad competente definirá la fuente institucional de inversión y el compromiso de operación antes de adquirir. La autorización abarcará inversión, soporte, contenido, energía y reposiciones. El servicio público se evalúa por utilidad y continuidad; su sostenimiento requiere capacidad presupuestal y responsables durante el horizonte de operación.
