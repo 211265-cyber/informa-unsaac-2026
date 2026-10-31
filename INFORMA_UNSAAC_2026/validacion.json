@@ -4,16 +4,16 @@
   "entry_point": "main.tex",
   "pdf": {
     "file": "main.pdf",
-    "pages": 108,
-    "size_bytes": 10728736,
-    "sha256": "7cdfd8fdf46fe77ba0afecad9c7abbaba8a60000cdd46305ff4e9ef1921c8c8e",
+    "pages": 143,
+    "size_bytes": 12171477,
+    "sha256": "c532a09b1c07345f37cdb206d8772e7dc7157c2fe889dbf15b9019c7a8bba23d",
     "page_size_pt": [
       595.28,
       841.89
     ],
     "latest_tex_not_newer_than_pdf": true,
     "encrypted": false,
-    "links": 568,
+    "links": 1083,
     "fonts_embedded": {
       "DWNTRA+TimesNewRomanPS-BoldMT": true,
       "VGPCXC+TimesNewRomanPSMT": true,
@@ -125,21 +125,21 @@
     "cost_model": "gestion/evidencia/modelo_economico.json",
     "present_value_8pct": {
       "A0": "27402.76",
-      "A1": "118682.52",
-      "A2": "125928.38"
+      "A1": "118766.68",
+      "A2": "126012.54"
     },
     "published_prices_verified_on": "2026-10-30",
     "investment_with_reserves": {
       "A0": "9196.00",
-      "A1": "83203.09",
-      "A2": "93333.53"
+      "A1": "83287.25",
+      "A2": "93417.69"
     },
     "tco_5_years": {
       "A0": "31996.00",
-      "A1": "128368.76",
-      "A2": "134886.90"
+      "A1": "128452.92",
+      "A2": "134971.06"
     },
-    "published_share_of_A2_base": "0.5885"
+    "published_share_of_A2_base": "0.5985"
   },
   "source_checks": {
     "missing_cites": [],
@@ -287,23 +287,25 @@
       "0x2011": 0
     },
     "replacement_characters": 0,
-    "bibliography_entries": 60
+    "bibliography_entries": 62
   },
   "tex_sha256": {
-    "01_formulacion.tex": "a54e4aabf40611f08591441428ff71100406ec12da626d27820bc7e3a0dd813d",
+    "01_formulacion.tex": "f1a5bf7ce7441535c3f240dc1880d4b208d67e0f9979c06458bb0430440afb03",
     "02_tecnica.tex": "08f7e28b02591deba654b0a5d84423ed6f48bc48cda52992921025f9f4c68921",
-    "03_presupuesto.tex": "358f13a0ae21996d1b0c153918aa9af7a4a1442cab1b23dec711f8f64d2ea6d5",
+    "03_presupuesto.tex": "0affbb79becfd0d52537011c4356fc3767eafc0dcd656380fe6236662aea405d",
     "04_gestion.tex": "162558ed5d826461116f5535aee755d0b49dd609431c9e4db8bc19fe3c5417a3",
-    "05_referencias.tex": "03f5270b86df46175ee9359dbd02217aacfbec60c017e600812f910b6b402910",
-    "06_anexos.tex": "8f6b36b59614e2c361335a24b276fb76b21d8b00c0b1496ad7746a27303aeaa1",
+    "05_referencias.tex": "23677b95605e07cb48c0357824a4684d3337c10c8a47a18d1e10dcbe9b0ef26e",
+    "06_anexos.tex": "2152d87c9c9d249fcd78b046e4b0a92f79f413c8499db6b9d986b3a998429c8a",
     "07_ejecucion_operacion.tex": "fd5b7252646a094877b12bb756b252574452227a7c329284fba943b516b8569a",
     "08_mercado_tecnologico.tex": "f15f7b5506bed69dcdfbff351cdcca6d2269aebeeea31cc05d24b1318afe850a",
-    "09_conclusiones.tex": "47e207df7ca39690f77e77bf0168e3587ef0ff9dc21be7624ee46bc0c5c3633d",
+    "09_conclusiones.tex": "f49e99a780794ca1f8eb6bc5154a0263e909ebd7bb84610a6e4b8c2b2eeeb7a0",
     "10_comparacion_energia.tex": "e0fa41e353c268a7a869ef6b4205c93fec73dd6c9b7c3ca3ca13c6862a2bd512",
-    "11_especificaciones.tex": "76fdadc81cde8537eb2455816e06443e2514c47e2a8be9643265b3b650bc1216",
-    "12_seleccion_mercado.tex": "727afb6140b0d6aa1bea80865c108815e46a555b5df7ce098d734a1e6757841d",
-    "contenido.tex": "85008f37ce759540ded8acbd316ee89d9b8ff0110f0d64d9a3c6c0d8acdce35c",
-    "estilo.tex": "36e9b883abbc170297a515461ce816c34de30807d2b00c4d559d8eec5b7e8b79",
+    "11_especificaciones.tex": "42b306233920c562a2cfe43991ff62b5332d6a1ff6ba77ff5a5022ab1f98053d",
+    "12_seleccion_mercado.tex": "9c2ffe467bfa5280b1fb926beeb0ff6f14bab8073423ad3f93563b2c1f0d1258",
+    "13_cotizaciones.tex": "842edf7f83f673f50f0b33fbd0e8d562385153d731aded964969ea8c1f6b6300",
+    "14_condiciones.tex": "7a9fd695e29b067d167cbfa240a3d645faf946e37d1eb000f5c422f425dc38a6",
+    "contenido.tex": "d85b2a3200d7454e43dbe57cc92ded174c04db52f8aea360f04206392027cc2a",
+    "estilo.tex": "044236d1796b0114b4639416f6ed1456ceacff8a11851eb471ca77a7a98679ca",
     "main.tex": "bf7abb901205980432b37c2cbaf07f02fdec3f4373c32e15d42c99c4932a6ee8",
     "portada.tex": "ba24795fb082814a186a8f47b53b927d4cdb96ba1c29c2c6a56c893102d8fb22"
   },
@@ -352,8 +354,8 @@
       "fotografias del entorno en una sola fila para que la figura no se divida entre paginas"
     ],
     "population_source": "matricula referencial proporcionada por el equipo; confirmar con registro oficial 2026-II",
-    "tables": 85,
-    "figures": 24,
+    "tables": 116,
+    "figures": 25,
     "visual_review": "paginas revisadas en hojas de contacto; arboles, matriz, Gantt y paginas afectadas revisados a 60-90 ppp; sin paginas en blanco, figuras divididas ni cuadros fuera de orden"
   },
   "specifications_update_2026_10_30": {
@@ -388,5 +390,21 @@
       "pliego tarifario de Electro Sur Este (gob.pe bloquea la consulta automatizada)",
       "precios de conductores AC y tuberia en Promart y Sodimac (paginas renderizadas por JavaScript)"
     ]
+  },
+  "reference_format_update_2026_10_31": {
+    "trigger": "documento de biblioteca de otro equipo señalado por el usuario como el mejor evaluado",
+    "added": [
+      "anexo D: 26 cotizaciones en hoja apaisada con imagen, características, descripción, proveedor, precio, enlace y fuente de imagen",
+      "75 imágenes de producto en imagenes/cot con procedencia y SHA-256",
+      "sección de condiciones de la contratación: valor referencial por paquete, plazo, forma de pago, requisitos del postor, garantías, penalidades, vicios ocultos, responsabilidades y supervisión",
+      "anexo E: evidencia del tablero de Jira",
+      "tomacorrientes, cable libre de halógenos y tubería cotizados en Promelsa con reserva de IGV",
+      "generador reproducible en gestion/evidencia/cotizaciones"
+    ],
+    "changed_by_selection_rule": {
+      "gabinete": "6 RU S/ 225 + bandeja S/ 20 -> 9 RU con bandeja S/ 172",
+      "cable_AC": "NH-90 S/ 240.72 -> H07Z1-K S/ 213.58 por rollo",
+      "provision_P8": "1240.00 -> 250.00 al cotizar cable, tubería y tomacorrientes"
+    }
   }
 }

@@ -27,10 +27,10 @@ Tablero adosable de 18 polos & 1 & 104,89 & 104,89\\
 Barra de cobre de 5/8 pulg. $\times$ 2,4 m & 1 & 298,17 & 298,17\\
 Conector de bronce de 5/8 pulg. & 2 & 6,35 & 12,70\\
 Cemento conductivo, bolsa de 25 kg & 2 & 170,91 & 341,82\\
-Cable NH-90 libre de halógenos de 2,5 mm², rollo & 3 & 240,72 & 722,16\\
+Cable libre de halógenos H07Z1-K de 2,5 mm², rollo & 3 & 213,58 & 640,74\\
 Tubo PVC SAP de 3/4 pulg. $\times$ 3 m & 15 & 11,17 & 167,55\\
 Tomacorriente 2P+T de 16 A con placa & 4 & 39,35 & 157,40\\\midrule
-\textbf{Subtotal del subsistema energético} & & & \textbf{18\,033,81}\\
+\textbf{Subtotal del subsistema energético} & & & \textbf{17\,952,39}\\
 }
 \source{Terminal: precio por transferencia, IGV no indicado \cite{prodimer}. Energía: AutoSolar Perú, IGV incluido \cite{preciojinko,tensiteinv,tensitebat,autosolarfv,autosolarac,autosolarmed}. Cable, tubería y tomacorrientes: Promelsa, IGV no declarado en la página \cite{promelsa}.}
 
@@ -54,7 +54,7 @@ Cámara IP de 4 MP, ET-04 & 3 & 219,00 & 657,00\\\midrule
 }
 \source{ARTEUS S.A.C., RUC 20608279637, precios con IGV incluido \cite{arteus,arteusred,arteuscctv}. Cantidades según el metrado del cuadro \ref{tab:metrado_red}.}
 
-Se conserva una reserva tributaria condicionada de S/ 5\,318,47 para las partidas cuya página no declara el IGV: 18\% de S/ 28\,499,97 de los terminales, es decir S/ 5\,129,99, y 18\% de S/ 1\,047,11 de cable, tubería y tomacorrientes, es decir S/ 188,48 \cite{igv}. Las demás partidas declaran IGV incluido, por lo que no se agrega de nuevo. Las ofertas cerrarán el tratamiento tributario, el transporte y el suministro.
+Se conserva una reserva tributaria condicionada de S/ 5\,303,81 para las partidas cuya página no declara el IGV: 18\% de S/ 28\,499,97 de los terminales, es decir S/ 5\,129,99, y 18\% de S/ 965,69 de cable, tubería y tomacorrientes, es decir S/ 173,82 \cite{igv}. Las demás partidas declaran IGV incluido, por lo que no se agrega de nuevo. Las ofertas cerrarán el tratamiento tributario, el transporte y el suministro.
 
 \subsection{Estimaciones propias y servicios}
 Las partidas del cuadro \ref{tab:estimaciones} no tienen precio publicado para el modelo exacto o dependen del metrado. Son estimaciones propias de planificación y se reemplazarán por cotizaciones.
@@ -82,14 +82,14 @@ HP significa horas-persona. La instalación incluye 16 HP para el tendido de los
 
 \cuadro{tab:presupuesto}{Inversión de la alternativa integral A2}{@{}Y r@{}}{\textbf{Componente}&\textbf{S/}}{
 Terminales con precio publicado & 28\,499,97\\*
-Subsistema energético con precio publicado & 18\,033,81\\
+Subsistema energético con precio publicado & 17\,952,39\\
 Red y videovigilancia con precio publicado & 4\,374,00\\
-Reserva tributaria condicionada: terminales y materiales AC & 5\,318,47\\
+Reserva tributaria condicionada: terminales y materiales AC & 5\,303,81\\
 Provisiones de logística, materiales y licencias & 3\,475,00\\
 Servicios de implementación, 408 HP & 25\,320,00\\\midrule
-\textbf{Base de planificación} & \textbf{85\,021,25}\\
-Contingencia: 10\% de la base & 8\,502,13\\\midrule
-\textbf{Inversión con reservas} & \textbf{93\,523,38}\\
+\textbf{Base de planificación} & \textbf{84\,925,17}\\
+Contingencia: 10\% de la base & 8\,492,52\\\midrule
+\textbf{Inversión con reservas} & \textbf{93\,417,69}\\
 }
 El 60\% de la base procede de precios publicados y el 40\% de estimaciones y reservas. La contingencia atiende variaciones dentro del alcance; los cambios de configuración se evaluarán mediante un nuevo presupuesto. La reserva tributaria y la de sistema se conciliarán con las ofertas para evitar cargos duplicados.
 
@@ -115,8 +115,8 @@ A0 configura una página central y un proceso editorial con canales y dispositiv
 
 \cuadro{tab:capex_alt}{Comparación de inversión por alternativa}{@{}P{1cm}Y r r@{}}{\textbf{Alt.}&\textbf{Resultado cubierto}&\textbf{Base S/}&\textbf{Con reservas S/}}{
 A0 & Canales ordenados y página central, sin nuevos terminales & 8\,360,00 & 9\,196,00\\*
-A1 & CMS, tres terminales, red, videovigilancia y respaldo preparado para FV & 75\,811,76 & 83\,392,94\\
-A2 & A1 más generación, integración y registro FV & 85\,021,25 & 93\,523,38\\
+A1 & CMS, tres terminales, red, videovigilancia y respaldo preparado para FV & 75\,715,68 & 83\,287,25\\
+A2 & A1 más generación, integración y registro FV & 84\,925,17 & 93\,417,69\\
 }
 
 \subsection{Operación, energía y reposición}
@@ -139,11 +139,11 @@ Con tarifa supuesta de S/ 0,80/kWh, A1 utiliza S/ 1\,537,44/año de red. En A2, 
 Para el año 5 se incluye una provisión de reposición de batería en A1 y A2 de S/ 4\,978,47: el precio de la batería elegida, S/ 4\,178,47, y S/ 800 de servicio. Coincide con su garantía de cinco años y es revisable según estado de salud, ciclos y temperatura. La igualdad del año de sustitución es un supuesto comparativo, porque el uso del banco puede diferir entre A1 y A2. Las demás reposiciones se revisarán con el inventario y su estado.
 
 \cuadro{tab:tco}{Costo de planificación a cinco años}{@{}Y r r r@{}}{\textbf{Concepto}&\textbf{A0 S/}&\textbf{A1 S/}&\textbf{A2 S/}}{
-Inversión con reservas & 9\,196,00 & 83\,392,94 & 93\,523,38\\*
+Inversión con reservas & 9\,196,00 & 83\,287,25 & 93\,417,69\\*
 Operación anual con energía & 4\,560,00 & 8\,037,44 & 7\,314,98\\
 Cinco años de operación & 22\,800,00 & 40\,187,20 & 36\,574,90\\
 Reposición prevista en año 5 & 0,00 & 4\,978,47 & 4\,978,47\\\midrule
-\textbf{Total del horizonte} & \textbf{31\,996,00} & \textbf{128\,558,61} & \textbf{135\,076,75}\\
+\textbf{Total del horizonte} & \textbf{31\,996,00} & \textbf{128\,452,92} & \textbf{134\,971,06}\\
 }
 El total es un flujo de costos sin descuento en soles constantes de 2026, sin valor residual al cierre del horizonte. No se asignan ingresos al acceso gratuito ni valor monetario a mejoras no medidas. La comparación del servicio usará además consultas exitosas, tiempo de búsqueda y vigencia de información. A0 sigue siendo la alternativa de menor costo; la incorporación de terminales requiere demostrar su valor adicional frente a esa opción.
 
@@ -156,13 +156,13 @@ El total es un flujo de costos sin descuento en soles constantes de 2026, sin va
   tick label style={font=\small}, ymajorgrids, grid style={black!12}, axis line style={black!45},
   enlarge x limits=0.28, legend style={at={(0.5,-0.17)},anchor=north,legend columns=3,font=\small,draw=none},
   reverse legend=false, nodes near coords={}, axis x line*=bottom, axis y line*=left]
-\addplot[fill=tiazul,draw=tiazul!80!black] coordinates {(A0,9.196) (A1,83.393) (A2,93.523)};
+\addplot[fill=tiazul,draw=tiazul!80!black] coordinates {(A0,9.196) (A1,83.287) (A2,93.418)};
 \addplot[fill=verdeprueba!75,draw=verdeprueba!80!black] coordinates {(A0,22.800) (A1,40.187) (A2,36.575)};
 \addplot[fill=energia!85,draw=energia!80!black] coordinates {(A0,0) (A1,4.978) (A2,4.978)};
 \legend{Inversión,Operación de cinco años,Reposición de batería}
 \node[font=\small\bfseries,anchor=south] at (axis cs:A0,31.996) {32,0};
-\node[font=\small\bfseries,anchor=south] at (axis cs:A1,128.559) {128,6};
-\node[font=\small\bfseries,anchor=south] at (axis cs:A2,135.077) {135,1};
+\node[font=\small\bfseries,anchor=south] at (axis cs:A1,128.453) {128,5};
+\node[font=\small\bfseries,anchor=south] at (axis cs:A2,134.971) {135,0};
 \end{axis}
 \end{tikzpicture}
 \captionof{figure}{Comparación de costos de inversión, operación y reposición a cinco años}\label{fig:tco}
@@ -171,10 +171,10 @@ El total es un flujo de costos sin descuento en soles constantes de 2026, sin va
 El flujo sin descuento se complementa con el valor actual de costos, VAC, a la tasa social de descuento de 8\% de los parámetros de evaluación social del MEF \cite{mefparametros}. Aquí se aplica a precios de mercado como indicador de comparación: no reemplaza una evaluación social con precios sociales ni la verificación del parámetro vigente al registrar la inversión. Los factores de valor actual son 3,9927 para la operación de los años 1 a 5 y 0,6806 para la reposición del año 5.
 
 \cuadro{tab:vac}{Valor actual de costos a cinco años con tasa de 8\%}{@{}Y r r r@{}}{\textbf{Concepto}&\textbf{A0 S/}&\textbf{A1 S/}&\textbf{A2 S/}}{
-Inversión con reservas, año 0 & 9\,196,00 & 83\,392,94 & 93\,523,38\\*
+Inversión con reservas, año 0 & 9\,196,00 & 83\,287,25 & 93\,417,69\\*
 Valor actual de la operación, años 1 a 5 & 18\,206,76 & 32\,091,17 & 29\,206,59\\
 Valor actual de la reposición del año 5 & 0,00 & 3\,388,26 & 3\,388,26\\\midrule
-\textbf{Valor actual de costos} & \textbf{27\,402,76} & \textbf{118\,872,37} & \textbf{126\,118,23}\\
+\textbf{Valor actual de costos} & \textbf{27\,402,76} & \textbf{118\,766,68} & \textbf{126\,012,54}\\
 }
 El orden de las alternativas se mantiene. La diferencia de A2 sobre A1 aumenta de S/ 6\,518,14 a S/ 7\,245,86 en valor actual, porque la inversión FV ocurre al inicio y el ahorro de energía se distribuye en el horizonte.
 
@@ -183,12 +183,12 @@ El servicio no genera ingresos y sus beneficios no se monetizan, por lo que la c
 
 \cuadro{tab:ice}{Índice de costo-efectividad por estudiante a cinco años}{@{}Y r r r r@{}}{\textbf{Alternativa}&\textbf{VAC S/}&\textbf{ICE S/}&\textbf{Rango S/}&\textbf{S/ por año}}{
 A0 & 27\,402,76 & 32,24 & 31,50 a 33,02 & 6,45\\*
-A1 & 118\,872,37 & 139,85 & 136,63 a 143,22 & 27,97\\
-A2 & 126\,118,23 & 148,37 & 144,96 a 151,95 & 29,67\\\midrule
-A1 frente a A0 & 91\,469,61 & 107,61 & 105,14 a 110,20 & 21,52\\
+A1 & 118\,766,68 & 139,73 & 136,51 a 143,09 & 27,95\\
+A2 & 126\,012,54 & 148,25 & 144,84 a 151,82 & 29,65\\\midrule
+A1 frente a A0 & 91\,363,92 & 107,49 & 105,02 a 110,08 & 21,50\\
 A2 frente a A1 & 7\,245,86 & 8,52 & 8,33 a 8,73 & 1,70\\
 }
-El ICE corresponde a 850 estudiantes; el rango aplica 870 y 830, y la última columna divide el ICE entre los cinco años del horizonte. Como las tres alternativas atienden a la misma población, el ICE conserva el orden del VAC; su aporte es expresar el costo incremental por estudiante. Frente a A0, los terminales de A1 cuestan S/ 107,61 adicionales por estudiante en cinco años, unos S/ 21,52 por estudiante-año. La generación FV de A2 añade S/ 8,52 por estudiante sobre A1. La decisión exige que la mejora medida en consulta exitosa y tiempo de búsqueda justifique esos importes. El índice se recalculará con la matrícula oficial y, en la evaluación del piloto, con usuarios efectivos.
+El ICE corresponde a 850 estudiantes; el rango aplica 870 y 830, y la última columna divide el ICE entre los cinco años del horizonte. Como las tres alternativas atienden a la misma población, el ICE conserva el orden del VAC; su aporte es expresar el costo incremental por estudiante. Frente a A0, los terminales de A1 cuestan S/ 107,49 adicionales por estudiante en cinco años, unos S/ 21,50 por estudiante-año. La generación FV de A2 añade S/ 8,52 por estudiante sobre A1. La decisión exige que la mejora medida en consulta exitosa y tiempo de búsqueda justifique esos importes. El índice se recalculará con la matrícula oficial y, en la evaluación del piloto, con usuarios efectivos.
 
 \subsection{Sensibilidad y reglas de decisión}
 La diferencia inicial A2-A1 es S/ 10\,130,44. El ahorro anual de energía del escenario es S/ 922,46 y el mantenimiento adicional FV es S/ 200: la diferencia neta anual es S/ 722,46. En cinco años A2 conserva un costo adicional de S/ 6\,518,14. El respaldo de cuatro horas es común y se evalúa con la misma prueba en ambas opciones.
@@ -197,7 +197,7 @@ La diferencia inicial A2-A1 es S/ 10\,130,44. El ahorro anual de energía del es
 Estimaciones propias +20\% & Añade S/ 5\,759,00 a la base A2 y S/ 6\,334,90 incluida contingencia\\*
 Cobertura solar de 30\% a 80\% & Ahorro bruto anual entre S/ 461,23 y S/ 1\,229,95 a tarifa supuesta de 0,80\\
 Tarifa entre S/ 0,60 y S/ 1,00 & Ahorro bruto entre S/ 691,85 y S/ 1\,153,08 con 60\% de cobertura\\
-Licencia y tributos ya incluidos & Reduce las reservas confirmadas en las ofertas hasta S/ 6\,368,47\\
+Licencia y tributos ya incluidos & Reduce las reservas confirmadas en las ofertas hasta S/ 6\,353,81\\
 Opciones equivalentes más baratas & Batería o disco acreditados como equivalentes reducen la base sin cambiar las especificaciones\\
 Consumo de terminales o días de uso menores & Reduce energía evitada; recalcula costo incremental y generación aprovechable\\
 Reposición fuera del año 5 & Modifica el flujo del horizonte según estado y condiciones de garantía\\

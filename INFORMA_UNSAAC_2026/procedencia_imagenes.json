@@ -332,5 +332,1280 @@
       422,
       700
     ]
+  },
+  {
+    "file": "cot/inv-tensite.jpg",
+    "source_page": "https://autosolar.pe/inversores-hibridos/inversor-hibrido-tensite-4kw-monofasico-ah4m-2",
+    "source_image_url": "https://cdn.autosolar.pe/images/3206103/inversor-hibrido-tensite-4kw-monofasico-ah4m-2-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "81f9345042c4438dc93e05bc4036169875835e748c2fbd423dcf947836457401",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "81f9345042c4438dc93e05bc4036169875835e748c2fbd423dcf947836457401",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/inv-suntaic.jpg",
+    "source_page": "https://autosolar.pe/inversores-hibridos-monofasicos/inversor-hibrido-6kw-monofasico-sth6m-2gen-suntaic",
+    "source_image_url": "https://cdn.autosolar.pe/images/3200605/inversor-hibrido-6kw-monofasico-sth6m-2gen-suntaic-684995754ef03-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "1db708588053a36e36fe8e0a5b7644278990eed037239f5b7b0300fa2e25e05b",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "1db708588053a36e36fe8e0a5b7644278990eed037239f5b7b0300fa2e25e05b",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/inv-livoltek.jpg",
+    "source_page": "https://autosolar.pe/inversores-hibridos-monofasicos/inversor-hibrido-monofasico-5kw-220v-hyper-5000-livoltek",
+    "source_image_url": "https://cdn.autosolar.pe/images/3203003/inversor-hibrido-monofasico-5kw-220v-hyper-5000-livoltek-6ad14d44a1e71-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2a90513b3faa9a2e9bd32e68a1ca0844f0bdd2f609ee3ab1aa07148093d9a310",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "2a90513b3faa9a2e9bd32e68a1ca0844f0bdd2f609ee3ab1aa07148093d9a310",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/inv-growatt.jpg",
+    "source_page": "https://autosolar.pe/inversores-hibridos/inversor-hibrido-3kw-growatt-sph3000",
+    "source_image_url": "https://cdn.autosolar.pe/images/3205070/inversor-hibrido-3kw-growatt-sph3000-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "bf6b5ff3997f47cd7c586b580472554e72f5819ad913b5ce677bda0625796ff9",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "bf6b5ff3997f47cd7c586b580472554e72f5819ad913b5ce677bda0625796ff9",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/bat-tensite.jpg",
+    "source_page": "https://autosolar.pe/baterias-de-litio-48v/bateria-litio-48kwh-48v-ts-l5000lv-tensite",
+    "source_image_url": "https://cdn.autosolar.pe/images/1880811/bateria-litio-48kwh-48v-ts-l5000lv-tensite-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "03d5ed82200a0553cb57aeac1cbce1f19da022b4377d08fabc5652e2266c3e2a",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "03d5ed82200a0553cb57aeac1cbce1f19da022b4377d08fabc5652e2266c3e2a",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/bat-suntaic.jpg",
+    "source_page": "https://autosolar.pe/baterias-de-litio-48v/bateria-de-litio-solar-48v-5kwh-st-l5000lv-suntaic",
+    "source_image_url": "https://cdn.autosolar.pe/images/1882301/bateria-de-litio-solar-suntaic-st-l5000lv-48v-5kwh-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "65f7bb3957e415bbfd4f362758ec98e390993a0f0f0d372618c79c9059581bdb",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "65f7bb3957e415bbfd4f362758ec98e390993a0f0f0d372618c79c9059581bdb",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/bat-felicity.jpg",
+    "source_page": "https://autosolar.pe/baterias-de-litio-48v/bateria-de-litio-48v-5kwh-100ah-lpbf48100-felicity-solar",
+    "source_image_url": "https://cdn.autosolar.pe/images/1880952/bateria-de-litio-5kwh-48v-100ah-lpbf48100-felicity-solar-68ded8253b4d7-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "abef7c9dc0c5bce5e42361e05a775ce75c90d06b6e3fdb32593de8a492d100e9",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "abef7c9dc0c5bce5e42361e05a775ce75c90d06b6e3fdb32593de8a492d100e9",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/bat-pylontech.jpg",
+    "source_page": "https://autosolar.pe/baterias-de-litio-48v/bateria-litio-48kwh-pylontech-us5000-48v",
+    "source_image_url": "https://cdn.autosolar.pe/images/1880909/bateria-litio-48kwh-pylontech-us5000-48v-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5079d73103b6d59edf17bc01315c9633a38c3ed5223fe81da99d559a21a81944",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "5079d73103b6d59edf17bc01315c9633a38c3ed5223fe81da99d559a21a81944",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/est-incl3.jpg",
+    "source_page": "https://autosolar.pe/soportes-suelo/estructura-3-paneles-144c-15o-inclinada-falcat",
+    "source_image_url": "https://cdn.autosolar.pe/images/1501662/estructura-3-paneles-144c-15o-inclinada-falcat-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "e5aca1dbcdad0af3ce53819de8f2335c18471e96a2a69e3e7a3f61be686770a5",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "e5aca1dbcdad0af3ce53819de8f2335c18471e96a2a69e3e7a3f61be686770a5",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/est-copl3.jpg",
+    "source_page": "https://autosolar.pe/soportes-cubierta-metalica/estructura-3-paneles-144c-40mm-coplanar-falcat",
+    "source_image_url": "https://cdn.autosolar.pe/images/1507115/estructura-3-paneles-144c-40mm-coplanar-falcat-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "3922e4ddf4d8f34b4b4e476fb7f308a16e22691cc86913548d54ec5c011595fe",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "3922e4ddf4d8f34b4b4e476fb7f308a16e22691cc86913548d54ec5c011595fe",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/est-incl2.jpg",
+    "source_page": "https://autosolar.pe/soportes-suelo/estructura-2-paneles-144c-15o-inclinada-falcat",
+    "source_image_url": "https://cdn.autosolar.pe/images/1501661/estructura-2-paneles-144c-15o-inclinada-falcat-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "db0e1cde7fc05b7c46d8e93012c5481c1363382bff7ee74bebc8601fb2cb1bae",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "db0e1cde7fc05b7c46d8e93012c5481c1363382bff7ee74bebc8601fb2cb1bae",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/sdc-25.jpg",
+    "source_page": "https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-25a-4p-1500vdc-dc-solar-energy",
+    "source_image_url": "https://cdn.autosolar.pe/images/7107110/interruptor-termomagnetico-25a-4p-1500vdc-dc-solar-energy-68b2060a19496-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5325b01939f9845e0177e4fd2babb29ad66fec73db4bdb7664311dc841ac92e3",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "5325b01939f9845e0177e4fd2babb29ad66fec73db4bdb7664311dc841ac92e3",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/sdc-16.jpg",
+    "source_page": "https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-2x16a-600vdc-zj-beny",
+    "source_image_url": "https://cdn.autosolar.pe/images/7107010/interruptor-termomagnetico-2x16a-600vdc-zj-beny-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2ea1fd08b76c7d940655ff0713bc65019c1e7e2be0ec527d50c8801764e674de",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "2ea1fd08b76c7d940655ff0713bc65019c1e7e2be0ec527d50c8801764e674de",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/sdc-63.jpg",
+    "source_page": "https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-63a-500vdc-2p-dc-solar-energy",
+    "source_image_url": "https://cdn.autosolar.pe/images/7107086/7107086-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "1fca1be8205a1fe341359ba162c43566974b70cc25207236cc63218c7c86418e",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "1fca1be8205a1fe341359ba162c43566974b70cc25207236cc63218c7c86418e",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/spd-feeo.jpg",
+    "source_page": "https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-600vdc-2p-20ka-40ka-feeo",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102501/proteccion-sobretensiones-600vdc-2p-20ka-40ka-feeo-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "0581c92539547dea3e0640aaf15ca21015f6ac6ed1f7cb5b31ba1a7f38408b07",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "0581c92539547dea3e0640aaf15ca21015f6ac6ed1f7cb5b31ba1a7f38408b07",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/spd-beny.jpg",
+    "source_page": "https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-600vdc-2p-40ka-zj-beny",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102507/proteccion-sobretensiones-600vdc-2p-40ka-zj-beny-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "9ceb5738e03fa779128a53ddd4895458a7e07e61aee357d50ffa3d4835b3f0f1",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "9ceb5738e03fa779128a53ddd4895458a7e07e61aee357d50ffa3d4835b3f0f1",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/spd-t12.jpg",
+    "source_page": "https://autosolar.pe/protector-de-sobretensiones/dps-2p-600vdc-2040kva-t12-feeo",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102529/dps-2p-600vdc-2040kva-t12-feeo-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "476f3c39ec479a6de8806fc626b2629ec294543b849c228d9f18fcff25f00051",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "476f3c39ec479a6de8806fc626b2629ec294543b849c228d9f18fcff25f00051",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/dif-25.jpg",
+    "source_page": "https://autosolar.pe/interruptores-diferenciales/interruptor-diferencial-monofasico-25a-abb-30ma-tipo-a-2p",
+    "source_image_url": "https://cdn.autosolar.pe/images/7103040/interruptor-diferencial-monofasico-25a-abb-30ma-tipo-a-2p-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "3c536edb528cf47d297e80a6fdc4ab69cbc12055e802955feff8c17b8bc90232",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "3c536edb528cf47d297e80a6fdc4ab69cbc12055e802955feff8c17b8bc90232",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/dif-40.jpg",
+    "source_page": "https://autosolar.pe/diferencial-monofasico/interruptor-diferencial-monofasico-40a-abb-30ma-tipo-a-2p",
+    "source_image_url": "https://cdn.autosolar.pe/images/7103042/interruptor-diferencial-monofasico-40a-abb-30ma-tipo-a-2p-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5332de10331c2ba8226ebcc2de7515be18906b4d8b96638789aef9ef0cda2b23",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "5332de10331c2ba8226ebcc2de7515be18906b4d8b96638789aef9ef0cda2b23",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/tab-18.jpg",
+    "source_page": "https://autosolar.pe/tableros-adosables/tablero-adosable-18-polos",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504057/tablero-adosable-18-polos-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "51a009ed8b7af9ab30eb029f2ad6697266c1557c61dc54aec376a7816316a412",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "51a009ed8b7af9ab30eb029f2ad6697266c1557c61dc54aec376a7816316a412",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/tab-12.jpg",
+    "source_page": "https://autosolar.pe/tableros-adosables/tablero-adosable-12-polos",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504054/tablero-adosable-12-polos-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "844306c288842c37bb35f9e3b51ebcd6ae5abbcc438f08bb51e98129633e61bb",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "844306c288842c37bb35f9e3b51ebcd6ae5abbcc438f08bb51e98129633e61bb",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/tab-08.jpg",
+    "source_page": "https://autosolar.pe/tableros-adosables/tablero-adosable-8-polos",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504052/tablero-adosable-8-polos-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "0bc7b41203a39917dcc41e03a76954b8c9ca6dc65591bba0c85fb444c88c77ef",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "0bc7b41203a39917dcc41e03a76954b8c9ca6dc65591bba0c85fb444c88c77ef",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/mon-tensite.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-inversores/monitorizacion-t-dongle-tensite",
+    "source_image_url": "https://cdn.autosolar.pe/images/3206014/monitorizacion-t-dongle-tensite-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "24dcfc88edb790f5ddccf5e9af131102eceaa81507262ecf331c9badf3360a73",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "24dcfc88edb790f5ddccf5e9af131102eceaa81507262ecf331c9badf3360a73",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/mon-suntaic.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-inversores/monitorizacion-stick-suntaic",
+    "source_image_url": "https://cdn.autosolar.pe/images/3001030/monitorizacion-stick-suntaic-693c486dca86e-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "987c9c10fc05d5debb43c5d77828a844a71ae112187055b4b3cd42cb5cd2bb45",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "987c9c10fc05d5debb43c5d77828a844a71ae112187055b4b3cd42cb5cd2bb45",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/mon-growatt.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-inversores/monitorizacion-growatt-shine-wifi-x",
+    "source_image_url": "https://cdn.autosolar.pe/images/3202018/monitorizacion-growatt-shine-wifi-x-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2f1ec216978750ada1a7c27ac004276f33c3811e66472b8962116eb1929159de",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "2f1ec216978750ada1a7c27ac004276f33c3811e66472b8962116eb1929159de",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/mc4-multi.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-paneles-solares/conector-mc4-multicontact-macho-hembra",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504044/conector-mc4-multicontact-macho-hembra-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "0355ac3fef8527c4d9dffbd2f08d1eb6d74598ab323605e2eaf3ad31d6cb2503",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "0355ac3fef8527c4d9dffbd2f08d1eb6d74598ab323605e2eaf3ad31d6cb2503",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/mc4-weid.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-paneles-solares/conectores-mc4-pvstick-weidmuller",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504017/conectores-mc4-pvstick-weidmuller-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "acf54a1d4d693045964ff59e367e5b0fb368cb91bbf2464b44c051abc5d9fb9d",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "acf54a1d4d693045964ff59e367e5b0fb368cb91bbf2464b44c051abc5d9fb9d",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/cam-hdw1431.jpg",
+    "source_page": "https://arteus.pe/products/dahua-dh-ipc-hdw1431t1p-s6-camara-de-seguridad-ip-poe-4mp-2k-2-8mm-wdr-ip67-ir-30m",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/IPC-HDW1431T1-S4.jpg?v=1790332630&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "12a24492838757cb46cbc245eb090aa7cb10646ddba58e8c15e76a14e4499e28",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "12a24492838757cb46cbc245eb090aa7cb10646ddba58e8c15e76a14e4499e28",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/cam-hdbw1431.jpg",
+    "source_page": "https://arteus.pe/products/dahua-dh-ipc-hdbw1431en-s4-camara-de-vigilancia-ip-poe-2k-4mp-2-8mm-wdr-ip67-ir-30m",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/IPC-HDBW1431E-S4.jpg?v=1790332496&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "6d2ca93315f6da104310b25c53127bc3f3035636cf35f7df8193fc35531b9a1f",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "6d2ca93315f6da104310b25c53127bc3f3035636cf35f7df8193fc35531b9a1f",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/cam-hdw2449.jpg",
+    "source_page": "https://arteus.pe/products/dahua-ipc-hdw2449t-s-il-camara-ip-poe-4mp-2k-2-8mm-wdr-ip67-microfono-ir-led-30m-wizsense",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/IPC-HDW2449T-S-IL.jpg?v=1790332657&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "834c8e4a951f4a6cab3ccb8d9fde9b2d19267c87050591343756a0805b19532e",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "834c8e4a951f4a6cab3ccb8d9fde9b2d19267c87050591343756a0805b19532e",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/nvr-dahua.jpg",
+    "source_page": "https://arteus.pe/products/dahua-nvr1104hs-p-s3-h-grabador-nvr-4k-4ch-puertos-poe-hasta-8mp-80mbps-1hdd-hasta-8tb",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/NVR1104HS-P-S3-H.jpg?v=1790333288&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "7d3c54dd1fc77a3dceec7aaf8e99c4a6d01e1c9019c04f7f4076d6c79d2af89b",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "7d3c54dd1fc77a3dceec7aaf8e99c4a6d01e1c9019c04f7f4076d6c79d2af89b",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/nvr-vigi.jpg",
+    "source_page": "https://arteus.pe/products/tp-link-vigi-nvr1004h-4p-grabador-de-video-nvr-4-canales-poe-4k",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/VIGINVR1004H-4P.jpg?v=1792613026&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "eed0de642d54587cd176392d43d0d96fadceb7aa22a141367f49a77fe28136ea",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "eed0de642d54587cd176392d43d0d96fadceb7aa22a141367f49a77fe28136ea",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/nvr-hilook.jpg",
+    "source_page": "https://arteus.pe/products/hilook-nvr-104h-d-4p-mini-grabador-nvr-poe-4-canales-6mp",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/NVR-104H-D-4P-2.jpg?v=1790400970&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "09db3825e9ba5958ce922f9d539ce7784f0c115646d013ea8bbb299e849b7124",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "09db3825e9ba5958ce922f9d539ce7784f0c115646d013ea8bbb299e849b7124",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/sw-dlink.jpg",
+    "source_page": "https://arteus.pe/products/d-link-dgs-1100-08pv2",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/DGS-1100-08PV2.jpg?v=1790373923&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "ca63415c6d61bd10f4b012c40283e5f78b4e00ca0c4d46516e7b39522eed24c8",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "ca63415c6d61bd10f4b012c40283e5f78b4e00ca0c4d46516e7b39522eed24c8",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/sw-dahua.jpg",
+    "source_page": "https://arteus.pe/products/dahua-s4210-8gt-110-switch-8-puertos-poe-gigabit-110w-poe-watchdog",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/S4210-8GT-110--2.jpg?v=1790433248&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "3ea7146a7b8fc762525d1f5161de42733a3d0347041b52168b7cb556e1508a4e",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "3ea7146a7b8fc762525d1f5161de42733a3d0347041b52168b7cb556e1508a4e",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/sw-hik.png",
+    "source_page": "https://arteus.pe/products/hikvision-ds-3e1510p-si-switch-poe-8-puertos-gigabit-2sfp-110w-smart",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/hik82.png?v=1790326700&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2a75d61b46557b850fefc06e722e97309e007b96283caa13c736fa3128a10d88",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "2a75d61b46557b850fefc06e722e97309e007b96283caa13c736fa3128a10d88",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/hdd-skyhawk.jpg",
+    "source_page": "https://arteus.pe/products/seagate-st2000vx017-skyhawk-disco-duro-2tb-3-5",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/images_a56829c6-7b0b-4940-a14e-945ce5d25e1f.jpg?v=1790465448&width=447",
+    "retrieved": "2026-10-30",
+    "original_sha256": "eeee6acbb2a991eaccb36d8d9195e6c8d1fd47d1598a9f061f2f4be53ddaff97",
+    "original_size": [
+      447,
+      447
+    ],
+    "processing": "sin modificar",
+    "sha256": "eeee6acbb2a991eaccb36d8d9195e6c8d1fd47d1598a9f061f2f4be53ddaff97",
+    "size": [
+      447,
+      447
+    ]
+  },
+  {
+    "file": "cot/hdd-wd22.jpg",
+    "source_page": "https://arteus.pe/products/western-digital-wd22purz-disco-duro-interno-purple-2tb",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/WD22PURZ-3.jpg?v=1790408981&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5813b172e9fd0cb84cfc72c9cc5887866743a022ba035c234b0fd44c18dab51c",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "5813b172e9fd0cb84cfc72c9cc5887866743a022ba035c234b0fd44c18dab51c",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/utp-dixon.jpg",
+    "source_page": "https://arteus.pe/products/dixon-9040-24-lszh-cable-utp-cat6-cobre-24awg-gris-305m",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/9040-24-LSZH.jpg?v=1790359475&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "fb0c05f4c8a30f72bca64d2dbcde2d84794f16eef2cde9e8af655600d1e1bd0d",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "fb0c05f4c8a30f72bca64d2dbcde2d84794f16eef2cde9e8af655600d1e1bd0d",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/utp-satra.jpg",
+    "source_page": "https://arteus.pe/products/satra-0212021111-cable-de-red-utp-cat6-cobre-24awg-lszh-1-gris-305m",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/0212021111-2_518300e2-bc41-4c82-96be-f5966bbc54f4.jpg?v=1790375625&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "15460c948265acad9a3f1d6601f8560481a05fa9f6441ab578d4bb0f313af318",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "15460c948265acad9a3f1d6601f8560481a05fa9f6441ab578d4bb0f313af318",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/jack-nexxt.png",
+    "source_page": "https://arteus.pe/products/nexxt-solutions-pcgkjc6tyrjsl-infra-promo-jack-cat-6-stp-keystone-tipo-110",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/PCGKJC6TYRJSL-land.png?v=1790447570&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "034efdb21d96de46c972fc1e11cc4f7847c527886c8b12b601809947215c7598",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "034efdb21d96de46c972fc1e11cc4f7847c527886c8b12b601809947215c7598",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/jack-linkbasik.jpg",
+    "source_page": "https://arteus.pe/products/linkbasik-jka09-uc6-wh-jack-rj-45-cat6-color-blanco",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/JKA09-UC6-WH_a0ea1e8f-2d19-4a71-8b7d-197da9f1510a.jpg?v=1790428184&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "4263e473a1b7d200e681264e83db5e4251920afa977ea0eb7d9edd39dfef9131",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "4263e473a1b7d200e681264e83db5e4251920afa977ea0eb7d9edd39dfef9131",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/pp-pkj24.jpg",
+    "source_page": "https://arteus.pe/products/dixon-pkj24-c6-a-bk-patch-panel-cat-6-modular-24-puertos-vacio",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/PKJ24-C6-A-BK.jpg?v=1790475824&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5811053eb9c9fcb59c962680fb4df45809df53169f290173a13059a989a37c80",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "5811053eb9c9fcb59c962680fb4df45809df53169f290173a13059a989a37c80",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/pp-ppkj24.jpg",
+    "source_page": "https://arteus.pe/products/dixon-ppkj24-patch-panel-24-puertos-cat-6-cat-6a-modular-vacio",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/PPKJ24.jpg?v=1790475774&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "e924ced81169e02e121b37a1abc440489786f65913b89ea06665cb8a1de8859f",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "e924ced81169e02e121b37a1abc440489786f65913b89ea06665cb8a1de8859f",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/pp-nexxt.jpg",
+    "source_page": "https://arteus.pe/products/nexxt-solutions-aw191nxt06-patch-panel-rack-24p-1u-cat6-pre-config-tipo-110",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/AW191NXT06-1_5dafd035-09c6-4df6-a415-a59d970329d1.jpg?v=1790446655&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2796b4a44dcdedda3c4803547b6da86de126a7a475960c5aee14a4e0db682a23",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "2796b4a44dcdedda3c4803547b6da86de126a7a475960c5aee14a4e0db682a23",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/caja-satra.jpg",
+    "source_page": "https://arteus.pe/products/satra-0111048901-caja-modular-pvc-adosable-2x4x1-89",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/111048901.jpg?v=1790429066&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "0d11edfba7ee02c3895c32a48b95a98222d68c9eeb7cfe611fa98339a371ce36",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "0d11edfba7ee02c3895c32a48b95a98222d68c9eeb7cfe611fa98339a371ce36",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/caja-dixon.jpg",
+    "source_page": "https://arteus.pe/products/dixon-je318-wh",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/JE318-WH_5823b47f-378d-413b-a35c-f7e0c56d67a1.jpg?v=1790476387&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "efae5dabf2df3fcc6a6f434de04aeab6e96bfe18b882c03f8c524cc5fc742477",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "efae5dabf2df3fcc6a6f434de04aeab6e96bfe18b882c03f8c524cc5fc742477",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/caja-nexxt.png",
+    "source_page": "https://arteus.pe/products/nexxt-solutions-ae180nxt03-caja-de-montaje-superficial-rj45",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/descarga_34.png?v=1790447794&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "fffed5903a128c9117bff535238323dd1b8daed8b969c65fc59de58fc8f7f820",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "fffed5903a128c9117bff535238323dd1b8daed8b969c65fc59de58fc8f7f820",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/pc-legrand.jpg",
+    "source_page": "https://arteus.pe/products/legrand-051832-patch-cord-utp-cat6-lszh-1m-azul",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/051832_8571b03b-30ab-456d-95b0-3aab68a36c60.jpg?v=1790367451&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "ee660756e9cbac192d6a70d0bcdf0814335db026ac52cfed119fbd11ac0aa709",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "ee660756e9cbac192d6a70d0bcdf0814335db026ac52cfed119fbd11ac0aa709",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/pc-satra.jpg",
+    "source_page": "https://arteus.pe/products/satra-0102030104-cable-patch-cord-utp-cat6-azul-1m",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/cat6_1024x.jpg?v=1790375682",
+    "retrieved": "2026-10-30",
+    "original_sha256": "648a6e1ba25c45b97abfb957798cac0ecaae2320244a5cba10245a9cacc642af",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "648a6e1ba25c45b97abfb957798cac0ecaae2320244a5cba10245a9cacc642af",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/pc-nexxt.jpg",
+    "source_page": "https://arteus.pe/products/nexxt-solutions-ab361nxt24-cable-de-red-patch-cord-cat6-u-utp-cm-3m-10ft-azul",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/AB361NXT24-1.jpg?v=1790446541&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "c18b10a029969435dae28cb41a8db615dfaffc013d53280ee53770f9ca35bf91",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "c18b10a029969435dae28cb41a8db615dfaffc013d53280ee53770f9ca35bf91",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/can-dexson.jpg",
+    "source_page": "https://arteus.pe/products/dexson-dxn10051-canaleta-blanca-20x12-con-adhesivo",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/dexson-dxn10051-canaleta-blanca-20x12-con-adhesivo-arteus.jpg?v=1790318719&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5149b51c3057f243dda77407559108bc992dcf77a46642961554391e097b7834",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "5149b51c3057f243dda77407559108bc992dcf77a46642961554391e097b7834",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/can-efapel40.png",
+    "source_page": "https://arteus.pe/products/efapel-10060-cbr-canaleta-40x16-de-2mts-c-division",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/efapel-10060-cbr-canaleta-40x16-de-2mts-cdivision-arteus-2_1024x.png?v=1790313925",
+    "retrieved": "2026-10-30",
+    "original_sha256": "9b65c9eaf03e61aac0b09d1aeef47af153ebd0c02ab665881a4b3bed1ba8a37a",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "9b65c9eaf03e61aac0b09d1aeef47af153ebd0c02ab665881a4b3bed1ba8a37a",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/can-efapel60.png",
+    "source_page": "https://arteus.pe/products/efapel-10070-cbr-canaleta-60x16-de-2mts-con-division",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/efapel-10070-cbr-canaleta-60x16-de-2mts-con-division-arteus-2_1024x.png?v=1790314016",
+    "retrieved": "2026-10-30",
+    "original_sha256": "2357012043493d55225c3c229c27faef2b398d48e8b5833c3b4b905ecba6e83f",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "2357012043493d55225c3c229c27faef2b398d48e8b5833c3b4b905ecba6e83f",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/gab-zkteco.jpg",
+    "source_page": "https://arteus.pe/products/zkteco-zk-r9u-5409a-gabinete-de-pared-9ru-53x40x45cm",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/gabinetezkteco_80eb8272-b3d2-4714-8d3d-a1583886e07d_1024x.jpg?v=1790339526",
+    "retrieved": "2026-10-30",
+    "original_sha256": "ea3d6af7c6890ec172469d72f317897a571b1639f7fa303ebb427e17cdbdebf8",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "ea3d6af7c6890ec172469d72f317897a571b1639f7fa303ebb427e17cdbdebf8",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/gab-g6.png",
+    "source_page": "https://arteus.pe/products/gabinete-de-pared-estandar-g6-30x60x51cm",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/GabinetedeParedESTANDAR_G6_-6RU_e2bad193-f580-4701-9daa-5c20e60797a9_1024x.png?v=1790415029",
+    "retrieved": "2026-10-30",
+    "original_sha256": "88c75ea29d1971d25b67f9cb9a9d9086a78a671d48253452a1695b74ed639a35",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "88c75ea29d1971d25b67f9cb9a9d9086a78a671d48253452a1695b74ed639a35",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/gab-finen.jpg",
+    "source_page": "https://arteus.pe/products/finen-w1-5406-gabinete-de-pared-6ru-368-x-540-x-400mm-c-puerta-de-vidrio",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/W1-5406-2_1024x.jpg?v=1790427812",
+    "retrieved": "2026-10-30",
+    "original_sha256": "f2031d34fba0ef73a29562dc8711d6bafeb4eec0a89ce9bdd7722b1227c58629",
+    "original_size": [
+      1000,
+      1000
+    ],
+    "processing": "sin modificar",
+    "sha256": "f2031d34fba0ef73a29562dc8711d6bafeb4eec0a89ce9bdd7722b1227c58629",
+    "size": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "cot/reg-pdu.jpg",
+    "source_page": "https://arteus.pe/products/power-rack-8-tomas-planas-y-redonda",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/pdu2.jpg?v=1790333749&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "b2c2e53a48117b8737e7cab513a43d4b22631e921352a753701f324da61dc569",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "b2c2e53a48117b8737e7cab513a43d4b22631e921352a753701f324da61dc569",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/reg-nexxt.png",
+    "source_page": "https://arteus.pe/products/nexxt-solutions-npd-21u8u15a-regleta-horizontal-8-tomacorrientes-15a-monofasica-16awg",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/descarga_27.png?v=1790447281&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "4097f52d21932876c42970e0686740f8d0d07fa8281d0478e3da2cd9d1ae62f7",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "4097f52d21932876c42970e0686740f8d0d07fa8281d0478e3da2cd9d1ae62f7",
+    "size": [
+      500,
+      500
+    ]
+  },
+  {
+    "file": "cot/toma-bticino.jpg",
+    "source_page": "https://www.promelsa.com.pe/tomacorriente-schuko-2p-t-16a-p50-placa-blanco-1045958.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/t/o/tomacorriente-schuko-2p-t-16a-p50-placa-blanco-1045958-01.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "5c0ff6a5415c7acbb0a68d063c31af699b6adeff1d9d647010cb25d9dc6dfb0f",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "5c0ff6a5415c7acbb0a68d063c31af699b6adeff1d9d647010cb25d9dc6dfb0f",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/toma-matix.jpg",
+    "source_page": "https://www.promelsa.com.pe/1017375-tomacorriente-p-empotrar-schuko-2x16at-250v-2-modulos-marfil-matix.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1017375-01.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "50da5906da7876e17b8f375b7cb4186ae19f5318b888e83f42ffb9d9ea532f5f",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "50da5906da7876e17b8f375b7cb4186ae19f5318b888e83f42ffb9d9ea532f5f",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/toma-mosaic.jpg",
+    "source_page": "https://www.promelsa.com.pe/1016576-tomacorriente-schuko-2x16at-c-tornillo-2-modulos-blanco-mosaic.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1016576-01_1.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "6bb7e30144a9cdcceacbb06da3e850b0597c9f06a2b0d75c64921b0edeed231e",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "6bb7e30144a9cdcceacbb06da3e850b0597c9f06a2b0d75c64921b0edeed231e",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/cab-miguelez.jpg",
+    "source_page": "https://www.promelsa.com.pe/1004151-cable-h07z1-k-2-5mm2-450-750v-libre-de-halogeno-negro-clase-5-x-rollo.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1004151-02.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "1c41ec191fa70a52632496ba64481b07476acb776ffb38f2d1d7ed575dbf34c0",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "1c41ec191fa70a52632496ba64481b07476acb776ffb38f2d1d7ed575dbf34c0",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/cab-indeco.jpg",
+    "source_page": "https://www.promelsa.com.pe/cable-nh-90-2-5mm2-450-750v-libre-de-halogeno-negro-clase-2-x-rollo-practicable-1042538.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/c/a/cable-nh-90-2-5mm2-450-750v-libre-de-hal-geno-negro-clase-2-x-rollo-practicable-1042538-01.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "6c65df975c19d056e21c92946e4a0529c14dfa67073844ef32706099e4c09513",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "6c65df975c19d056e21c92946e4a0529c14dfa67073844ef32706099e4c09513",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/u-cablesolar.jpg",
+    "source_page": "https://autosolar.pe/cable-unipolar/rollo-cable-solar-unipolar-6mm2-h1z2z2-k-15kv-15m-rojo",
+    "source_image_url": "https://cdn.autosolar.pe/images/5204032/rollo-cable-solar-unipolar-6mm2-h1z2z2-k-15kv-15m-rojo-687eabd165d08-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "10c58b3fc0222d64d2a9682df622cc4e4891edfe179600546a397bb9319f80b3",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "10c58b3fc0222d64d2a9682df622cc4e4891edfe179600546a397bb9319f80b3",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-cablebat.jpg",
+    "source_page": "https://autosolar.pe/cables-de-baterias/cable-para-baterias-interconexion-en-serie-35mm2",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504036/cable-para-baterias-interconexion-en-serie-35mm2-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "1e0d2b730709dafdb1ebea4826c083177edfa04d987dee5ec1ccacc8c4f7ee23",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "1e0d2b730709dafdb1ebea4826c083177edfa04d987dee5ec1ccacc8c4f7ee23",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-anl.jpg",
+    "source_page": "https://autosolar.pe/fusibles/fusible-anl-150a",
+    "source_image_url": "https://cdn.autosolar.pe/images/5504203/fusible-anl-150a-698a04b8dbdf5-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "85c3815b4f9dadca0773873cc74c2b1c3635e0071577f4900e70d32ea215e106",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "85c3815b4f9dadca0773873cc74c2b1c3635e0071577f4900e70d32ea215e106",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-sdm230.jpg",
+    "source_page": "https://autosolar.pe/accesorios-de-inversores/vatimetro-sdm230-modbus-pro-monofasico-tensite",
+    "source_image_url": "https://cdn.autosolar.pe/images/3206050/vatimetro-sdm230-modbus-pro-monofasico-tensite-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "893408299774ac021b7b8bd0c31b921a3fa0d6545c1374923bff29054a2339a6",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "893408299774ac021b7b8bd0c31b921a3fa0d6545c1374923bff29054a2339a6",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-barra.jpg",
+    "source_page": "https://autosolar.pe/materiales-para-pozo-a-tierra/barra-de-cobre-58-x-24m-con-punta",
+    "source_image_url": "https://cdn.autosolar.pe/images/5509040/barra-de-cobre-58-x-240m-cpunta-6909207fa33d0-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "e1d66ad2092fb621bb4e9e5c7ef9c34eef5fcaf863b271c4addf57ddcc6a9a6e",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "e1d66ad2092fb621bb4e9e5c7ef9c34eef5fcaf863b271c4addf57ddcc6a9a6e",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-tm16.jpg",
+    "source_page": "https://autosolar.pe/termomagneticos-monofasicos/termomagnetico-nxb-63-2p-16a-6ka-monofasico-chint",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102070/termomagnetico-nxb-63-2p-16a-6ka-monofasico-chint-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "f96bffcd5e5c48327951abd20b9da503fa49e76698d0426d883e1f00e383a1d3",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "f96bffcd5e5c48327951abd20b9da503fa49e76698d0426d883e1f00e383a1d3",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-tm32.jpg",
+    "source_page": "https://autosolar.pe/termomagneticos/termomagnetico-2p-32a-6ka-monofasico-chint",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102071/termomagnetico-2p-32a-6ka-monofasico-chint-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "9def794814c2d030365863fbb6933cb7bb66006649e560d34ecf9beef8e1ef3b",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "9def794814c2d030365863fbb6933cb7bb66006649e560d34ecf9beef8e1ef3b",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-spdac.jpg",
+    "source_page": "https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-2p-275v-40ka-chint",
+    "source_image_url": "https://cdn.autosolar.pe/images/7102517/proteccion-sobretensiones-2p-275v-40ka-chint-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "1776205185c28daa540c3670db7081e3e6e4ab3f83acbbdfb7d206f3c7e4fcfe",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "1776205185c28daa540c3670db7081e3e6e4ab3f83acbbdfb7d206f3c7e4fcfe",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-cemento.jpg",
+    "source_page": "https://autosolar.pe/materiales-para-pozo-a-tierra/cemento-conductivo-para-pozo-a-tierra-25kg-thor-cem",
+    "source_image_url": "https://cdn.autosolar.pe/images/3201080/cemento-conductivo-para-pozo-a-tierra-25kg-thor-cem-690df404b6e66-thumb.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "28fc037ab52b77ea0d17243e0d4f6436199b38213d2b839406a426f901d394b1",
+    "original_size": [
+      250,
+      250
+    ],
+    "processing": "sin modificar",
+    "sha256": "28fc037ab52b77ea0d17243e0d4f6436199b38213d2b839406a426f901d394b1",
+    "size": [
+      250,
+      250
+    ]
+  },
+  {
+    "file": "cot/u-tubo.jpg",
+    "source_page": "https://www.promelsa.com.pe/1026759-tubo-pvc-sap-3-4-x-3mts.html",
+    "source_image_url": "https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1026759-01_1.jpg",
+    "retrieved": "2026-10-30",
+    "original_sha256": "e5e9eebe4ce260e09527c6f54142beec3d2452d9f409f7be20ecf9b365781cf2",
+    "original_size": [
+      400,
+      400
+    ],
+    "processing": "sin modificar",
+    "sha256": "e5e9eebe4ce260e09527c6f54142beec3d2452d9f409f7be20ecf9b365781cf2",
+    "size": [
+      400,
+      400
+    ]
+  },
+  {
+    "file": "cot/u-faceplate.jpg",
+    "source_page": "https://arteus.pe/products/dixon-je3001wh-faceplate-placa-frontal-simple-1-puerto-blanco",
+    "source_image_url": "https://arteus.pe/cdn/shop/files/JE3001WH.jpg?v=1790475842&width=500",
+    "retrieved": "2026-10-30",
+    "original_sha256": "a69744fbd32f80a791860ea5d8f8b1fd71294476616de53a218bd9a94b874870",
+    "original_size": [
+      500,
+      500
+    ],
+    "processing": "sin modificar",
+    "sha256": "a69744fbd32f80a791860ea5d8f8b1fd71294476616de53a218bd9a94b874870",
+    "size": [
+      500,
+      500
+    ]
   }
 ]

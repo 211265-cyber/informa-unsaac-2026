@@ -128,28 +128,38 @@ Revisión hecha a partir de las observaciones generales del docente a otros proy
 - **Anexo C.** Registra el documento del que se tomó cada característica de cada marca.
 - **Mantenimiento.** Plan por equipo, incluidas pantallas, marco táctil, SSD, cámaras, red, módulos, batería y tierra, con costo anual.
 - **Costos exactos.**
-  - Treinta y siete partidas con precio publicado de AutoSolar Perú y de ARTEUS S.A.C., RUC 20608279637, ambos con IGV incluido.
+  - Treinta y nueve partidas con precio publicado.
+    - AutoSolar Perú y ARTEUS S.A.C., RUC 20608279637, declaran el IGV incluido.
+    - Promelsa no declara el IGV; por eso se reserva el 18 %.
   - Las provisiones globales de inversor, materiales y medición se reemplazaron por precios.
-  - El 59 % de la base de A2 procede de precios publicados.
+  - El 60 % de la base de A2 procede de precios publicados.
+- **Formato del documento de referencia de la biblioteca.**
+  - Anexo D con 26 cotizaciones en hoja apaisada y 75 imágenes de producto registradas en `procedencia_imagenes.json`. Cada cotización tiene imagen, características con su descripción, proveedor, precio, enlace y fuente de la imagen.
+  - Incluye tomacorrientes, conductores, canaletas, jacks, cajas y protecciones.
+  - Sección de condiciones de la contratación: valor referencial por paquete, plazo, forma de pago, requisitos del postor, garantías, penalidades, vicios ocultos, responsabilidades y supervisión.
+  - Anexo E con la evidencia del tablero de Jira.
+- **Cambios por la regla de elección.**
+  - El gabinete de 9 RU, de S/ 172 e incluye bandeja, reemplaza al de 6 RU de S/ 225.
+  - El cable H07Z1-K, de S/ 213,58 el rollo, reemplaza al NH-90 de S/ 240,72.
 
 ### Cifras vigentes
 
 - Inversión con reservas:
   - A0: S/ 9 196,00;
-  - A1: S/ 83 203,09;
-  - A2: S/ 93 333,53.
+  - A1: S/ 83 287,25;
+  - A2: S/ 93 417,69.
 - Costo adicional FV de S/ 10 130,44. Costos a cinco años:
   - A0: S/ 31 996,00;
-  - A1: S/ 128 368,76;
-  - A2: S/ 134 886,90.
+  - A1: S/ 128 452,92;
+  - A2: S/ 134 971,06.
 - Valor actual de costos al 8 %:
   - A0: S/ 27 402,76;
-  - A1: S/ 118 682,52;
-  - A2: S/ 125 928,38.
+  - A1: S/ 118 766,68;
+  - A2: S/ 126 012,54.
 - Índice de costo-efectividad por estudiante:
   - A0: S/ 32,24;
-  - A1: S/ 139,63;
-  - A2: S/ 148,15.
+  - A1: S/ 139,73;
+  - A2: S/ 148,25.
 - 408 HP de implementación, con 16 HP para red y videovigilancia.
 - Reposición de batería en el año 5: S/ 4 978,47.
 
@@ -159,7 +169,10 @@ Revisión hecha a partir de las observaciones generales del docente a otros proy
 - Confirmar que el switch de menor precio admite IEEE 802.1Q y que el inversor elegido conserva su potencia a 3 400 m.
 - Confirmar la compatibilidad BMS de la batería con el inversor, por escrito del proveedor.
 - Confirmar el plazo de conservación de video en el texto vigente de la directiva de la ANPD; el diseño fija 30 días.
-- Las tiendas Promart y Sodimac no mostraron precios por consulta automatizada. Por eso conductores AC, tubería y conductor de tierra siguen como estimación propia de S/ 1 240.
+- Confirmar con Promelsa el tratamiento del IGV y la longitud de los rollos de cable.
+- El conductor de tierra de 10 mm², el de 6 mm², las cajas y la rotulación siguen como estimación propia de S/ 250.
+- Las canaletas de 40 × 16 mm a S/ 5 no muestran stock verificable. Si lo confirman, ahorrarían S/ 434.
+- Si el NVR de TP-Link incluye disco y acredita compatibilidad con las cámaras, ahorraría hasta S/ 711.
 
 ## Dictamen
 

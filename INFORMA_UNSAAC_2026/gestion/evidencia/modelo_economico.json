@@ -1,15 +1,15 @@
 {
   "currency": "PEN, soles constantes de 2026",
-  "published": "49933.67",
-  "conditional_tax_reserve": "5129.99",
-  "own_provisions": "4465.00",
-  "A2_base": "84848.66",
-  "A1_base": "75639.17",
+  "published": "50826.36",
+  "conditional_tax_reserve": "5303.81",
+  "own_provisions": "3475.00",
+  "A2_base": "84925.17",
+  "A1_base": "75715.68",
   "FV_increment_base": "9209.49",
   "investment": {
     "A0": "9196.00",
-    "A1": "83203.09",
-    "A2": "93333.53"
+    "A1": "83287.25",
+    "A2": "93417.69"
   },
   "opex_year": {
     "A0": "4560.00",
@@ -23,8 +23,8 @@
   },
   "tco_5_years": {
     "A0": "31996.00",
-    "A1": "128368.76",
-    "A2": "134886.90"
+    "A1": "128452.92",
+    "A2": "134971.06"
   },
   "energy_annual_kWh": "1921.8",
   "grid_tariff_assumption": "0.80",
@@ -36,8 +36,8 @@
     "single_factor_year_5": "0.6806",
     "vac": {
       "A0": "27402.76",
-      "A1": "118682.52",
-      "A2": "125928.38"
+      "A1": "118766.68",
+      "A2": "126012.54"
     },
     "difference_A2_A1": "7245.86",
     "basis": "precios de mercado; tasa del Anexo 11, Directiva 001-2019-EF/63.01, por verificar al registrar la inversion"
@@ -53,8 +53,8 @@
     "population_source": "matricula referencial de la EPIIS proporcionada por el equipo; confirmar con el registro oficial 2026-II",
     "ice_per_student_central": {
       "A0": "32.24",
-      "A1": "139.63",
-      "A2": "148.15"
+      "A1": "139.73",
+      "A2": "148.25"
     },
     "ice_range_870_830": {
       "A0": [
@@ -62,28 +62,28 @@
         "33.02"
       ],
       "A1": [
-        "136.42",
-        "142.99"
+        "136.51",
+        "143.09"
       ],
       "A2": [
-        "144.75",
-        "151.72"
+        "144.84",
+        "151.82"
       ]
     },
     "ice_per_student_year_central": {
       "A0": "6.45",
-      "A1": "27.93",
-      "A2": "29.63"
+      "A1": "27.95",
+      "A2": "29.65"
     },
     "incremental_per_student_central": {
-      "A1_vs_A0": "107.39",
+      "A1_vs_A0": "107.49",
       "A2_vs_A1": "8.52"
     }
   },
   "published_by_group": {
     "terminales": "28499.97",
-    "energia": "16986.70",
-    "red_y_videovigilancia": "4447.00"
+    "energia_y_materiales_AC": "17952.39",
+    "red_y_videovigilancia": "4374.00"
   },
   "services": {
     "hours_person": 408,
@@ -97,12 +97,29 @@
   "selected_references": {
     "ET-01": "Prodimer TIPI7-55, 9499.99",
     "ET-02": "VM institucional o VPS; valorizado a USD 14.99/mes de renovacion, 720.00/anio",
-    "ET-03": "Cable Cat 6 cobre LSZH 305 m 666.00; switch Dahua S4210-8GT-110 517.00",
+    "ET-03": "Cable Cat 6 cobre LSZH 305 m 666.00; switch Dahua S4210-8GT-110 517.00; gabinete ZKTECO 9 RU 172.00; tomacorriente Bticino 2P+T 39.35",
     "ET-04": "Camara Dahua IPC-HDW1431T1P-S6 219.00; NVR Dahua NVR1104HS-P-S3/H 292.00; disco SkyHawk 2 TB 699.00",
     "ET-05": "Tensite AH4M-2 6537.03",
     "ET-06": "Jinko JKM615N-66HL4M-BDV 405.35",
     "ET-07": "Tensite TS-L5000/LV 4178.47",
     "ET-08": "Estructura inclinada 15 grados para 3 modulos 459.61",
-    "ET-10": "Medidor SDM230 502.41 y T-Dongle 147.84"
+    "ET-10": "Medidor SDM230 502.41 y T-Dongle 147.84",
+    "ET-09": "Cable H07Z1-K 2,5 mm2 rollo 213.58 (Promelsa); tubo SAP 3/4 11.17"
+  },
+  "conditional_tax_reserve_detail": {
+    "terminales": "5129.99",
+    "materiales_AC_Promelsa": "173.82"
+  },
+  "packages_base": {
+    "P1_terminales": "35879.96",
+    "P2_energia": "19306.21",
+    "P3_red": "4419.00",
+    "P4_servicios": "25320.00"
+  },
+  "packages_with_contingency": {
+    "P1_terminales": "39467.96",
+    "P2_energia": "21236.83",
+    "P3_red": "4860.90",
+    "P4_servicios": "27852.00"
   }
 }

@@ -1,0 +1,704 @@
+% Anexo de cotizaciones generado a partir de las consultas del 30 de octubre de 2026.
+\section{Cotizaciones por componente}\label{sec:cotizaciones}
+Este anexo presenta cada componente del presupuesto como una cotización comparada: imagen referencial, características publicadas, proveedor, precio y enlace del producto, con una columna que explica qué significa cada característica. Las opciones se contrastan con la especificación ET que corresponde y se elige con la regla de la sección \ref{sec:seleccion}: menor costo entre las opciones que cumplen y están documentadas.
+
+Los terminales, los módulos fotovoltaicos y el alojamiento se comparan en los cuadros \ref{tab:fichas-totems}, \ref{tab:modulos_comparados} y \ref{tab:comp_hosting}. Las imágenes son referenciales, se reproducen con fines académicos y su página de origen, URL y huella SHA-256 se registran en \texttt{procedencia\_imagenes.json}. Todas las consultas son del 30 de octubre de 2026.
+
+\begin{landscape}
+\urldef{\cotua}\url{https://autosolar.pe/inversores-hibridos/inversor-hibrido-tensite-4kw-monofasico-ah4m-2}
+\urldef{\cotub}\url{https://cdn.autosolar.pe/images/3206103/inversor-hibrido-tensite-4kw-monofasico-ah4m-2-thumb.jpg}
+\urldef{\cotuc}\url{https://autosolar.pe/inversores-hibridos-monofasicos/inversor-hibrido-6kw-monofasico-sth6m-2gen-suntaic}
+\urldef{\cotud}\url{https://cdn.autosolar.pe/images/3200605/inversor-hibrido-6kw-monofasico-sth6m-2gen-suntaic-684995754ef03-thumb.jpg}
+\urldef{\cotue}\url{https://autosolar.pe/inversores-hibridos-monofasicos/inversor-hibrido-monofasico-5kw-220v-hyper-5000-livoltek}
+\urldef{\cotuf}\url{https://cdn.autosolar.pe/images/3203003/inversor-hibrido-monofasico-5kw-220v-hyper-5000-livoltek-6ad14d44a1e71-thumb.jpg}
+\urldef{\cotug}\url{https://autosolar.pe/inversores-hibridos/inversor-hibrido-3kw-growatt-sph3000}
+\urldef{\cotuh}\url{https://cdn.autosolar.pe/images/3205070/inversor-hibrido-3kw-growatt-sph3000-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas\scriptsize\renewcommand{\arraystretch}{1.0}
+\captionof{table}{Cotización de inversor híbrido, ET-05}\label{tab:cot-inv}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Tensite AH4M-2} & \textbf{Opción 2: Suntaic STH6M-2/GEN} & \textbf{Opción 3: Livoltek Hyper-5000} & \textbf{Opción 4: Growatt SPH3000} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/inv-tensite.jpg}{1.8cm} & \imgficha{imagenes/cot/inv-suntaic.jpg}{1.8cm} & \imgficha{imagenes/cot/inv-livoltek.jpg}{1.8cm} & \imgficha{imagenes/cot/inv-growatt.jpg}{1.8cm} & Fotografía publicada por el proveedor\\
+\textbf{Potencia nominal} & 4\,000 W & 6\,000 W & 5\,000 W & 3\,000 W & Potencia AC continua que entrega a las cargas; la carga crítica es de 640 W\\
+\textbf{Corriente por MPPT} & 16 A & 15 A & 14 A & 12 A & Corriente máxima que admite cada seguidor; debe igualar o superar la Imp de 15,15 A del módulo\\
+\textbf{Cortocircuito por MPPT} & 20 A & 18 A & 17,5 A & No publicado & Debe superar la Isc de 16,02 A de la cadena\\
+\textbf{Tensión FV máxima y rango MPPT} & 550 V; 40 a 530 V & 550 V; 90 a 500 V & 600 V; 125 a 550 V & 550 V; 150 a 550 V & La cadena llega a 318,94 V en frío y trabaja cerca de 243,6 V\\
+\textbf{Batería} & 48 V, 40 a 60 V; 100 A & 48 V, 42 a 59 V; 100 A & 40 a 60 V; 100 A & 42 a 59 V; 66 A & Tensión y corriente de carga y descarga del banco de litio\\
+\textbf{Respaldo} & 5\,000 VA; conmutación de 10 ms & 6\,000 VA & 5\,000 W & 3\,000 W & Potencia disponible durante un corte de red\\
+\textbf{Eficiencia y protección} & 97,6\%; IP66 & 98\%; IP65 & 97,8\%; IP65 & Cerca de 98\%; IP65 & Pérdidas de conversión y resistencia al polvo y al agua\\
+\textbf{Altitud de operación} & 4\,000 m; reducción sobre 3\,000 m & 3\,000 m & No publicada & Por verificar & Cusco se ubica cerca de 3\,400 m\\
+\textbf{Garantía} & 10 años de producto & No publicada & No publicada & 5 años, ampliable a 10 & Respaldo del fabricante durante el horizonte\\
+\textbf{Cumplimiento de ET-05} & C & N: 15 A y 3\,000 m & N: 14 A & N: 12 A & C cumple y está documentado; P por acreditar; N no cumple\\
+\textbf{Resultado} & \textbf{Elegida} & Recortaría la producción & Recortaría la producción & Más cara y recorta la producción & Regla: menor costo entre las opciones sin N\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{6\,537,03} & \textbf{4\,077,77} & \textbf{2\,960,94} & \textbf{8\,368,82} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotua} & {\scriptsize\cotuc} & {\scriptsize\cotue} & {\scriptsize\cotug} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotub} & {\scriptsize\cotud} & {\scriptsize\cotuf} & {\scriptsize\cotuh} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{tensiteinv,suntaicinv,livoltek,growattsph}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotui}\url{https://autosolar.pe/baterias-de-litio-48v/bateria-litio-48kwh-48v-ts-l5000lv-tensite}
+\urldef{\cotuj}\url{https://cdn.autosolar.pe/images/1880811/bateria-litio-48kwh-48v-ts-l5000lv-tensite-thumb.jpg}
+\urldef{\cotuk}\url{https://autosolar.pe/baterias-de-litio-48v/bateria-de-litio-solar-48v-5kwh-st-l5000lv-suntaic}
+\urldef{\cotul}\url{https://cdn.autosolar.pe/images/1882301/bateria-de-litio-solar-suntaic-st-l5000lv-48v-5kwh-thumb.jpg}
+\urldef{\cotum}\url{https://autosolar.pe/baterias-de-litio-48v/bateria-de-litio-48v-5kwh-100ah-lpbf48100-felicity-solar}
+\urldef{\cotun}\url{https://cdn.autosolar.pe/images/1880952/bateria-de-litio-5kwh-48v-100ah-lpbf48100-felicity-solar-68ded8253b4d7-thumb.jpg}
+\urldef{\cotuo}\url{https://autosolar.pe/baterias-de-litio-48v/bateria-litio-48kwh-pylontech-us5000-48v}
+\urldef{\cotup}\url{https://cdn.autosolar.pe/images/1880909/bateria-litio-48kwh-pylontech-us5000-48v-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas\scriptsize\renewcommand{\arraystretch}{1.0}
+\captionof{table}{Cotización de batería de litio, ET-07}\label{tab:cot-bat}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Tensite TS-L5000/LV} & \textbf{Opción 2: Suntaic ST-L5000/LV} & \textbf{Opción 3: Felicity LPBF48100} & \textbf{Opción 4: Pylontech US5000} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/bat-tensite.jpg}{1.8cm} & \imgficha{imagenes/cot/bat-suntaic.jpg}{1.8cm} & \imgficha{imagenes/cot/bat-felicity.jpg}{1.8cm} & \imgficha{imagenes/cot/bat-pylontech.jpg}{1.8cm} & Fotografía publicada por el proveedor\\
+\textbf{Química y tensión} & LiFePO4; 48 V & LiFePO4 16S; 51,2 V & LiFePO4; 51,2 V & Ión-litio; 48 V & Química estable y tensión del bus de baterías\\
+\textbf{Energía total y útil} & 4,8 kWh; 4,3 kWh & 5,22 kWh; 4,7 kWh & 5 kWh útiles & 4,8 kWh; profundidad 95\% & Energía para cuatro horas: se requieren 2,56 kWh AC\\
+\textbf{Ciclos de vida} & Más de 6\,000 al 80\% & No publicado & 6\,000 o más & Más de 6\,000 al 95\% & Duración esperada antes de la reposición\\
+\textbf{Corriente} & 60 A nominal; 100 A continuos & 50 A nominal; 100 A máx. & No publicada & No publicada & Debe sostener la descarga del inversor\\
+\textbf{Temperatura de carga} & 0 a 50\,°C & No publicada & No publicada & 0 a 50\,°C según manual & Cusco tiene madrugadas frías en el cuarto técnico\\
+\textbf{Comunicación} & CAN y RS485 & CAN y RS485 & CAN y RS485 & CAN y RS485 & Enlace del BMS con el inversor\\
+\textbf{Garantía} & 5 años & No publicada & No publicada & 10 años & Coincide con la reposición del año 5 del flujo\\
+\textbf{Compatibilidad con el inversor elegido} & Mismo fabricante & Por acreditar & Por acreditar & Por acreditar & Protocolo del BMS reconocido por el inversor\\
+\textbf{Cumplimiento de ET-07} & C & P: ciclos y compatibilidad & P: ficha no enlazada & P: compatibilidad & C cumple y está documentado; P por acreditar\\
+\textbf{Resultado} & \textbf{Elegida} & Equivalente si acredita & Equivalente si acredita & S/ 3\,314,53 más cara & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar sin precio; Sunperu sin IGV & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{4\,178,47} & \textbf{3\,535,17} & \textbf{3\,266,66} & \textbf{7\,493,00 con IGV en Sunperu} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotui} & {\scriptsize\cotuk} & {\scriptsize\cotum} & {\scriptsize\cotuo} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuj} & {\scriptsize\cotul} & {\scriptsize\cotun} & {\scriptsize\cotup} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{tensitebat,suntaicbat,felicity,pylonas}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuq}\url{https://autosolar.pe/soportes-suelo/estructura-3-paneles-144c-15o-inclinada-falcat}
+\urldef{\cotur}\url{https://cdn.autosolar.pe/images/1501662/estructura-3-paneles-144c-15o-inclinada-falcat-thumb.jpg}
+\urldef{\cotus}\url{https://autosolar.pe/soportes-cubierta-metalica/estructura-3-paneles-144c-40mm-coplanar-falcat}
+\urldef{\cotut}\url{https://cdn.autosolar.pe/images/1507115/estructura-3-paneles-144c-40mm-coplanar-falcat-thumb.jpg}
+\urldef{\cotuu}\url{https://autosolar.pe/soportes-suelo/estructura-2-paneles-144c-15o-inclinada-falcat}
+\urldef{\cotuv}\url{https://cdn.autosolar.pe/images/1501661/estructura-2-paneles-144c-15o-inclinada-falcat-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de estructura de montaje FV, ET-08}\label{tab:cot-est}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Falcat inclinada 15°, 3 módulos} & \textbf{Opción 2: Falcat coplanar, 3 módulos} & \textbf{Opción 3: Falcat inclinada 15°, 2 módulos} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/est-incl3.jpg}{2.3cm} & \imgficha{imagenes/cot/est-copl3.jpg}{2.3cm} & \imgficha{imagenes/cot/est-incl2.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Tipo de montaje} & Inclinada 15° para losa & Coplanar para cubierta metálica & Inclinada 15°, ajustable 15 a 30° & Cusco está a 13,5° S; la inclinación favorece captación y autolimpieza\\
+\textbf{Módulos admitidos} & 144 celdas hasta 1,134 $\times$ 2,4 m & Marco de 35 a 45 mm & 144 celdas hasta 1,134 $\times$ 2,4 m & El módulo elegido mide 2,382 $\times$ 1,134 m y 30 mm\\
+\textbf{Componentes} & 2 rieles de aluminio de 3,70 m; 4 abrazaderas & 2 rieles de 3,70 m; 6 soportes L & 2 rieles de 2,50 m; soporte ajustable & Piezas incluidas en el kit\\
+\textbf{Kits para 6 módulos} & 2: S/ 919,22 & 2: S/ 692,52 & 3: S/ 983,49 & Costo del conjunto completo\\
+\textbf{Cumplimiento de ET-08} & C & N: sin inclinación; para cubierta metálica & C & La especificación pide inclinación de 10 a 20° sobre losa\\
+\textbf{Resultado} & \textbf{Elegida} & No aplica a la losa & S/ 64,27 más por conjunto & Menor costo para seis módulos inclinados\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{459,61} & \textbf{346,26} & \textbf{327,83} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuq} & {\scriptsize\cotus} & {\scriptsize\cotuu} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotur} & {\scriptsize\cotut} & {\scriptsize\cotuv} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarfv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuw}\url{https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-25a-4p-1500vdc-dc-solar-energy}
+\urldef{\cotux}\url{https://cdn.autosolar.pe/images/7107110/interruptor-termomagnetico-25a-4p-1500vdc-dc-solar-energy-68b2060a19496-thumb.jpg}
+\urldef{\cotuy}\url{https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-2x16a-600vdc-zj-beny}
+\urldef{\cotuz}\url{https://cdn.autosolar.pe/images/7107010/interruptor-termomagnetico-2x16a-600vdc-zj-beny-thumb.jpg}
+\urldef{\cotuaa}\url{https://autosolar.pe/termomagneticos-dc/interruptor-termomagnetico-63a-500vdc-2p-dc-solar-energy}
+\urldef{\cotuab}\url{https://cdn.autosolar.pe/images/7107086/7107086-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de seccionador DC, ET-09}\label{tab:cot-sdc}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: DC Solar Energy 25 A 4P} & \textbf{Opción 2: ZJ Beny 2 $\times$ 16 A} & \textbf{Opción 3: DC Solar Energy 63 A 2P} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/sdc-25.jpg}{2.3cm} & \imgficha{imagenes/cot/sdc-16.jpg}{2.3cm} & \imgficha{imagenes/cot/sdc-63.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Corriente nominal} & 25 A & 16 A & 63 A & Debe ser 1,25 $\times$ Isc, es decir 20,0 A o más\\
+\textbf{Tensión DC} & 1\,500 V DC & 600 V DC & 120 a 500 V DC & La cadena alcanza 318,94 V; ET-09 exige 600 V DC\\
+\textbf{Polos y corte} & 4 polos; 6 kA & 2 polos & 2 polos; 6 kA; curva C & Polos en serie elevan la tensión admisible\\
+\textbf{Cumplimiento de ET-09} & C & N: 16 A & N: 500 V & Corriente y tensión mínimas\\
+\textbf{Resultado} & \textbf{Elegida} & Dispararía con la corriente de cortocircuito & Tensión insuficiente & Única opción que cumple ambas condiciones\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{94,21} & \textbf{50,03} & \textbf{74,27} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuw} & {\scriptsize\cotuy} & {\scriptsize\cotuaa} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotux} & {\scriptsize\cotuz} & {\scriptsize\cotuab} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarfv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuac}\url{https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-600vdc-2p-20ka-40ka-feeo}
+\urldef{\cotuad}\url{https://cdn.autosolar.pe/images/7102501/proteccion-sobretensiones-600vdc-2p-20ka-40ka-feeo-thumb.jpg}
+\urldef{\cotuae}\url{https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-600vdc-2p-40ka-zj-beny}
+\urldef{\cotuaf}\url{https://cdn.autosolar.pe/images/7102507/proteccion-sobretensiones-600vdc-2p-40ka-zj-beny-thumb.jpg}
+\urldef{\cotuag}\url{https://autosolar.pe/protector-de-sobretensiones/dps-2p-600vdc-2040kva-t12-feeo}
+\urldef{\cotuah}\url{https://cdn.autosolar.pe/images/7102529/dps-2p-600vdc-2040kva-t12-feeo-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de protector de sobretensiones DC, ET-09}\label{tab:cot-spd}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: FEEO 2P 600 V DC} & \textbf{Opción 2: ZJ Beny 2P 600 V DC} & \textbf{Opción 3: FEEO tipo 1+2, 600 V DC} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/spd-feeo.jpg}{2.3cm} & \imgficha{imagenes/cot/spd-beny.jpg}{2.3cm} & \imgficha{imagenes/cot/spd-t12.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Tensión FV máxima} & 600 V & 600 V & 600 V & Supera los 318,94 V de la cadena\\
+\textbf{Corriente de descarga} & 20 kA nominal; 40 kA máx. & 20 kA nominal; 40 kA máx. & 20 kA nominal; 40 kA máx. & Energía que deriva a tierra\\
+\textbf{Tipo y nivel de protección} & Tipo 2 & Tipo 2; respuesta de 25 ns o menos & Tipo 1+2; 2,8 kV & El tipo 1 sólo se exige con pararrayos o descarga directa\\
+\textbf{Cumplimiento de ET-09} & C & C & C, con capacidad no requerida & 600 V DC y 20 a 40 kA\\
+\textbf{Resultado} & \textbf{Elegida} & S/ 93,75 más & S/ 398,85 más & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{173,07} & \textbf{266,82} & \textbf{571,92} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuac} & {\scriptsize\cotuae} & {\scriptsize\cotuag} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuad} & {\scriptsize\cotuaf} & {\scriptsize\cotuah} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarfv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuai}\url{https://autosolar.pe/interruptores-diferenciales/interruptor-diferencial-monofasico-25a-abb-30ma-tipo-a-2p}
+\urldef{\cotuaj}\url{https://cdn.autosolar.pe/images/7103040/interruptor-diferencial-monofasico-25a-abb-30ma-tipo-a-2p-thumb.jpg}
+\urldef{\cotuak}\url{https://autosolar.pe/diferencial-monofasico/interruptor-diferencial-monofasico-40a-abb-30ma-tipo-a-2p}
+\urldef{\cotual}\url{https://cdn.autosolar.pe/images/7103042/interruptor-diferencial-monofasico-40a-abb-30ma-tipo-a-2p-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de interruptor diferencial, ET-09}\label{tab:cot-dif}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: ABB 25 A 30 mA tipo A} & \textbf{Opción 2: ABB 40 A 30 mA tipo A} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/dif-25.jpg}{2.3cm} & \imgficha{imagenes/cot/dif-40.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Corriente nominal} & 25 A & 40 A & Debe superar el termomagnético de 16 A que protege\\
+\textbf{Sensibilidad y tipo} & 30 mA; tipo A & 30 mA; tipo A & Protección de personas; el tipo A detecta fugas con componente pulsante de las fuentes electrónicas\\
+\textbf{Polos y tensión} & 2 polos; 230/400 V & 2 polos & Circuito monofásico\\
+\textbf{Cumplimiento de ET-09} & C & C & 30 mA por circuito derivado\\
+\textbf{Resultado} & \textbf{Elegida}, 2 unidades & Capacidad innecesaria & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{179,27} & \textbf{181,51} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuai} & {\scriptsize\cotuak} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuaj} & {\scriptsize\cotual} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarac}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuam}\url{https://autosolar.pe/tableros-adosables/tablero-adosable-18-polos}
+\urldef{\cotuan}\url{https://cdn.autosolar.pe/images/5504057/tablero-adosable-18-polos-thumb.jpg}
+\urldef{\cotuao}\url{https://autosolar.pe/tableros-adosables/tablero-adosable-12-polos}
+\urldef{\cotuap}\url{https://cdn.autosolar.pe/images/5504054/tablero-adosable-12-polos-thumb.jpg}
+\urldef{\cotuaq}\url{https://autosolar.pe/tableros-adosables/tablero-adosable-8-polos}
+\urldef{\cotuar}\url{https://cdn.autosolar.pe/images/5504052/tablero-adosable-8-polos-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de tablero de distribución, ET-09}\label{tab:cot-tab}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Tablero adosable de 18 polos} & \textbf{Opción 2: Tablero adosable de 12 polos} & \textbf{Opción 3: Tablero adosable de 8 polos} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/tab-18.jpg}{2.3cm} & \imgficha{imagenes/cot/tab-12.jpg}{2.3cm} & \imgficha{imagenes/cot/tab-08.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Capacidad} & 18 polos & 12 polos & 8 polos & Se requieren 14 polos: dos 2P de 32 A, dos 2P de 16 A, dos diferenciales y un protector\\
+\textbf{Material y protección} & ABS retardante al fuego; IP40 o IP41 & ABS & ABS retardante al fuego; IP40 o IP41 & Envolvente aislante para interior\\
+\textbf{Cumplimiento de ET-09} & C: 4 polos de reserva & N: faltan 2 polos & N: faltan 6 polos & Capacidad mínima del tablero crítico\\
+\textbf{Resultado} & \textbf{Elegida} & Insuficiente & Insuficiente & Única capacidad suficiente\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{104,89} & \textbf{89,07} & \textbf{74,67} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuam} & {\scriptsize\cotuao} & {\scriptsize\cotuaq} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuan} & {\scriptsize\cotuap} & {\scriptsize\cotuar} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarac}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuas}\url{https://autosolar.pe/accesorios-de-inversores/monitorizacion-t-dongle-tensite}
+\urldef{\cotuat}\url{https://cdn.autosolar.pe/images/3206014/monitorizacion-t-dongle-tensite-thumb.jpg}
+\urldef{\cotuau}\url{https://autosolar.pe/accesorios-de-inversores/monitorizacion-stick-suntaic}
+\urldef{\cotuav}\url{https://cdn.autosolar.pe/images/3001030/monitorizacion-stick-suntaic-693c486dca86e-thumb.jpg}
+\urldef{\cotuaw}\url{https://autosolar.pe/accesorios-de-inversores/monitorizacion-growatt-shine-wifi-x}
+\urldef{\cotuax}\url{https://cdn.autosolar.pe/images/3202018/monitorizacion-growatt-shine-wifi-x-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de módulo de monitoreo, ET-10}\label{tab:cot-mon}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Tensite T-Dongle} & \textbf{Opción 2: Suntaic Stick} & \textbf{Opción 3: Growatt Shine WiFi-X} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/mon-tensite.jpg}{2.3cm} & \imgficha{imagenes/cot/mon-suntaic.jpg}{2.3cm} & \imgficha{imagenes/cot/mon-growatt.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Comunicación} & WiFi; IP66 & Enlace con teléfono; alarmas & WiFi 802.11 b/g/n & Envío de datos de energía y alarmas\\
+\textbf{Compatibilidad} & Inversores Tensite & Inversores Suntaic & Inversores Growatt X y MIN-XE & Debe corresponder al inversor elegido\\
+\textbf{Cumplimiento de ET-10} & C & N: otra marca de inversor & N: otra marca de inversor & Registro exportable del inversor instalado\\
+\textbf{Resultado} & \textbf{Elegida} & Incompatible & Incompatible y más cara & Única compatible\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{147,84} & \textbf{126,54} & \textbf{209,16} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuas} & {\scriptsize\cotuau} & {\scriptsize\cotuaw} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuat} & {\scriptsize\cotuav} & {\scriptsize\cotuax} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarmed}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuay}\url{https://autosolar.pe/accesorios-de-paneles-solares/conector-mc4-multicontact-macho-hembra}
+\urldef{\cotuaz}\url{https://cdn.autosolar.pe/images/5504044/conector-mc4-multicontact-macho-hembra-thumb.jpg}
+\urldef{\cotuba}\url{https://autosolar.pe/accesorios-de-paneles-solares/conectores-mc4-pvstick-weidmuller}
+\urldef{\cotubb}\url{https://cdn.autosolar.pe/images/5504017/conectores-mc4-pvstick-weidmuller-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de conector MC4, ET-09}\label{tab:cot-mc4}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Multicontact macho-hembra} & \textbf{Opción 2: Weidmuller PV Stick} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/mc4-multi.jpg}{2.3cm} & \imgficha{imagenes/cot/mc4-weid.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Presentación} & Par macho y hembra & Conector sin herramientas, con polaridad marcada & Unión de cables de la cadena FV\\
+\textbf{Sección admitida} & Cable solar de 6 mm² & Hasta 10 mm² & El cable elegido es de 6 mm²\\
+\textbf{Protección} & Contra humedad y agua & No publicada & Uso a la intemperie en la cubierta\\
+\textbf{Cumplimiento de ET-09} & C & C & Compatibilidad con el cable de 6 mm²\\
+\textbf{Resultado} & \textbf{Elegida}, 4 pares & S/ 23,11 más por unidad & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{10,70} & \textbf{33,81} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuay} & {\scriptsize\cotuba} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuaz} & {\scriptsize\cotubb} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{autosolarfv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotubc}\url{https://arteus.pe/products/dahua-dh-ipc-hdw1431t1p-s6-camara-de-seguridad-ip-poe-4mp-2k-2-8mm-wdr-ip67-ir-30m}
+\urldef{\cotubd}\url{https://arteus.pe/cdn/shop/files/IPC-HDW1431T1-S4.jpg}
+\urldef{\cotube}\url{https://arteus.pe/products/dahua-dh-ipc-hdbw1431en-s4-camara-de-vigilancia-ip-poe-2k-4mp-2-8mm-wdr-ip67-ir-30m}
+\urldef{\cotubf}\url{https://arteus.pe/cdn/shop/files/IPC-HDBW1431E-S4.jpg}
+\urldef{\cotubg}\url{https://arteus.pe/products/dahua-ipc-hdw2449t-s-il-camara-ip-poe-4mp-2k-2-8mm-wdr-ip67-microfono-ir-led-30m-wizsense}
+\urldef{\cotubh}\url{https://arteus.pe/cdn/shop/files/IPC-HDW2449T-S-IL.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas\scriptsize\renewcommand{\arraystretch}{1.0}
+\captionof{table}{Cotización de cámara IP, ET-04}\label{tab:cot-cam}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Dahua DH-IPC-HDW1431T1P-S6} & \textbf{Opción 2: Dahua DH-IPC-HDBW1431EN-S4} & \textbf{Opción 3: Dahua IPC-HDW2449T-S-IL} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/cam-hdw1431.jpg}{1.8cm} & \imgficha{imagenes/cot/cam-hdbw1431.jpg}{1.8cm} & \imgficha{imagenes/cot/cam-hdw2449.jpg}{1.8cm} & Fotografía publicada por el proveedor\\
+\textbf{Resolución} & 4 MP, 2\,560 $\times$ 1\,440 & 4 MP, 2K & Título 4 MP; ficha 1\,920 $\times$ 1\,080 & Detalle para reconocer personas a 2 a 5 m\\
+\textbf{Lente y visión nocturna} & 2,8 mm; IR de 30 m & 2,8 mm; IR de 30 m & 2,8 mm; IR de 30 m & Ángulo amplio sobre el terminal y su entorno\\
+\textbf{Compresión} & H.265+ & No publicada & H.265+ & Menor almacenamiento por día de grabación\\
+\textbf{Alimentación} & PoE 802.3af; 4,3 W & PoE; consumo no publicado & PoE 802.3af; 4,4 W & Se alimenta desde el NVR; entra en la cota de 40 W\\
+\textbf{Otros} & WDR de 120 dB; IP67 & Domo; IP67 & Micrófono; microSD de 256 GB & El micrófono no se requiere y aumenta el tratamiento de datos\\
+\textbf{Stock} & Disponible & Contactar al vendedor & Disponible & Disponibilidad verificable en la página\\
+\textbf{Cumplimiento de ET-04} & C & P: compresión y consumo & P: resolución & 4 MP, H.265, PoE y 6 W como máximo\\
+\textbf{Resultado} & \textbf{Elegida}, 3 unidades & Ficha incompleta & Resolución dudosa y más cara & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{219,00} & \textbf{231,00} & \textbf{291,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotubc} & {\scriptsize\cotube} & {\scriptsize\cotubg} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotubd} & {\scriptsize\cotubf} & {\scriptsize\cotubh} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteuscctv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotubi}\url{https://arteus.pe/products/dahua-nvr1104hs-p-s3-h-grabador-nvr-4k-4ch-puertos-poe-hasta-8mp-80mbps-1hdd-hasta-8tb}
+\urldef{\cotubj}\url{https://arteus.pe/cdn/shop/files/NVR1104HS-P-S3-H.jpg}
+\urldef{\cotubk}\url{https://arteus.pe/products/tp-link-vigi-nvr1004h-4p-grabador-de-video-nvr-4-canales-poe-4k}
+\urldef{\cotubl}\url{https://arteus.pe/cdn/shop/files/VIGINVR1004H-4P.jpg}
+\urldef{\cotubm}\url{https://arteus.pe/products/hilook-nvr-104h-d-4p-mini-grabador-nvr-poe-4-canales-6mp}
+\urldef{\cotubn}\url{https://arteus.pe/cdn/shop/files/NVR-104H-D-4P-2.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas\scriptsize\renewcommand{\arraystretch}{1.0}
+\captionof{table}{Cotización de grabador NVR, ET-04}\label{tab:cot-nvr}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Dahua NVR1104HS-P-S3/H} & \textbf{Opción 2: TP-Link VIGI NVR1004H-4P} & \textbf{Opción 3: Hilook NVR-104H-D/4P} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/nvr-dahua.jpg}{1.8cm} & \imgficha{imagenes/cot/nvr-vigi.jpg}{1.8cm} & \imgficha{imagenes/cot/nvr-hilook.jpg}{1.8cm} & Fotografía publicada por el proveedor\\
+\textbf{Canales y PoE} & 4 canales; 4 puertos PoE+ & 4 canales; 4 PoE+, 53 W & 4 canales; 4 PoE, 36 W & Tres cámaras más una reserva, alimentadas desde el grabador\\
+\textbf{Ancho de banda de entrada} & 80 Mbps & 80 Mbps & 40 Mbps & Se requieren 12 Mbps; ET-04 exige 40 Mbps o más\\
+\textbf{Resolución máxima} & 8 MP & 4K & 6 MP & Debe admitir las cámaras de 4 MP\\
+\textbf{Disco} & 1 SATA hasta 8 TB & 1 SATA hasta 10 TB; la descripción indica 2 TB preinstalado & 1 SATA hasta 6 TB & El cálculo requiere 2 TB\\
+\textbf{Compatibilidad con las cámaras} & Nativa, misma marca & ONVIF por demostrar & ONVIF por demostrar & Registro automático, detección y hora\\
+\textbf{Stock} & Disponible & Disponible & No indicado & Disponibilidad verificable\\
+\textbf{Cumplimiento de ET-04} & C & P: compatibilidad y disco & P: compatibilidad & 4 canales, 4 PoE, 40 Mbps\\
+\textbf{Resultado} & \textbf{Elegida} & Si acredita disco y compatibilidad, ahorraría hasta S/ 711 & Al límite de ancho de banda & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{292,00} & \textbf{280,00} & \textbf{227,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotubi} & {\scriptsize\cotubk} & {\scriptsize\cotubm} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotubj} & {\scriptsize\cotubl} & {\scriptsize\cotubn} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteuscctv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotubo}\url{https://arteus.pe/products/d-link-dgs-1100-08pv2}
+\urldef{\cotubp}\url{https://arteus.pe/cdn/shop/files/DGS-1100-08PV2.jpg}
+\urldef{\cotubq}\url{https://arteus.pe/products/dahua-s4210-8gt-110-switch-8-puertos-poe-gigabit-110w-poe-watchdog}
+\urldef{\cotubr}\url{https://arteus.pe/cdn/shop/files/S4210-8GT-110--2.jpg}
+\urldef{\cotubs}\url{https://arteus.pe/products/hikvision-ds-3e1510p-si-switch-poe-8-puertos-gigabit-2sfp-110w-smart}
+\urldef{\cotubt}\url{https://arteus.pe/cdn/shop/files/hik82.png}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de switch administrable, ET-03}\label{tab:cot-sw}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: D-Link DGS-1100-08P} & \textbf{Opción 2: Dahua S4210-8GT-110} & \textbf{Opción 3: Hikvision DS-3E1510P-SI} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/sw-dlink.jpg}{2.3cm} & \imgficha{imagenes/cot/sw-dahua.jpg}{2.3cm} & \imgficha{imagenes/cot/sw-hik.png}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Puertos} & 8 Gigabit con PoE & 8 Gigabit con PoE y 2 SFP & 8 Gigabit con PoE y 2 SFP & Seis puertos usados y dos de reserva; SFP para un enlace de fibra futuro\\
+\textbf{Potencia PoE} & 64 W & 110 W & 110 W & No se requiere PoE: las cámaras se alimentan desde el NVR\\
+\textbf{Gestión} & Web; VLAN 802.1Q no publicada & Web y SNMP; 4\,000 VLAN; STP y RSTP & Smart; VLAN, QoS y SNMP & Separar consulta, cámaras y administración\\
+\textbf{Conmutación} & 16 Gbps; sin ventilador & 20 Gbps; carcasa metálica & No publicada & Capacidad interna del equipo\\
+\textbf{Stock} & Contactar al vendedor & No indicado & Disponible & Disponibilidad verificable\\
+\textbf{Cumplimiento de ET-03} & P: VLAN & C & C & 8 puertos, VLAN, QoS y gestión\\
+\textbf{Resultado} & Se aceptará si acredita 802.1Q & \textbf{Elegida} & S/ 26 más & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{327,00} & \textbf{517,00} & \textbf{543,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotubo} & {\scriptsize\cotubq} & {\scriptsize\cotubs} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotubp} & {\scriptsize\cotubr} & {\scriptsize\cotubt} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteuscctv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotubu}\url{https://arteus.pe/products/seagate-st2000vx017-skyhawk-disco-duro-2tb-3-5}
+\urldef{\cotubv}\url{https://arteus.pe/cdn/shop/files/images_a56829c6-7b0b-4940-a14e-945ce5d25e1f.jpg}
+\urldef{\cotubw}\url{https://arteus.pe/products/western-digital-wd22purz-disco-duro-interno-purple-2tb}
+\urldef{\cotubx}\url{https://arteus.pe/cdn/shop/files/WD22PURZ-3.jpg}
+\urldef{\cotuby}\url{https://www.panacompu.com/peru/en/product-information/western-digital-purple-wd23purz-internal-hard-drive-2tb-5400rpm-35-64mb-cache}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de disco de videovigilancia, ET-04}\label{tab:cot-hdd}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Seagate SkyHawk ST2000VX017} & \textbf{Opción 2: WD Purple WD22PURZ} & \textbf{Opción 3: WD Purple WD23PURZ} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/hdd-skyhawk.jpg}{2.3cm} & \imgficha{imagenes/cot/hdd-wd22.jpg}{2.3cm} & \emph{Sin imagen publicada} & Fotografía publicada por el proveedor\\
+\textbf{Capacidad y uso} & 2 TB; videovigilancia continua & 2 TB; videovigilancia & 2 TB; videovigilancia & 30 días de grabación requieren 1\,069 GB\\
+\textbf{Velocidad y caché} & 5\,400 rpm; 256 MB & 5\,400 rpm; 256 MB & 5\,400 rpm; 64 MB & Escritura continua de tres cámaras\\
+\textbf{Interfaz} & SATA de 6 Gb/s & SATA III & SATA & Bahía del NVR\\
+\textbf{Disponibilidad} & Disponible & Agotado & La tienda no acepta pedidos en Perú & Stock verificable en la fecha de consulta\\
+\textbf{Resultado} & \textbf{Elegida} & Equivalente si se repone: S/ 428 menos & Sin compra posible & Única con stock verificable\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Panacompu; impuestos incluidos & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{699,00} & \textbf{271,00} & \textbf{313,16} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotubu} & {\scriptsize\cotubw} & {\scriptsize\cotuby} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotubv} & {\scriptsize\cotubx} & Sin imagen & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteuscctv,panacompu}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotubz}\url{https://arteus.pe/products/dixon-9040-24-lszh-cable-utp-cat6-cobre-24awg-gris-305m}
+\urldef{\cotuca}\url{https://arteus.pe/cdn/shop/files/9040-24-LSZH.jpg}
+\urldef{\cotucb}\url{https://arteus.pe/products/satra-0212021111-cable-de-red-utp-cat6-cobre-24awg-lszh-1-gris-305m}
+\urldef{\cotucc}\url{https://arteus.pe/cdn/shop/files/0212021111-2_518300e2-bc41-4c82-96be-f5966bbc54f4.jpg}
+\urldef{\cotucd}\url{https://arteus.pe/products/legrand-032754-cable-utp-cat6-lszh-rollo-305m-azul}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de cable UTP Cat 6, ET-03}\label{tab:cot-utp}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Dixon 9040/24 LSZH} & \textbf{Opción 2: Satra 0212021111 LSZH-1} & \textbf{Opción 3: Legrand 032754 LSZH} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/utp-dixon.jpg}{2.3cm} & \imgficha{imagenes/cot/utp-satra.jpg}{2.3cm} & \emph{Sin imagen publicada} & Fotografía publicada por el proveedor\\
+\textbf{Categoría} & Cat 6 según TIA/EIA-568 & Cat 6; 250 MHz & Cat 6 & Gigabit con margen hasta 90 m de enlace\\
+\textbf{Conductor} & Cobre sólido de 24 AWG & Cobre de 24 AWG & No declarado & ET-03 exige cobre; el aluminio recubierto se calienta con PoE\\
+\textbf{Chaqueta} & LSZH & LSZH-1 & LSZH & Baja emisión de humo en vías de evacuación\\
+\textbf{Presentación} & Caja de 305 m & Caja de 305 m & Rollo de 305 m & El metrado estima 244 m\\
+\textbf{Cumplimiento de ET-03} & C & C & P: conductor & Cobre sólido, Cat 6 y LSZH\\
+\textbf{Resultado} & \textbf{Elegida} & S/ 1 más & Se aceptará si acredita cobre & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{666,00} & \textbf{667,00} & \textbf{535,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotubz} & {\scriptsize\cotucb} & {\scriptsize\cotucd} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuca} & {\scriptsize\cotucc} & Sin imagen & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteuscctv}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuce}\url{https://arteus.pe/products/newlink-3667706-keystone-jack-cat6-110-type-azul}
+\urldef{\cotucf}\url{https://arteus.pe/products/nexxt-solutions-pcgkjc6tyrjsl-infra-promo-jack-cat-6-stp-keystone-tipo-110}
+\urldef{\cotucg}\url{https://arteus.pe/cdn/shop/files/PCGKJC6TYRJSL-land.png}
+\urldef{\cotuch}\url{https://arteus.pe/products/linkbasik-jka09-uc6-wh-jack-rj-45-cat6-color-blanco}
+\urldef{\cotuci}\url{https://arteus.pe/cdn/shop/files/JKA09-UC6-WH_a0ea1e8f-2d19-4a71-8b7d-197da9f1510a.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de jack keystone Cat 6, ET-03}\label{tab:cot-jack}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Newlink 3667706} & \textbf{Opción 2: Nexxt PCGKJC6TYRJSL} & \textbf{Opción 3: Linkbasik JKA09-UC6-WH} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \emph{Sin imagen publicada} & \imgficha{imagenes/cot/jack-nexxt.png}{2.3cm} & \imgficha{imagenes/cot/jack-linkbasik.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Formato} & Keystone tipo 110, UTP & Keystone tipo 110, blindado STP & Jack RJ45 UTP; formato keystone no declarado & Debe encajar en el patch panel modular y en el faceplate\\
+\textbf{Categoría} & Cat 6; la descripción indica 6A & Cat 6 & Cat 6 & Igual o superior al cable\\
+\textbf{Conductor admitido} & 24 AWG; contactos con oro de 50 µm & 22 a 26 AWG & No publicado & Compatibilidad con el cable de 24 AWG\\
+\textbf{Cumplimiento de ET-03} & C & N: blindado para cable no apantallado & P: formato & Keystone Cat 6 UTP\\
+\textbf{Resultado} & \textbf{Elegida}, 16 unidades & Requeriría cable apantallado & Se aceptará si acredita keystone & Menor costo entre las documentadas\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{13,00} & \textbf{19,00} & \textbf{5,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotuce} & {\scriptsize\cotucf} & {\scriptsize\cotuch} & Página consultada\\
+\textbf{Fuente de la imagen} & Sin imagen & {\scriptsize\cotucg} & {\scriptsize\cotuci} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotucj}\url{https://arteus.pe/products/dixon-pkj24-c6-a-bk-patch-panel-cat-6-modular-24-puertos-vacio}
+\urldef{\cotuck}\url{https://arteus.pe/cdn/shop/files/PKJ24-C6-A-BK.jpg}
+\urldef{\cotucl}\url{https://arteus.pe/products/dixon-ppkj24-patch-panel-24-puertos-cat-6-cat-6a-modular-vacio}
+\urldef{\cotucm}\url{https://arteus.pe/cdn/shop/files/PPKJ24.jpg}
+\urldef{\cotucn}\url{https://arteus.pe/products/nexxt-solutions-aw191nxt06-patch-panel-rack-24p-1u-cat6-pre-config-tipo-110}
+\urldef{\cotuco}\url{https://arteus.pe/cdn/shop/files/AW191NXT06-1_5dafd035-09c6-4df6-a415-a59d970329d1.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de patch panel, ET-03}\label{tab:cot-pp}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Dixon PKJ24-C6-A/BK} & \textbf{Opción 2: Dixon PPKJ24} & \textbf{Opción 3: Nexxt AW191NXT06} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/pp-pkj24.jpg}{2.3cm} & \imgficha{imagenes/cot/pp-ppkj24.jpg}{2.3cm} & \imgficha{imagenes/cot/pp-nexxt.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Puertos} & 24 vacíos, modulares & 24 vacíos, modulares & 24 cargados, tipo 110 & Siete enlaces y crecimiento futuro\\
+\textbf{Compatibilidad} & Jacks Cat 5e, 6 y 6A & Jacks Cat 6 y 6A & Cat 6 & Usa los jacks keystone del mismo enlace\\
+\textbf{Construcción} & Acero SPCC de 1,5 mm; 1 RU & Acero SPCC de 1,5 mm; ventanas para etiquetas; 1 RU & 1 RU de 19 pulg. & Montaje en el gabinete\\
+\textbf{Cumplimiento de ET-03} & C & C & C & Terminación en patch panel\\
+\textbf{Resultado} & \textbf{Elegida} & S/ 21 más & S/ 106 más; jacks incluidos no necesarios & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{63,00} & \textbf{84,00} & \textbf{169,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotucj} & {\scriptsize\cotucl} & {\scriptsize\cotucn} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuck} & {\scriptsize\cotucm} & {\scriptsize\cotuco} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotucp}\url{https://arteus.pe/products/satra-0111048901-caja-modular-pvc-adosable-2x4x1-89}
+\urldef{\cotucq}\url{https://arteus.pe/cdn/shop/files/111048901.jpg}
+\urldef{\cotucr}\url{https://arteus.pe/products/dixon-je318-wh}
+\urldef{\cotucs}\url{https://arteus.pe/cdn/shop/files/JE318-WH_5823b47f-378d-413b-a35c-f7e0c56d67a1.jpg}
+\urldef{\cotuct}\url{https://arteus.pe/products/nexxt-solutions-ae180nxt03-caja-de-montaje-superficial-rj45}
+\urldef{\cotucu}\url{https://arteus.pe/cdn/shop/files/descarga_34.png}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de caja adosable para faceplate, ET-03}\label{tab:cot-caja}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Satra 0111048901} & \textbf{Opción 2: Dixon JE318/WH} & \textbf{Opción 3: Nexxt AE180NXT03} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/caja-satra.jpg}{2.3cm} & \imgficha{imagenes/cot/caja-dixon.jpg}{2.3cm} & \imgficha{imagenes/cot/caja-nexxt.png}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Formato} & Adosable 2 $\times$ 4, PVC, 48 mm de fondo & 2 $\times$ 4; 70 $\times$ 114 $\times$ 47 mm & Caja superficial RJ45 & Montaje del faceplate sin picar el muro\\
+\textbf{Seguridad} & UL94V-0, resistente al fuego; IP40 & No publicada & No publicada & Comportamiento ante el fuego\\
+\textbf{Compatibilidad} & Faceplate 2 $\times$ 4 & Placa simple o ejecutiva & No publicada & Usa el faceplate de 1 puerto\\
+\textbf{Cumplimiento de ET-03} & C & C & P & Caja para faceplate en cada enlace\\
+\textbf{Resultado} & \textbf{Elegida}, 7 unidades & S/ 2 más & Descripción vacía & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{7,00} & \textbf{9,00} & \textbf{13,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotucp} & {\scriptsize\cotucr} & {\scriptsize\cotuct} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotucq} & {\scriptsize\cotucs} & {\scriptsize\cotucu} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotucv}\url{https://arteus.pe/products/legrand-051832-patch-cord-utp-cat6-lszh-1m-azul}
+\urldef{\cotucw}\url{https://arteus.pe/cdn/shop/files/051832_8571b03b-30ab-456d-95b0-3aab68a36c60.jpg}
+\urldef{\cotucx}\url{https://arteus.pe/products/satra-0102030104-cable-patch-cord-utp-cat6-azul-1m}
+\urldef{\cotucy}\url{https://arteus.pe/cdn/shop/files/cat6_1024x.jpg}
+\urldef{\cotucz}\url{https://arteus.pe/products/nexxt-solutions-ab361nxt24-cable-de-red-patch-cord-cat6-u-utp-cm-3m-10ft-azul}
+\urldef{\cotuda}\url{https://arteus.pe/cdn/shop/files/AB361NXT24-1.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de patch cord Cat 6, ET-03}\label{tab:cot-pc}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Legrand 051832, 1 m} & \textbf{Opción 2: Satra 0102030104, 1 m} & \textbf{Opción 3: Nexxt AB361NXT24, 3 m} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/pc-legrand.jpg}{2.3cm} & \imgficha{imagenes/cot/pc-satra.jpg}{2.3cm} & \imgficha{imagenes/cot/pc-nexxt.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Longitud y uso} & 1 m; lado del gabinete & 1 m; lado del gabinete & 3 m; lado del terminal o cámara & Conexión entre jack y equipo\\
+\textbf{Categoría} & Cat 6 U/UTP; 24 AWG & Cat 5e, 6 o 6A según TIA-568C.2; UL y ETL & Cat 6 U/UTP; CM & Igual o superior al enlace\\
+\textbf{Cumplimiento de ET-03} & C & C & C & Patch cords Cat 6\\
+\textbf{Resultado} & \textbf{Elegida}, 7 unidades & S/ 4 más & \textbf{Elegida}, 7 unidades de 3 m & Menor costo por longitud requerida\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{19,00} & \textbf{23,00} & \textbf{13,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotucv} & {\scriptsize\cotucx} & {\scriptsize\cotucz} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotucw} & {\scriptsize\cotucy} & {\scriptsize\cotuda} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotudb}\url{https://arteus.pe/products/dexson-dxn10051-canaleta-blanca-20x12-con-adhesivo}
+\urldef{\cotudc}\url{https://arteus.pe/cdn/shop/files/dexson-dxn10051-canaleta-blanca-20x12-con-adhesivo-arteus.jpg}
+\urldef{\cotudd}\url{https://arteus.pe/products/efapel-10060-cbr-canaleta-40x16-de-2mts-c-division}
+\urldef{\cotude}\url{https://arteus.pe/cdn/shop/files/efapel-10060-cbr-canaleta-40x16-de-2mts-cdivision-arteus-2_1024x.png}
+\urldef{\cotudf}\url{https://arteus.pe/products/efapel-10070-cbr-canaleta-60x16-de-2mts-con-division}
+\urldef{\cotudg}\url{https://arteus.pe/cdn/shop/files/efapel-10070-cbr-canaleta-60x16-de-2mts-con-division-arteus-2_1024x.png}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de canaleta, ET-03}\label{tab:cot-can}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Dexson DXN10051 20 $\times$ 12} & \textbf{Opción 2: Efapel 10060 40 $\times$ 16} & \textbf{Opción 3: Efapel 10070 60 $\times$ 16} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/can-dexson.jpg}{2.3cm} & \imgficha{imagenes/cot/can-efapel40.png}{2.3cm} & \imgficha{imagenes/cot/can-efapel60.png}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Sección y longitud} & 20 $\times$ 12 mm; 2,00 m & 40 $\times$ 16 mm; 2,10 m & 60 $\times$ 16 mm; 2,10 m & Un cable UTP por canaleta; 106 m de recorrido visible\\
+\textbf{Fijación y protección} & Adhesiva; PVC; 1 compartimento & Con división según título; IP44 e IK07 & Con división; IP44 e IK07 & Instalación sin daño a muros\\
+\textbf{Tramos y costo para 106 m} & 53: S/ 689,00 & 51: S/ 255,00 & 51: S/ 1\,071,00 & Costo total del recorrido\\
+\textbf{Stock} & Disponible & Contactar al vendedor & Disponible & Disponibilidad verificable\\
+\textbf{Cumplimiento de ET-03} & C & P: stock & C & Canalización con tapa en zonas de tránsito\\
+\textbf{Resultado} & \textbf{Elegida} & Equivalente si confirma stock: S/ 434 menos & S/ 382 más & Menor costo con stock verificable\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{13,00} & \textbf{5,00} & \textbf{21,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotudb} & {\scriptsize\cotudd} & {\scriptsize\cotudf} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotudc} & {\scriptsize\cotude} & {\scriptsize\cotudg} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotudh}\url{https://arteus.pe/products/zkteco-zk-r9u-5409a-gabinete-de-pared-9ru-53x40x45cm}
+\urldef{\cotudi}\url{https://arteus.pe/cdn/shop/files/gabinetezkteco_80eb8272-b3d2-4714-8d3d-a1583886e07d_1024x.jpg}
+\urldef{\cotudj}\url{https://arteus.pe/products/gabinete-de-pared-estandar-g6-30x60x51cm}
+\urldef{\cotudk}\url{https://arteus.pe/cdn/shop/files/GabinetedeParedESTANDAR_G6_-6RU_e2bad193-f580-4701-9daa-5c20e60797a9_1024x.png}
+\urldef{\cotudl}\url{https://arteus.pe/products/finen-w1-5406-gabinete-de-pared-6ru-368-x-540-x-400mm-c-puerta-de-vidrio}
+\urldef{\cotudm}\url{https://arteus.pe/cdn/shop/files/W1-5406-2_1024x.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de gabinete de pared, ET-03}\label{tab:cot-gab}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: ZKTECO ZK-R9U-5409A, 9 RU} & \textbf{Opción 2: Estándar G6, 6 RU} & \textbf{Opción 3: FINEN W1-5406, 6 RU} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/gab-zkteco.jpg}{2.3cm} & \imgficha{imagenes/cot/gab-g6.png}{2.3cm} & \imgficha{imagenes/cot/gab-finen.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Capacidad} & 9 RU de 19 pulg. & 6 RU & 6 RU & Switch, NVR, patch panel, organizador y regleta ocupan unos 5 RU\\
+\textbf{Medidas} & 53 $\times$ 40 $\times$ 45 cm, ancho, fondo y alto & 30 $\times$ 60 $\times$ 51 cm, alto, ancho y fondo & 36,8 $\times$ 54 $\times$ 40 cm & Espacio en el cuarto técnico\\
+\textbf{Construcción y accesorios} & Acero; puerta de cristal templado; 1 bandeja & No publicados & Puerta de vidrio; se entrega desarmado & La bandeja evita una compra adicional\\
+\textbf{Stock} & Disponible & Disponible & Contactar al vendedor & Disponibilidad verificable\\
+\textbf{Cumplimiento de ET-03} & C & C & P: stock y accesorios & 6 RU como mínimo, con puerta y llave\\
+\textbf{Resultado} & \textbf{Elegida} & S/ 53 más y sin bandeja & Sin stock verificable & Menor costo con stock verificable\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{172,00} & \textbf{225,00} & \textbf{117,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotudh} & {\scriptsize\cotudj} & {\scriptsize\cotudl} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotudi} & {\scriptsize\cotudk} & {\scriptsize\cotudm} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotudn}\url{https://arteus.pe/products/power-rack-8-tomas-planas-y-redonda}
+\urldef{\cotudo}\url{https://arteus.pe/cdn/shop/files/pdu2.jpg}
+\urldef{\cotudp}\url{https://arteus.pe/products/nexxt-solutions-npd-21u8u15a-regleta-horizontal-8-tomacorrientes-15a-monofasica-16awg}
+\urldef{\cotudq}\url{https://arteus.pe/cdn/shop/files/descarga_27.png}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de regleta de gabinete, ET-03}\label{tab:cot-reg}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: PDU de 8 tomas GEN-PDU8-10A} & \textbf{Opción 2: Nexxt NPD-21U8U15A} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/reg-pdu.jpg}{2.3cm} & \imgficha{imagenes/cot/reg-nexxt.png}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Tomas} & 8 & 8 & Switch, NVR, monitoreo y reserva\\
+\textbf{Corriente} & 10 A según el código del modelo & 15 A; 16 AWG & La carga del gabinete es menor de 1 A\\
+\textbf{Montaje} & Rack de 19 pulg. & Horizontal & Fijación dentro del gabinete\\
+\textbf{Cumplimiento de ET-03} & C & C & Regleta en el gabinete\\
+\textbf{Resultado} & \textbf{Elegida} & S/ 17 más & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{100,00} & \textbf{117,00} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotudn} & {\scriptsize\cotudp} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotudo} & {\scriptsize\cotudq} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{arteusred,arteusotros}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotudr}\url{https://www.promelsa.com.pe/tomacorriente-schuko-2p-t-16a-p50-placa-blanco-1045958.html}
+\urldef{\cotuds}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/t/o/tomacorriente-schuko-2p-t-16a-p50-placa-blanco-1045958-01.jpg}
+\urldef{\cotudt}\url{https://www.promelsa.com.pe/1017375-tomacorriente-p-empotrar-schuko-2x16at-250v-2-modulos-marfil-matix.html}
+\urldef{\cotudu}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1017375-01.jpg}
+\urldef{\cotudv}\url{https://www.promelsa.com.pe/1016576-tomacorriente-schuko-2x16at-c-tornillo-2-modulos-blanco-mosaic.html}
+\urldef{\cotudw}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1016576-01_1.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de tomacorriente 2P+T, ET-03}\label{tab:cot-toma}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Bticino Schuko 2P+T 16 A P50 con placa} & \textbf{Opción 2: Bticino Matix Schuko 2 $\times$ 16 A+T} & \textbf{Opción 3: Legrand Mosaic Schuko 2 $\times$ 16 A+T} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/toma-bticino.jpg}{2.3cm} & \imgficha{imagenes/cot/toma-matix.jpg}{2.3cm} & \imgficha{imagenes/cot/toma-mosaic.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Tipo} & Schuko 2P+T de 16 A con placa & Schuko 2 $\times$ 16 A+T, 250 V; 2 módulos & Schuko 2 $\times$ 16 A+T con tornillo; 2 módulos & Conexión con tierra para terminales y gabinete\\
+\textbf{Presentación} & Placa incluida & Sistema modular; soporte y placa no indicados & Sistema modular; soporte y placa no indicados & Piezas necesarias para instalar\\
+\textbf{Color} & Blanco & Marfil & Blanco & Acabado\\
+\textbf{Cumplimiento de ET-03} & C & C & C & 2P+T de 16 A y 250 V\\
+\textbf{Resultado} & \textbf{Elegida}, 4 unidades & S/ 2,61 más sin placa & S/ 8,76 más sin placa & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & Promelsa; IGV no declarado & Promelsa; IGV no declarado & Promelsa; IGV no declarado & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{39,35} & \textbf{41,96} & \textbf{48,11} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotudr} & {\scriptsize\cotudt} & {\scriptsize\cotudv} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuds} & {\scriptsize\cotudu} & {\scriptsize\cotudw} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{promelsa}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotudx}\url{https://www.promelsa.com.pe/1004151-cable-h07z1-k-2-5mm2-450-750v-libre-de-halogeno-negro-clase-5-x-rollo.html}
+\urldef{\cotudy}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1004151-02.jpg}
+\urldef{\cotudz}\url{https://www.promelsa.com.pe/cable-nh-90-2-5mm2-450-750v-libre-de-halogeno-negro-clase-2-x-rollo-practicable-1042538.html}
+\urldef{\cotuea}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/c/a/cable-nh-90-2-5mm2-450-750v-libre-de-hal-geno-negro-clase-2-x-rollo-practicable-1042538-01.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de conductor AC libre de halógenos, ET-09}\label{tab:cot-cab}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YY>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+\textbf{Característica} & \textbf{Opción 1: Miguelez H07Z1-K 2,5 mm²} & \textbf{Opción 2: Indeco NH-90 2,5 mm²} & \textbf{Descripción}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/cab-miguelez.jpg}{2.3cm} & \imgficha{imagenes/cot/cab-indeco.jpg}{2.3cm} & Fotografía publicada por el proveedor\\
+\textbf{Tipo} & H07Z1-K libre de halógenos & NH-90 libre de halógenos & Menor humo y gases en caso de incendio\\
+\textbf{Tensión y conductor} & 450/750 V; clase 5 flexible & 450/750 V; clase 2 & Circuitos derivados de 220 V\\
+\textbf{Presentación} & Rollo; longitud por confirmar & Rollo; longitud por confirmar & Se presupuestan tres rollos para unos 240 m\\
+\textbf{Cumplimiento de ET-09} & C & C & LSZH de 2,5 mm²; caída de 0,78\% en 45 m\\
+\textbf{Resultado} & \textbf{Elegida}, 3 rollos & S/ 27,14 más por rollo & Menor costo entre las que cumplen\\
+\textbf{Proveedor e IGV} & Promelsa; IGV no declarado & Promelsa; IGV no declarado & Tienda peruana y tratamiento tributario declarado\\
+\textbf{Precio unitario S/} & \textbf{213,58} & \textbf{240,72} & Precio publicado en la fecha de consulta\\
+\textbf{Enlace del producto} & {\scriptsize\cotudx} & {\scriptsize\cotudz} & Página consultada\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotudy} & {\scriptsize\cotuea} & Archivo de imagen descargado\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Páginas de producto consultadas el 30 de octubre de 2026 \cite{promelsa}. C: cumple y está documentado; P: por acreditar en la oferta; N: no cumple.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotueb}\url{https://autosolar.pe/cable-unipolar/rollo-cable-solar-unipolar-6mm2-h1z2z2-k-15kv-15m-rojo}
+\urldef{\cotuec}\url{https://cdn.autosolar.pe/images/5204032/rollo-cable-solar-unipolar-6mm2-h1z2z2-k-15kv-15m-rojo-687eabd165d08-thumb.jpg}
+\urldef{\cotued}\url{https://autosolar.pe/cables-de-baterias/cable-para-baterias-interconexion-en-serie-35mm2}
+\urldef{\cotuee}\url{https://cdn.autosolar.pe/images/5504036/cable-para-baterias-interconexion-en-serie-35mm2-thumb.jpg}
+\urldef{\cotuef}\url{https://autosolar.pe/fusibles/fusible-anl-150a}
+\urldef{\cotueg}\url{https://cdn.autosolar.pe/images/5504203/fusible-anl-150a-698a04b8dbdf5-thumb.jpg}
+\urldef{\cotueh}\url{https://autosolar.pe/accesorios-de-inversores/vatimetro-sdm230-modbus-pro-monofasico-tensite}
+\urldef{\cotuei}\url{https://cdn.autosolar.pe/images/3206050/vatimetro-sdm230-modbus-pro-monofasico-tensite-thumb.jpg}
+\urldef{\cotuej}\url{https://autosolar.pe/materiales-para-pozo-a-tierra/barra-de-cobre-58-x-24m-con-punta}
+\urldef{\cotuek}\url{https://cdn.autosolar.pe/images/5509040/barra-de-cobre-58-x-240m-cpunta-6909207fa33d0-thumb.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de oferta única: subsistema FV, batería y medición}\label{tab:cot-u1}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYYYY@{}}
+\toprule
+\textbf{Característica} & \textbf{Cable solar H1Z2Z2-K de 6 mm², rollo de 15 m} & \textbf{Cable para baterías de 35 mm²} & \textbf{Fusible ANL de 150 A} & \textbf{Vatímetro SDM230 Modbus monofásico} & \textbf{Barra de cobre de 5/8 pulg. $\times$ 2,4 m}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/u-cablesolar.jpg}{2.3cm} & \imgficha{imagenes/cot/u-cablebat.jpg}{2.3cm} & \imgficha{imagenes/cot/u-anl.jpg}{2.3cm} & \imgficha{imagenes/cot/u-sdm230.jpg}{2.3cm} & \imgficha{imagenes/cot/u-barra.jpg}{2.3cm}\\
+\textbf{Uso en el proyecto} & Cadena FV hasta el inversor; 30 m por polaridad & Batería al inversor; caída de 0,39\% & Protección del cable de batería & Exportación cero y medición de red, ET-10 & Electrodo del pozo a tierra\\
+\textbf{Características publicadas} & 1,5 kV; cobre estañado; aislamiento XLPO libre de halógenos & 35 mm²; longitud no indicada & Tipo ANL; 150 A; alta capacidad de ruptura & Monofásico; Modbus; compatible con inversores Tensite & Cobre puro; 2,40 m; con punta\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido\\
+\textbf{Cantidad} & 4 & 2 & 1 & 1 & 1\\
+\textbf{Precio unitario S/} & \textbf{101,42} & \textbf{27,23} & \textbf{39,39} & \textbf{502,41} & \textbf{298,17}\\
+\textbf{Parcial S/} & 405,68 & 54,46 & 39,39 & 502,41 & 298,17\\
+\textbf{Enlace del producto} & {\scriptsize\cotueb} & {\scriptsize\cotued} & {\scriptsize\cotuef} & {\scriptsize\cotueh} & {\scriptsize\cotuej}\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuec} & {\scriptsize\cotuee} & {\scriptsize\cotueg} & {\scriptsize\cotuei} & {\scriptsize\cotuek}\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Componentes con una sola oferta identificada en la consulta del 30 de octubre de 2026; se aceptará cualquier equivalente que cumpla la especificación \cite{autosolarfv,autosolarmed,autosolarac}.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuel}\url{https://autosolar.pe/termomagneticos-monofasicos/termomagnetico-nxb-63-2p-16a-6ka-monofasico-chint}
+\urldef{\cotuem}\url{https://cdn.autosolar.pe/images/7102070/termomagnetico-nxb-63-2p-16a-6ka-monofasico-chint-thumb.jpg}
+\urldef{\cotuen}\url{https://autosolar.pe/termomagneticos/termomagnetico-2p-32a-6ka-monofasico-chint}
+\urldef{\cotueo}\url{https://cdn.autosolar.pe/images/7102071/termomagnetico-2p-32a-6ka-monofasico-chint-thumb.jpg}
+\urldef{\cotuep}\url{https://autosolar.pe/protector-de-sobretensiones/proteccion-sobretensiones-2p-275v-40ka-chint}
+\urldef{\cotueq}\url{https://cdn.autosolar.pe/images/7102517/proteccion-sobretensiones-2p-275v-40ka-chint-thumb.jpg}
+\urldef{\cotuer}\url{https://autosolar.pe/materiales-para-pozo-a-tierra/cemento-conductivo-para-pozo-a-tierra-25kg-thor-cem}
+\urldef{\cotues}\url{https://cdn.autosolar.pe/images/3201080/cemento-conductivo-para-pozo-a-tierra-25kg-thor-cem-690df404b6e66-thumb.jpg}
+\urldef{\cotuet}\url{https://www.promelsa.com.pe/1026759-tubo-pvc-sap-3-4-x-3mts.html}
+\urldef{\cotueu}\url{https://www.promelsa.com.pe/media/catalog/product/cache/6b4130b32769b1778be6c5b443fe5cb6/1/0/1026759-01_1.jpg}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de oferta única: tablero, puesta a tierra e instalación}\label{tab:cot-u2}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYYYY@{}}
+\toprule
+\textbf{Característica} & \textbf{Termomagnético 2P de 16 A, 6 kA} & \textbf{Termomagnético 2P de 32 A, 6 kA} & \textbf{Protector de sobretensiones AC 2P 275 V} & \textbf{Cemento conductivo, bolsa de 25 kg} & \textbf{Tubo PVC SAP de 3/4 pulg. $\times$ 3 m}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/u-tm16.jpg}{2.3cm} & \imgficha{imagenes/cot/u-tm32.jpg}{2.3cm} & \imgficha{imagenes/cot/u-spdac.jpg}{2.3cm} & \imgficha{imagenes/cot/u-cemento.jpg}{2.3cm} & \imgficha{imagenes/cot/u-tubo.jpg}{2.3cm}\\
+\textbf{Uso en el proyecto} & Circuitos de terminales y de red & Entrada de red y salida de respaldo & Tablero crítico & Relleno del pozo a tierra & Tramos verticales y protegidos de conductores\\
+\textbf{Características publicadas} & 230/400 V; poder de corte de 6 kA & 230/400 V; 6 kA; Ui 500 V & Uc 275 V; 40 kA; Up 1,5 kV; tipo II & Menos de 5 $\Omega$·m; IEC 62561-7 & PVC SAP; 3/4 pulg.; 3 m\\
+\textbf{Proveedor e IGV} & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & AutoSolar Perú; IGV incluido & Promelsa; IGV no declarado\\
+\textbf{Cantidad} & 2 & 2 & 1 & 2 & 15\\
+\textbf{Precio unitario S/} & \textbf{40,46} & \textbf{53,52} & \textbf{155,94} & \textbf{170,91} & \textbf{11,17}\\
+\textbf{Parcial S/} & 80,92 & 107,04 & 155,94 & 341,82 & 167,55\\
+\textbf{Enlace del producto} & {\scriptsize\cotuel} & {\scriptsize\cotuen} & {\scriptsize\cotuep} & {\scriptsize\cotuer} & {\scriptsize\cotuet}\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuem} & {\scriptsize\cotueo} & {\scriptsize\cotueq} & {\scriptsize\cotues} & {\scriptsize\cotueu}\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Componentes con una sola oferta identificada en la consulta del 30 de octubre de 2026; se aceptará cualquier equivalente que cumpla la especificación \cite{autosolarac,promelsa,arteusred}.}
+\end{minipage}\par\vspace{10pt}
+
+\urldef{\cotuev}\url{https://arteus.pe/products/dixon-je3001wh-faceplate-placa-frontal-simple-1-puerto-blanco}
+\urldef{\cotuew}\url{https://arteus.pe/cdn/shop/files/JE3001WH.jpg}
+\urldef{\cotuex}\url{https://arteus.pe/products/glc-tec-glc-orgab-001-organizador-horizontal-de-cable-de-1ru-19-metal}
+\urldef{\cotuey}\url{https://autosolar.pe/materiales-para-pozo-a-tierra/conector-de-bronce-58-para-pozo-a-tierra}
+\par\noindent\begin{minipage}{\linewidth}\formatofichas
+\captionof{table}{Cotización de oferta única: red local}\label{tab:cot-u3}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}YYY@{}}
+\toprule
+\textbf{Característica} & \textbf{Faceplate Dixon JE3001WH de 1 puerto} & \textbf{Organizador horizontal GLC de 1 RU} & \textbf{Conector de bronce de 5/8 pulg.}\\\midrule
+\textbf{Imagen referencial} & \imgficha{imagenes/cot/u-faceplate.jpg}{2.3cm} & \emph{Sin imagen publicada} & \emph{Sin imagen publicada}\\
+\textbf{Uso en el proyecto} & Salida de cada enlace en terminal y cámara & Orden de patch cords en el gabinete & Unión del conductor con la barra del pozo\\
+\textbf{Características publicadas} & Compatible con keystone; 70 $\times$ 114 mm & Metal; 19 pulg.; 1 RU & Bronce; para barra de 5/8 pulg.\\
+\textbf{Proveedor e IGV} & ARTEUS S.A.C., RUC 20608279637; IGV incluido & ARTEUS S.A.C., RUC 20608279637; IGV incluido & AutoSolar Perú; IGV incluido\\
+\textbf{Cantidad} & 7 & 1 & 2\\
+\textbf{Precio unitario S/} & \textbf{3,00} & \textbf{17,00} & \textbf{6,35}\\
+\textbf{Parcial S/} & 21,00 & 17,00 & 12,70\\
+\textbf{Enlace del producto} & {\scriptsize\cotuev} & {\scriptsize\cotuex} & {\scriptsize\cotuey}\\
+\textbf{Fuente de la imagen} & {\scriptsize\cotuew} & Sin imagen & Sin imagen\\
+\bottomrule
+\end{tabularx}
+\fuentefichas{Componentes con una sola oferta identificada en la consulta del 30 de octubre de 2026; se aceptará cualquier equivalente que cumpla la especificación \cite{arteusred}.}
+\end{minipage}\par\vspace{10pt}
+
+\end{landscape}
+
+\section{Evidencia de gestión del equipo}\label{sec:evidencia_gestion}
+El tablero de Jira del proyecto organiza las actividades de formulación y validación en dos épicas y dieciséis tareas con responsable asignado. La figura \ref{fig:jira} muestra la lista de tareas del espacio INFORMA UNSAAC. El cronograma de implementación se presenta en el diagrama de Gantt de la figura \ref{fig:gantt}.
+\figura{gestion/jira_proyecto_creado.png}{Espacio de trabajo del proyecto en Jira con tareas asignadas}{fig:jira}{11cm}
